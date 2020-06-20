@@ -10,10 +10,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    " Plug 'scrooloose/NERDTree'
-    " Plug 'Xuyuanp/nerdtree-git-plugin'
-    " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Color Theme
@@ -30,8 +26,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Finder
     Plug 'kien/ctrlp.vim'
     " Git visualization & wrapper
-    Plug 'airblade/vim-gitgutter'
+    Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+    Plug 'airblade/vim-rooter'
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
