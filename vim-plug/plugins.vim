@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Color Theme
     Plug 'gruvbox-community/gruvbox'
+    Plug 'jbgutierrez/vim-better-comments'
     " Intellisense engine
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Undo history 
@@ -34,8 +35,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-
-call plug#end()
+    " Commenter
+    Plug 'preservim/nerdcommenter'  
+    
+    call plug#end()
 
 "Automatically install missing plugins on startup
 autocmd VimEnter *
