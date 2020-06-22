@@ -1,2 +1,3 @@
 # nvim
-A collection of vim configuration files. 
+A collection of my vim configuration files. 
+(Located in .config/nvim)
