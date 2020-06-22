@@ -1,23 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-neofetch
 
-# Define aliases
-alias c="clear"
-alias k="kubectl"
-alias mongod='brew services run mongodb-community@4.2'
-alias mongod-status='brew services list'
-alias mongod-stop='brew services stop mongodb-community@4.2'
-
-# fortune | cowsay | lolcat
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/chris/.oh-my-zsh"
-# Path to anaconda
-export PATH="/usr/local/anaconda3/bin:$PATH"
 # Path to denon
 export PATH="/Users/chris/.deno/bin:$PATH"
 # Path to mongo
 export PATH="/usr/local/Cellar/mongodb-community-shell/4.2.0/bin:$PATH"
+# path to nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -95,25 +87,26 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+export EDITOR='nvim'
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias c="clear"
+alias k="kubectl"
+alias mongod='brew services run mongodb-community@4.2'
+alias mongod-status='brew services list'
+alias mongod-stop='brew services stop mongodb-community@4.2'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+# fzf support.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Run on startup
+neofetch
 nvm current
