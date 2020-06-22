@@ -25,13 +25,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Man pages
     Plug 'vim-utils/vim-man'
     " Finder
-    Plug 'kien/ctrlp.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
     " Git visualization & wrapper
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
-    Plug 'airblade/vim-rooter'
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'

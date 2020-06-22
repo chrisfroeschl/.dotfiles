@@ -12,7 +12,6 @@
   "eslint.enable": true,
   "eslint.run": "onType",
   "eslint.autoFixOnSave": true,
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
