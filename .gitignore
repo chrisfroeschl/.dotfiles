@@ -1,1 +1,4 @@
 autoload
+.DS_Store
+**/.DS_Store
+.netrwhist
