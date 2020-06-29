@@ -106,7 +106,3 @@ alias mongod-stop='brew services stop mongodb-community@4.2'
 
 # fzf support.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Run on startup
-neofetch
-nvm current
