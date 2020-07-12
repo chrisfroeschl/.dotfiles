@@ -15,6 +15,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Color Theme
     Plug 'gruvbox-community/gruvbox'
     Plug 'jbgutierrez/vim-better-comments'
+    Plug 'luochen1990/rainbow'
+    Plug 'ap/vim-css-color'
     " Intellisense engine
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Undo history 
