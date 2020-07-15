@@ -7,7 +7,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Users/chris/.deno/bin:$PATH"
 export EDITOR='nvim' 
 export DEFAULT=$PS1 
-export PS1="\u:\w\$ " 
+export PS1="\[\033[32m\]\u:\[\033[37;1m\]\w\[\033[m\]\$ "
 
 alias c="clear" 
 alias k="kubectl" 
