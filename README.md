@@ -5,7 +5,7 @@ A collection of my vim configuration files.
 ## Dependencies
 
 Following packages are required for Plug extensions included inside this config. <br/>
-Install with your preferred package manager. <br/>
+Install with your preferred package manager.
 
 0. [nvim](https://neovim.io/)
 1. [fzf](https://github.com/junegunn/fzf.vim)
@@ -18,7 +18,8 @@ Install with your preferred package manager. <br/>
 8. A working python3 installation (:checkhealth to find out if yours is fine)
 
 ## Coc-Extensions
-```
+
+```json
 {
   "dependencies": {
     "coc-angular": ">=0.901.11",
@@ -29,14 +30,15 @@ Install with your preferred package manager. <br/>
     "coc-explorer": ">=0.7.11",
     "coc-html": ">=1.2.4",
     "coc-json": ">=1.2.6",
+    "coc-markdownlint": ">=1.5.0",
     "coc-marketplace": ">=1.7.0",
     "coc-pairs": ">=1.2.21",
     "coc-prettier": ">=1.1.14",
+    "coc-sh": ">=0.5.1",
     "coc-snippets": ">=2.1.28",
     "coc-tsserver": ">=1.5.1",
     "coc-vimlsp": ">=0.8.0",
     "coc-yaml": ">=1.0.4",
     "coc-yank": ">=1.1.4"
   }
-}
 ```
