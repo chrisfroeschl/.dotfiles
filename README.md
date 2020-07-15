@@ -1,2 +1,2 @@
-# zshrc
-A zsh configuration file.
+# shell
+A shell configuration collection.
