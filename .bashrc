@@ -12,7 +12,11 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Users/chris/.deno/bin:$PATH"
 export EDITOR='nvim' 
 export DEFAULT=$PS1 
-export PS1="\[\033[32m\]\u:\[\033[37;1m\]\w\[\033[m\]\$ "
+
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWCOLORHINTS="yes"
+source ~/.git-prompt.sh
+export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
 
 alias c="clear" 
 alias k="kubectl" 
