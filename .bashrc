@@ -15,6 +15,9 @@ export DEFAULT=$PS1
 
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS="yes"
+GIT_PS1_SHOWDIRTYSTATE="yes"
+GIT_PS1_SHOWSTASHSTATE="yes"
+GIT_PS1_SHOWUNTRACKEDFILES="yes"
 source ~/.git-prompt.sh
 export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
 
