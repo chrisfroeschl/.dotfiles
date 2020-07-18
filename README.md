@@ -1,21 +1,36 @@
 # nvim
-A collection of my vim configuration files. 
-(Located in .config/nvim)
+
+A collection of my neovim configuration files.
 
 ## Dependencies
 
-Following packages are required for Plug extensions included inside this config. <br/>
-Install with your preferred package manager.
+Following packages are required for [Plug](https://github.com/junegunn/vim-plug)
+extensions included inside this config.
 
-0. [nvim](https://neovim.io/)
-1. [fzf](https://github.com/junegunn/fzf.vim)
-2. To install useful key bindings and fuzzy completion: `$(brew --prefix)/opt/fzf/install`
-3. [ripgrep](https://github.com/BurntSushi/ripgrep)
-4. [universal-ctags](https://github.com/universal-ctags/ctags)
-5. [thesilversearcher](https://github.com/ggreer/the_silver_searcher)
-6. [fd](https://github.com/sharkdp/fd)
-7. [vim-plug](https://github.com/junegunn/vim-plug)
-8. A working python3 installation (:checkhealth to find out if yours is fine)
+- Mac
+
+    ```bash
+        brew install node
+        brew install neovim
+        brew install fzf
+        $(brew --prefix)/opt/fzf/install
+        brew install ripgrep
+        brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+        brew install the_silver_searcher
+        brew install fd
+    ```
+
+- Arch
+
+    ```bash
+        sudo pacman -S nodejs npm
+        sudo pacman -S neovim
+        sudo pacman -S fzf
+        sudo pacman -S ripgrep
+        yay -S universal-ctags-git
+        sudo pacman -S the_silver_searcher
+        pacman -S fd
+    ```
 
 ## Coc-Extensions
 

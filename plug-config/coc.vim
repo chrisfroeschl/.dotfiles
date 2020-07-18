@@ -149,5 +149,5 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Explorer
-nmap <space>e :CocCommand explorer<CR>
+nmap <space>e :CocCommand explorer --width 40<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
