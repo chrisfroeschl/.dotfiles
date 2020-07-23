@@ -1,26 +1,23 @@
-" "
-"---DEV---"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA # Mental Outlaw
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA # Luke Smith
+"---INFORMATIVE---"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkK9UDm_ZNrq_rIXCz3xCGA # Bryan Lunduke
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA # Luke Smith
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA # Mental Outlaw
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw # ThePrimeagen
-https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA # Chrisatmachine
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-8QAzbLcRglXeN_MY9blyw # Ben Awad
-https://stallman.org/rss/rss.xml # Stallman
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBa659QWEk1AI4Tg--mrJ2A # Tom Scott
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfzdUDBKNMAEWXjVox4KrJA # 108 mics
+https://stallman.org/rss/rss.xml # Stallman 
 https://news.ycombinator.com/rss # Hacker News
-https://neovim.io/news.xml # Neovim
-https://kubernetes.io/feed.xml # Kubernetes
+https://blog.angular.io/feed # Angular
+https://reactjs.org/feed.xml # React
 https://www.docker.com/blog/feed/ # Docker
+https://kubernetes.io/feed.xml # Kubernetes
 https://www.mongodb.com/blog/rss # MongoDB
 https://nodejs.org/en/feed/blog.xml # Node.js Blog
 https://nodejs.org/en/feed/releases.xml # Node.js Releases
 https://nodejs.org/en/feed/vulnerability.xml # Node.js Vulnerbilities
-https://blog.angular.io/feed # Angular
-https://reactjs.org/feed.xml # React
-
 " "
 "---MUSIC---"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCwolwTPDNMSzHV-HRii4gFQ # Crystal Castles
 https://www.youtube.com/feeds/videos.xml?channel_id=UCyjKBSGMcxdGbSD86iq_SBw # Drain Gang
 https://www.youtube.com/feeds/videos.xml?channel_id=UCc8m3wFLU62yFxGheXqkp3A # 1sleep23
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNB3I5coHcJLDaNMv9hna-Q # Noah
@@ -28,11 +25,16 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC89KLKxLCgN2T3e4G6Mr1bA # h
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQSUJUDbJMzph0_vpyzvzZQ # Yung Lean
 https://www.youtube.com/feeds/videos.xml?channel_id=UCP9Bvw5BQwQcX870r7KFjMg # Yung Sherman
 https://www.youtube.com/feeds/videos.xml?channel_id=UCCxLk1i4Ub8xvueNU_sgd4w # sad boys
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwolwTPDNMSzHV-HRii4gFQ # Crystal Castles
 https://www.youtube.com/feeds/videos.xml?channel_id=UCGJZbi-LR6eCYrbxCI9iJng # Weatherday
-https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA # dismiss yourself
-https://www.youtube.com/feeds/videos.xml?channel_id=UCfzdUDBKNMAEWXjVox4KrJA # 108 mics
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMaInN5XEB9H_AarYP6TJuQ # Deep October
-
+https://feeds.soundcloud.com/users/soundcloud:users:145901704/sounds.rss # Deep October
+https://feeds.soundcloud.com/users/soundcloud:users:211076041/sounds.rss # Dynasty
+https://www.youtube.com/feeds/videos.xml?channel_id=UCnzE8OLjecigoH63SDkbGig # MISOGI
+https://www.youtube.com/feeds/videos.xml?channel_id=UCb9iiHe5TDHQv-J8w6MWJBw # Mixed Matches
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAhWzJslnYGXzmb0JG2dWlw # Uboa
+https://feeds.soundcloud.com/users/soundcloud:users:356575376/sounds.rss # Leonard's Lake
+https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA # dismiss yourself
 " "
 "---PODCAST---"
 http://www.podcast-ufo.fail/?feed=rss2&cat=2 # Pufo
