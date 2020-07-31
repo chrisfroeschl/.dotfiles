@@ -13,7 +13,6 @@ https://www.mongodb.com/blog/rss # MongoDB
 https://nodejs.org/en/feed/releases.xml # Node.js Releases
 https://www.archlinux.org/feeds/news/ # Arch Linux
 https://suckless.org/atom.xml # Suckless
-
 " "
 "---MUSIC---"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCyjKBSGMcxdGbSD86iq_SBw # Drain Gang
@@ -23,8 +22,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC89KLKxLCgN2T3e4G6Mr1bA # h
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQSUJUDbJMzph0_vpyzvzZQ # Yung Lean
 https://www.youtube.com/feeds/videos.xml?channel_id=UCP9Bvw5BQwQcX870r7KFjMg # Yung Sherman
 https://www.youtube.com/feeds/videos.xml?channel_id=UCCxLk1i4Ub8xvueNU_sgd4w # sad boys
-https://www.youtube.com/feeds/videos.xml?channel_id=UCmLxe9Jy_N1v5yDNIDU0UCA # BLACK KRAY
-https://www.youtube.com/feeds/videos.xml?channel_id=UC9XU-GeJ4XBijYKw7NfxgZg # ReptilianClubBoyz
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwolwTPDNMSzHV-HRii4gFQ # Crystal Castles
 https://www.youtube.com/feeds/videos.xml?channel_id=UCGJZbi-LR6eCYrbxCI9iJng # Weatherday
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMaInN5XEB9H_AarYP6TJuQ # Deep October
@@ -33,10 +30,12 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCb9iiHe5TDHQv-J8w6MWJBw # M
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAhWzJslnYGXzmb0JG2dWlw # Uboa
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDxh2p2cB2RqVDYi7BIQq2A # Fifty Grand
 https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA # dismiss yourself
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_aUSHsxMNlDcXd4EjOg06w # Ezek
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXVVZ9yuH3Is0J2_OwiH6ag # Astari
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2zDD7AIpaf70mUfKl6E4WA # hund
 " "
 "---PODCAST---"
+https://notrelated.libsyn.com/rss # Luke Smith
 http://www.podcast-ufo.fail/?feed=rss2&cat=2 # Pufo
 https://die-wundersame-rapwoche.podcasts.fluxfm.de/feed/mp3/ # Mauli & Staiger
 https://feeds.soundcloud.com/users/soundcloud:users:767234893/sounds.rss # Anime Pussy Podcast
