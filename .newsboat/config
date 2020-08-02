@@ -1,6 +1,8 @@
 # general settings
-auto-reload yes
-reload-time  30
+# max-items 100
+datetime-format "%D, %R"
+show-keymap-hint no
+download-retries 4
 
 # unbind keys
 unbind-key ENTER
