@@ -1,6 +1,12 @@
 # nvim
 
+## Description
+
 A collection of my neovim configuration files.
+
+## Setup
+
+Clone the repository and place it inside you `.config` directory.
 
 ## Dependencies
 
