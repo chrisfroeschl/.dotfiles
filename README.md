@@ -2,11 +2,15 @@
 
 ## Description
 
-A collection of my neovim configuration files.
+My Neovim configuration files. This may seem like a <b>BLOATED</b> structure,
+but it becomes way easier to manage your plugins & settings through this approach.
 
 ## Setup
 
-Clone the repository and place it inside you `.config` directory.
+1. Clone the repository and place it inside your `~/.config` directory.
+2. Install below dependencies with your package manager.
+3. Run `:PlugInstall`.
+4. Install Coc-Extensions. (`CocInstall <extensions>` or `CocList marketplace`)
 
 ## Dependencies
 
