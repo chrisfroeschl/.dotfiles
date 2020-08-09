@@ -1,10 +1,11 @@
-"---INFORMATIVE---"
+"---VIDEO---"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA # lukesmith
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA # mentaloutlaw
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw # theprimeagen
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-8QAzbLcRglXeN_MY9blyw # benawad
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfzdUDBKNMAEWXjVox4KrJA # 108mics
-http://www.horriblesubs.info/rss.php?res=all # horriblesubs
+" "
+"---BLOG---"
 https://stallman.org/rss/rss.xml # richardstallman 
 https://lukesmith.xyz/rss.xml # lukesmith
 https://news.ycombinator.com/rss # hackernews
@@ -13,6 +14,17 @@ https://www.docker.com/blog/feed/ # docker
 https://nodejs.org/en/feed/releases.xml # nodejs 
 https://www.archlinux.org/feeds/news/ # archlinux
 https://suckless.org/atom.xml # suckless
+http://www.horriblesubs.info/rss.php?res=all # horriblesubs
+" "
+"---PODCAST---"
+https://notrelated.libsyn.com/rss # lukesmith
+http://www.podcast-ufo.fail/?feed=rss2&cat=2 # pufo
+https://feeds.soundcloud.com/users/soundcloud:users:767234893/sounds.rss # animepussypodcast
+" "
+"---GIT---"
+https://github.com/chrisfroeschl.private.atom?token=AKNJGAUNAVBJ5IV7SN77P455HPOYA # chrisfroeschl
+https://github.com/getify/You-Dont-Know-JS/commits/2nd-ed.atom # ydkjs
+https://github.com/trekhleb/javascript-algorithms/commits/master.atom # algorithms
 " "
 "---MUSIC---"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCyjKBSGMcxdGbSD86iq_SBw # draingang
@@ -34,8 +46,3 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA # d
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_aUSHsxMNlDcXd4EjOg06w # ezek
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXVVZ9yuH3Is0J2_OwiH6ag # astari
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2zDD7AIpaf70mUfKl6E4WA # hund
-" "
-"---PODCAST---"
-https://notrelated.libsyn.com/rss # lukesmith
-http://www.podcast-ufo.fail/?feed=rss2&cat=2 # pufo
-https://feeds.soundcloud.com/users/soundcloud:users:767234893/sounds.rss # animepussypodcast
