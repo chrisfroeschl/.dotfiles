@@ -61,9 +61,11 @@ extensions included inside this config.
     "coc-prettier": ">=1.1.14",
     "coc-sh": ">=0.5.1",
     "coc-snippets": ">=2.1.28",
+    "coc-texlab": ">=2.1.0",
     "coc-tsserver": ">=1.5.1",
     "coc-vimlsp": ">=0.8.0",
     "coc-yaml": ">=1.0.4",
     "coc-yank": ">=1.1.4"
   }
+}
 ```
