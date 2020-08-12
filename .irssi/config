@@ -1,5 +1,5 @@
 hilights = ( 
-  { text = "chris"; color = "%M"; nick = "yes"; word = "yes"; }
+  { text = "zpamm"; color = "%M"; nick = "yes"; word = "yes"; }
 );
 servers = (
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
@@ -308,11 +308,17 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "Chris Fr¬öschl";
+    real_name = "chris";
     user_name = "chris";
-    nick = "chrisfr";
+    nick = "zpamm";
     timestamp_format = "%H:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "irc/dcc" = { dcc_autoget = "yes"; dcc_download_path = "~/Downloads"; };
+  "irc/dcc" = {
+    dcc_autoget = "yes";
+    dcc_autoget_masks = "";
+    dcc_file_create_mode = "600";
+    dcc_download_path = "~/Downloads";
+    dcc_upload_path = "~/Downloads";
+  };
 };
