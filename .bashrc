@@ -1,8 +1,10 @@
-# Infinite history
+# infinite history
 HISTSIZE= HISTFILESIZE= 
-# Vim mode
+
+# vim mode
 set -o vi
 
+# environment variables
 export CLICOLOR=1 
 export LSCOLORS=exfxcxdxbxegedabagacad 
 # Linux alternative
@@ -13,6 +15,7 @@ export PATH="/Users/chris/.deno/bin:$PATH"
 export EDITOR='nvim' 
 export DEFAULT=$PS1 
 
+# git ps1 configuration
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS="yes"
 GIT_PS1_SHOWDIRTYSTATE="yes"
@@ -21,6 +24,7 @@ GIT_PS1_SHOWUNTRACKEDFILES="yes"
 source ~/.git-prompt.sh
 export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
 
+# aliases
 alias c="clear" 
 alias k="kubectl" 
 alias mongod='brew services run mongodb-community@4.2' 
