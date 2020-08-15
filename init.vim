@@ -5,7 +5,7 @@ source $HOME/.config/nvim/plug-config/neotex.vim
 source $HOME/.config/nvim/plug-config/vim-be-good.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/bufonly.vim
-source $HOME/.config/nvim/themes/gruvbox.vim
 source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/gruvbox.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim

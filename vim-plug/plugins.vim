@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Color Theme
     Plug 'gruvbox-community/gruvbox'
-    Plug 'jbgutierrez/vim-better-comments'
     " Intellisense engine
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Undo history 
@@ -39,7 +38,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Commenter
     Plug 'preservim/nerdcommenter'  
     " Latex
-    " Plug 'lervag/vimtex'
     Plug 'donRaphaco/neotex', { 'for': 'tex' }
     " Training
     Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
