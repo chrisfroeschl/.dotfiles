@@ -323,5 +323,8 @@ settings = {
     dcc_upload_path = "~/Downloads";
   };
   "irc/core" = { alternate_nick = "chris"; };
-  "fe-common/core" = { hilight_nick_matches_everywhere = "yes"; };
+  "fe-common/core" = {
+    hilight_nick_matches_everywhere = "yes";
+    theme = "greyed-out";
+  };
 };
