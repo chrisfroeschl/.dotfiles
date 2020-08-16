@@ -2,10 +2,16 @@
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>") 
 " Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap <M-l>    :vertical resize +2<CR>
+" Linux
+"nnoremap <M-j>    :resize -2<CR>
+"nnoremap <M-k>    :resize +2<CR>
+"nnoremap <M-h>    :vertical resize -2<CR>
+"nnoremap <M-l>    :vertical resize +2<CR>
+" MacOS (depends on keyboard bindings)
+nnoremap ∆      :resize -2<CR>
+nnoremap ˚      :resize +2<CR>
+nnoremap ˙      :vertical resize -2<CR>
+nnoremap ¬      :vertical resize +2<CR>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -38,7 +44,6 @@ nmap <leader>gd <Plug>(coc-definiton)
 nmap <leader>gy <Plug>(coc-type-definiton)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gr <Plug>(coc-reference)
-nnoremap <leader>u :UndotreeShow<CR>
 
 " Better window navigation
 nnoremap <C-h> <C-w>h

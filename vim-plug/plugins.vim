@@ -12,12 +12,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Color Theme
-    Plug 'gruvbox-community/gruvbox'
     " Intellisense engine
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Undo history 
-    Plug 'mbbill/undotree'
     " Typscript Syntax Support
     Plug 'HerringtonDarkholme/yats.vim'
     Plug 'leafgarland/typescript-vim'
@@ -34,11 +30,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     " Status Line
     Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     " Commenter
     Plug 'preservim/nerdcommenter'  
     " Latex
-    Plug 'donRaphaco/neotex', { 'for': 'tex' }
+    Plug 'lervag/vimtex'
     " Training
     Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 

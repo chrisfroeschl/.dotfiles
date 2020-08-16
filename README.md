@@ -3,7 +3,8 @@
 ## Description
 
 My Neovim configuration files. This may seem like a <b>BLOATED</b> structure,
-but it becomes way easier to manage your plugins & settings through this approach.
+but it becomes way easier to manage your plugins & settings through that kind of
+approach.
 
 ## Setup
 
@@ -17,7 +18,7 @@ but it becomes way easier to manage your plugins & settings through this approac
 Following packages are required for [Plug](https://github.com/junegunn/vim-plug)
 extensions included inside this config.
 
-- Mac
+- MacOS
 
     ```bash
         brew install node
@@ -48,6 +49,7 @@ extensions included inside this config.
 {
   "dependencies": {
     "coc-angular": ">=0.901.11",
+    "coc-bibtex": ">=1.2.7",
     "coc-css": ">=1.2.3",
     "coc-docker": ">=0.3.0",
     "coc-emmet": ">=1.1.4",
@@ -64,6 +66,7 @@ extensions included inside this config.
     "coc-texlab": ">=2.1.0",
     "coc-tsserver": ">=1.5.1",
     "coc-vimlsp": ">=0.8.0",
+    "coc-vimtex": ">=1.0.4",
     "coc-yaml": ">=1.0.4",
     "coc-yank": ">=1.1.4"
   }

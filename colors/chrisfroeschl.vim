@@ -6,7 +6,7 @@ endif
 
 let g:colors_name='chrisfroeschl'
 
-let s:black           = { "gui": "#000000", "cterm": "232" }
+let s:black           = { "gui": "#000000", "cterm": "16" }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
 let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
@@ -22,7 +22,6 @@ let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
 let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
 let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
 let s:light_green     = { "gui": "#5FD7A7", "cterm": "10"  }
-let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
 let s:light_yellow    = { "gui": "#ffff87", "cterm": "228"   }
 let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 let s:magenta         = { "gui": "#ff00d7", "cterm": "201"   }
@@ -30,15 +29,14 @@ let s:magenta         = { "gui": "#ff00d7", "cterm": "201"   }
   let s:bg              = s:black
   let s:bg_subtle       = s:lighter_black
   let s:bg_very_subtle  = s:subtle_black
-  let s:norm            = s:lighter_gray
+  let s:norm            = s:white
   let s:norm_subtle     = s:medium_gray
   let s:main_green      = s:dark_green
   let s:green           = s:light_green
   let s:red             = s:light_red
-  let s:visual          = s:dark_green
+  let s:visual          = s:white
   let s:yellow          = s:light_yellow
 
-" https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
   execute "highlight" a:group
     \ "guifg="   (has_key(a:style, "fg")    ? a:style.fg.gui   : "NONE")
@@ -64,7 +62,7 @@ hi! link String           Constant
 
 call s:h("Identifier",    {"fg": s:dark_blue})
 
-call s:h("Statement",     {"fg": s:dark_cyan})
+call s:h("Statement",     {"fg": s:orange})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
@@ -73,13 +71,13 @@ hi! link Exception        Statement
 
 call s:h("Operator",      {"fg": s:norm, "cterm": "bold", "gui": "bold"})
 
-call s:h("PreProc",     {"fg": s:norm_subtle})
+call s:h("PreProc",     {"fg": s:magenta})
 hi! link Include          PreProc
 hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:orange})
+call s:h("Type",          {"fg": s:red})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
@@ -97,20 +95,20 @@ call s:h("Error",         {"fg": s:actual_white, "bg": s:red, "cterm": "bold"})
 call s:h("Todo",          {"fg": s:main_green, "gui": "underline", "cterm": "underline"})
 call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:medium_gray})
-call s:h("Directory",     {"fg": s:dark_blue})
+call s:h("Directory",     {"fg": s:main_green})
 call s:h("ErrorMsg",      {"fg": s:red})
 call s:h("IncSearch",     {"bg": s:yellow, "fg": s:light_black})
 call s:h("Search",        {"bg": s:light_green, "fg": s:light_black})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:norm})
-call s:h("CursorLineNr",  {"fg": s:main_green, "bg": s:bg_very_subtle})
+call s:h("CursorLineNr",  {"fg": s:norm})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
 call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
 call s:h("Title",         {"fg": s:dark_blue})
-call s:h("Visual",        {"fg": s:norm, "bg": s:visual})
+call s:h("Visual",        {"fg": s:black, "bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
 call s:h("WarningMsg",    {"fg": s:yellow})
 call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
@@ -171,10 +169,11 @@ hi link ALEWarningSign	SyntasticWarningSign
 hi link ALEErrorSign	SyntasticErrorSign
 
 " Signify, git-gutter
-hi link SignifySignAdd              LineNr
-hi link SignifySignDelete           LineNr
-hi link SignifySignChange           LineNr
-hi link GitGutterAdd                LineNr
-hi link GitGutterDelete             LineNr
-hi link GitGutterChange             LineNr
+" safas
+hi link SignifySignAdd              DiffAdd
+hi link SignifySignDelete           DiffDelete
+hi link SignifySignChange           DiffChange
+hi link GitGutterAdd                DiffAdd
+hi link GitGutterDelete             DiffDelete
+hi link GitGutterChange             DiffChange
 hi link GitGutterChangeDelete       LineNr
