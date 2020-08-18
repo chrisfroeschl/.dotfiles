@@ -2,16 +2,23 @@
 
 ## Description
 
-My Neovim configuration files. This may seem like a <b>BLOATED</b> structure,
-but it becomes way easier to manage your plugins & settings through that kind of
+All my NeoVim based settings are collected inside this repository.
+It may seem like a **BLOATED** structure, but I can promise, that it became way
+easier to manage plugins, settings and others with that kind of
 approach.
+
+## Theme
+
+I am using a self created theme, which is more of a work in progress part.
+
+![theme preview](https://github.com/chrisfroeschl/nvim/blob/master/theme.png)
 
 ## Setup
 
 1. Clone the repository and place it inside your `~/.config` directory.
-2. Install below dependencies with your package manager.
-3. Run `:PlugInstall`.
-4. Install Coc-Extensions. (`CocInstall <extensions>` or `CocList marketplace`)
+2. Install below listed dependencies with your package manager.
+3. Run `:PlugInstall` to install Vim plugins.
+4. Run `:CocInstall <extensions>` to install Coc related extensions.
 
 ## Dependencies
 
