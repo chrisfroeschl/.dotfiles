@@ -57,15 +57,22 @@ servers = (
   {
     address = "irc.rizon.net";
     chatnet = "Rizon";
-    autoconnect = "yes";
     port = "6697";
     use_tls = "yes";
   },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
-  { 
+  {
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
+    use_tls = "yes";
+  },
+  {
+    address = "irc.irchighway.net";
+    chatnet = "Highwaynet";
+    port = "6697";
+    autoconnect = "yes";
+    use_tls = "yes";
   }
 );
 
@@ -138,6 +145,7 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
+  Highwaynet = { type = "IRC"; };
 };
 
 channels = (
@@ -145,6 +153,8 @@ channels = (
   { name = "#freenode"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#draingang"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#horriblesubs"; chatnet = "Rizon"; autojoin = "Yes"; },
+  { name = "#bookz"; chatnet = "Undernet"; autojoin = "Yes"; },
+  { name = "#ebooks"; chatnet = "Highwaynet"; autojoin = "Yes"; },
   { name = "#irssi"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gamesurge"; chatnet = "GameSurge"; autojoin = "No"; },
   { name = "#irssi"; chatnet = "IRCNet"; autojoin = "No"; },
