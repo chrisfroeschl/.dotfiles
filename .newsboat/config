@@ -1,5 +1,9 @@
 # general settings
-# max-items 100
+auto-reload yes
+reload-time  30
+
+# general settings
+max-items 1000
 datetime-format "%D, %R"
 show-keymap-hint no
 download-retries 4
