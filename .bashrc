@@ -27,6 +27,7 @@ export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
 # aliases
 alias c="clear" 
 alias k="kubectl" 
+alias t="torsocks trans -shell -4 en:de"
 alias mongod='brew services run mongodb-community@4.2' 
 alias mongod-status='brew services list' 
 alias mongod-stop='brew services stop mongodb-community@4.2' 
