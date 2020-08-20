@@ -30,6 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     " Status Line
     Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     " Commenter
     Plug 'preservim/nerdcommenter'  
     " Latex
