@@ -12,10 +12,10 @@ https://lukesmith.xyz/rss.xml # lukesmith
 https://news.ycombinator.com/rss # hackernews
 https://blog.angular.io/feed # angular
 https://www.docker.com/blog/feed/ # docker
+https://kubernetes.io/feed.xml # kubernetes
 https://nodejs.org/en/feed/releases.xml # nodejs 
 https://www.archlinux.org/feeds/news/ # archlinux
 https://suckless.org/atom.xml # suckless
-http://www.horriblesubs.info/rss.php?res=all # horriblesubs
 " "
 "---PODCAST---"
 https://notrelated.libsyn.com/rss # lukesmith
@@ -35,15 +35,13 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCP9Bvw5BQwQcX870r7KFjMg # y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCCxLk1i4Ub8xvueNU_sgd4w # sadboys
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwolwTPDNMSzHV-HRii4gFQ # crystalcastles
 https://www.youtube.com/feeds/videos.xml?channel_id=UCGJZbi-LR6eCYrbxCI9iJng # weatherday
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAhWzJslnYGXzmb0JG2dWlw # uboa
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMaInN5XEB9H_AarYP6TJuQ # deepoctober
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnzE8OLjecigoH63SDkbGig # misogi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCb9iiHe5TDHQv-J8w6MWJBw # mixedmatches
-https://www.youtube.com/feeds/videos.xml?channel_id=UCAhWzJslnYGXzmb0JG2dWlw # uboa
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIWqTEwwfnlhory4fAdVw_Q # clamscasino
-https://www.youtube.com/feeds/videos.xml?channel_id=UC9XU-GeJ4XBijYKw7NfxgZg # reptilianclubboyz
 https://www.youtube.com/feeds/videos.xml?channel_id=UCmLxe9Jy_N1v5yDNIDU0UCA # blackkray
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTa23iZGmKYdyQ_hijXl3bg # yabujin
+https://www.youtube.com/feeds/videos.xml?channel_id=UC6CFu1OaC4YL8ElL70JQqfw # crackdenrecords
+https://www.youtube.com/feeds/videos.xml?channel_id=UCIWqTEwwfnlhory4fAdVw_Q # clamscasino
 https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA # dismissyourself
 https://www.youtube.com/feeds/videos.xml?channel_id=UCgE4beMmb1_WSnaqrFiQeUg # emochaobankrollposse
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTa23iZGmKYdyQ_hijXl3bg # yabujin
-https://www.youtube.com/feeds/videos.xml?channel_id=UC6CFu1OaC4YL8ElL70JQqfw # crackdengjrecords
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNfIyIUMDl4l_LfxdVAeMnw # olallie
