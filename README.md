@@ -11,7 +11,7 @@ approach.
 
 I am using a self created theme, which is more of a work in progress part.
 
-![theme preview](https://github.com/chrisfroeschl/nvim/blob/master/theme.png)
+![theme preview](https://ibb.co/w0y80B7)
 
 ## Setup
 
