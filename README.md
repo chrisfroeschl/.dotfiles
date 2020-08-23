@@ -11,7 +11,7 @@ approach.
 
 I am using a self created theme, which is more of a work in progress part.
 
-![theme preview](https://ibb.co/w0y80B7)
+![theme preview](https://i.ibb.co/JBn8Bmq/Screenshot-2020-08-23-at-20-25-58.png)
 
 ## Setup
 
