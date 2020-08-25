@@ -13,4 +13,6 @@ tmux new-session -n main \; \
     split-window -h -p 50 \; \
     send-keys 'torsocks irssi' C-m \; \
     split-window -v \; \
-    send-keys 't' C-m \; \
+    send-keys 'torsocks trans -shell -4 en:de' C-m \; \
+    select-pane -t 0 \; \
+    split-window -v \; \

@@ -27,6 +27,8 @@ macro m set browser "/usr/local/bin/mpv %u"; open-in-browser ; set browser "/usr
 # Only works on Linux
 # macro f set browser "/usr/local/bin/firefox %u"; open-in-browser ; set browser "/usr/local/bin/w3m %u"
 macro f set browser "open -a Firefox %u"; open-in-browser ; set browser "/usr/local/bin/w3m %u"
+macro t set browser "open -a 'Tor Browser' %u"; open-in-browser ; set browser "/usr/local/bin/w3m %u"
+macro q set browser "open -a qutebrowser %u"; open-in-browser ; set browser "/usr/local/bin/w3m %u"
 
 # theme 
 color background         default   default
