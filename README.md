@@ -3,15 +3,13 @@
 ## Description
 
 All my NeoVim based settings are collected inside this repository.
-It may seem like a **BLOATED** structure, but I can promise, that it became way
-easier to manage plugins, settings and others with that kind of
-approach.
+
+No, this isn't another **BLOATED** structure of something I call my vim setup.
+You will enjoy, I promise.
 
 ## Theme
 
-I am using a self created theme, which is more of a work in progress part.
-
-![theme preview](https://ibb.co/w0y80B7)
+![theme preview](https://i.imgur.com/D9nsARX.png)
 
 ## Setup
 
@@ -28,6 +26,7 @@ extensions included inside this config.
 - MacOS
 
     ```bash
+        # Recommended: You can use fnm or nvim as an alternative.
         brew install node
         brew install neovim
         brew install fzf
@@ -36,11 +35,14 @@ extensions included inside this config.
         brew install --HEAD universal-ctags/universal-ctags/universal-ctags
         brew install the_silver_searcher
         brew install fd
+        pip install neovim
+        sudo npm install -g neovim
     ```
 
 - Arch
 
     ```bash
+        # Recommended: You can use fnm or nvim as an alternative.
         sudo pacman -S nodejs npm
         sudo pacman -S neovim
         sudo pacman -S fzf
@@ -48,9 +50,14 @@ extensions included inside this config.
         yay -S universal-ctags-git
         sudo pacman -S the_silver_searcher
         pacman -S fd
+        pip install neovim
+        sudo npm install -g neovim
     ```
 
 ## Coc-Extensions
+
+Versions of below extensions don't really matter, since I just listed them here
+to keep track of the names of my Coc-extensions.
 
 ```json
 {
