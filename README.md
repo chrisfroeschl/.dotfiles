@@ -13,9 +13,11 @@ dotfiles of this repository.
 - MacOS
 
     ```bash
-        brew install git
+        # MacOS doesn't ship with up-to-date groff version
+        brew install groff
         # MacOS doesn't ship with up-to-date bash version
         brew install bash
+        brew install git
         brew install tmux
         brew install rtorrent
         brew install irssi
