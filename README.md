@@ -6,6 +6,7 @@ A collection of several dotfiles for daily used CLIs. I try to minimize what's d
 in `~`, so I put most of my configs inside `~/.config`.
 
 Includes settings for:
+
     - bash (shell)
     - mongo (database)
     - rtorrent (torrent)
