@@ -33,10 +33,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " Commenter
     Plug 'preservim/nerdcommenter'  
-    " Latex
-    Plug 'lervag/vimtex'
-    " Training
-    Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 
     call plug#end()
 

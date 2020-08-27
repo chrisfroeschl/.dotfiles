@@ -63,7 +63,6 @@ to keep track of the names of my Coc-extensions.
 {
   "dependencies": {
     "coc-angular": ">=0.901.11",
-    "coc-bibtex": ">=1.2.7",
     "coc-css": ">=1.2.3",
     "coc-docker": ">=0.3.0",
     "coc-emmet": ">=1.1.4",
@@ -72,15 +71,12 @@ to keep track of the names of my Coc-extensions.
     "coc-html": ">=1.2.4",
     "coc-json": ">=1.2.6",
     "coc-markdownlint": ">=1.5.0",
-    "coc-marketplace": ">=1.7.0",
     "coc-pairs": ">=1.2.21",
     "coc-prettier": ">=1.1.14",
     "coc-sh": ">=0.5.1",
     "coc-snippets": ">=2.1.28",
-    "coc-texlab": ">=2.1.0",
     "coc-tsserver": ">=1.5.1",
     "coc-vimlsp": ">=0.8.0",
-    "coc-vimtex": ">=1.0.4",
     "coc-yaml": ">=1.0.4",
     "coc-yank": ">=1.1.4"
   }
