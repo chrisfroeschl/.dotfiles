@@ -2,30 +2,18 @@
 
 ## Description
 
-A collection of several dotfiles for daily used CLIs. I exclusively included configs
-that would require some time to rebuild.
+A collection of several dotfiles for daily used CLIs. I try to minimize what's directly
+in `~`, so I put most of my configs inside `~/.config`.
 
-## Packages
-
-Here are the installation commands listed, to install the packages linked to the
-dotfiles of this repository.
-
-- MacOS
-
-    ```bash
-        # MacOS doesn't ship with up-to-date groff version
-        brew install groff
-        # MacOS doesn't ship with up-to-date bash version
-        brew install bash
-        brew install git
-        brew install tmux
-        brew install rtorrent
-        brew install irssi
-        brew install newsboat
-        brew tap mongodb/brew
-        brew install mongodb-community@4.4
-    ```
-
-- Arch
-
-Coming soon
+Includes settings for:
+    - bash (shell)
+    - mongo (database)
+    - rtorrent (torrent)
+    - groff (markdown)
+    - htop (system)
+    - irssi (IRC client)
+    - mpv
+    - neofetch
+    - newsboat (RSS client)
+    - tmux
+    - zathura (PDF reader)
