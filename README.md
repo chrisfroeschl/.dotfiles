@@ -12,8 +12,8 @@ Includes settings for:
 - groff (markdown)
 - htop (system)
 - irssi (IRC client)
-- mpv
-- neofetch
+- mpv (video/audio player)
+- neofetch (system)
 - newsboat (RSS client)
-- tmux
+- tmux (terminal multiplexer)
 - zathura (PDF reader)
