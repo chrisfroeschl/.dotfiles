@@ -4,9 +4,6 @@
 
 All my NeoVim based settings are collected inside this repository.
 
-No, this isn't another **BLOATED** structure of something I call my vim setup.
-You will enjoy, I promise.
-
 ## Theme
 
 ![theme preview](https://i.imgur.com/D9nsARX.png)
@@ -14,9 +11,9 @@ You will enjoy, I promise.
 ## Setup
 
 1. Clone the repository and place it inside your `~/.config` directory.
-2. Install below listed dependencies with your package manager.
+2. Install below listed dependencies with your preferred package manager.
 3. Run `:PlugInstall` to install Vim plugins.
-4. Run `:CocInstall <extensions>` to install Coc related extensions.
+4. Run `:CocInstall <extension>` to install Coc related extensions.
 
 ## Dependencies
 
@@ -56,7 +53,7 @@ extensions included inside this config.
 
 ## Coc-Extensions
 
-Versions of below extensions don't really matter, since I just listed them here
+The versions of below extensions don't really matter, since I just listed them here
 to keep track of the names of my Coc-extensions.
 
 ```json
