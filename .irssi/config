@@ -155,6 +155,7 @@ channels = (
   { name = "#horriblesubs"; chatnet = "Rizon"; autojoin = "Yes"; },
   { name = "#bookz"; chatnet = "Undernet"; autojoin = "Yes"; },
   { name = "#ebooks"; chatnet = "Highwaynet"; autojoin = "Yes"; },
+  { name = "#fc"; chatnet = "Highwaynet"; autojoin = "Yes"; },
   { name = "#irssi"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gamesurge"; chatnet = "GameSurge"; autojoin = "No"; },
   { name = "#irssi"; chatnet = "IRCNet"; autojoin = "No"; },
