@@ -3,6 +3,8 @@
 ## Description
 
 All my NeoVim based settings are collected inside this repository.
+Make sure to use the master build from NeoVim, since some of my plugins won't work
+otherwise.
 
 ## Theme
 
@@ -25,7 +27,7 @@ extensions included inside this config.
     ```bash
         # Recommended: You can use fnm or nvim as an alternative.
         brew install node
-        brew install neovim
+        brew install --HEAD neovim
         brew install fzf
         $(brew --prefix)/opt/fzf/install
         brew install ripgrep

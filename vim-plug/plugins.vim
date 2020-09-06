@@ -33,6 +33,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " Commenter
     Plug 'preservim/nerdcommenter'  
+    " Practice
+    "Plug 'ThePrimeagen/vim-apm'
+    Plug 'ThePrimeagen/vim-be-good'
 
     call plug#end()
 
