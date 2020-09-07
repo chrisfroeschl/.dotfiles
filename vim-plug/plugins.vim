@@ -10,8 +10,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
     " Intellisense engine
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Typscript Syntax Support
@@ -34,7 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Commenter
     Plug 'preservim/nerdcommenter'  
     " Practice
-    "Plug 'ThePrimeagen/vim-apm'
+    Plug 'ThePrimeagen/vim-apm'
     Plug 'ThePrimeagen/vim-be-good'
 
     call plug#end()

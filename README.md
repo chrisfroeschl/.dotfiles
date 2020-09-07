@@ -2,9 +2,10 @@
 
 ## Description
 
-All my NeoVim based settings are collected inside this repository.
-Make sure to use the master build from NeoVim, since some of my plugins won't work
-otherwise.
+All my [NeoVim](https://neovim.io/) based settings are collected inside this repository.
+
+Make sure to use the master build from [NeoVim](https://github.com/neovim/neovim/releases),
+since some of my plugins won't work otherwise.
 
 ## Theme
 
