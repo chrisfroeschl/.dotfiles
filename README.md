@@ -11,7 +11,6 @@ Includes settings for:
 - rtorrent (torrent)
 - groff (markdown)
 - irssi (IRC client)
-- mpv (video/audio player)
 - newsboat (RSS client)
 - tmux (terminal multiplexer)
 - zathura (PDF reader)
