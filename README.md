@@ -1,24 +1,40 @@
-# nvim
+# dotfiles
 
 ## Description
 
-All my [NeoVim](https://neovim.io/) based settings are collected inside this repository.
+A collection of several dotfiles for daily used CLIs.
+
+Includes settings for:
+
+- bash (shell)
+- mongo (database)
+- rtorrent (torrent)
+- groff (markdown)
+- irssi (IRC client)
+- newsboat (RSS client)
+- tmux (terminal multiplexer)
+- zathura (PDF reader)
+- nvim (text editor)
+
+## nvim
+
+I decided to document some steps of the inital setup for the NeoVim part, since
+it requires some dependencies and could be cumbersome otherwise.
 
 Make sure to use the master build from [NeoVim](https://github.com/neovim/neovim/releases),
 since some of my plugins won't work otherwise.
 
-## Theme
+### Theme
 
 ![theme preview](https://i.imgur.com/D9nsARX.png)
 
-## Setup
+### Setup
 
-1. Clone the repository and place it inside your `~/.config` directory.
-2. Install below listed dependencies with your preferred package manager.
-3. Run `:PlugInstall` to install Vim plugins.
-4. Run `:CocInstall <extension>` to install Coc related extensions.
+1. Install below listed dependencies with your preferred package manager.
+2. Run `:PlugInstall` to install Vim plugins.
+3. Run `:CocInstall <extension>` to install Coc related extensions.
 
-## Dependencies
+### Dependencies
 
 Following packages are required for [Plug](https://github.com/junegunn/vim-plug)
 extensions included inside this config.
@@ -54,7 +70,7 @@ extensions included inside this config.
         sudo npm install -g neovim
     ```
 
-## Coc-Extensions
+### Coc-Extensions
 
 The versions of below extensions don't really matter, since I just listed them here
 to keep track of the names of my Coc-extensions.
