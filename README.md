@@ -6,19 +6,24 @@ A collection of several dotfiles for daily used CLIs.
 
 Includes settings for:
 
-- bash (shell)
-- mongo (database)
-- rtorrent (torrent)
-- groff (markdown)
-- irssi (IRC client)
-- newsboat (RSS client)
-- tmux (terminal multiplexer)
-- zathura (PDF reader)
-- nvim (text editor)
+- [Bash](https://www.gnu.org/software/bash/) (shell)
+- [MongoDB](https://www.mongodb.com/) (database)
+- [rtorrent](https://github.com/rakshasa/rtorrent) (torrent)
+- [groff](https://www.gnu.org/software/groff/) (markdown)
+- [irssi](https://github.com/irssi/irssi) (IRC client)
+- [newsboat](https://github.com/newsboat/newsboat) (RSS client)
+- [tmux](https://github.com/tmux/tmux) (terminal multiplexer)
+- [Zathura](https://wiki.archlinux.org/index.php/Zathura) (PDF reader)
+- [NeoVim](https://neovim.io/) (text editor)
 
-## nvim
+## Issues
 
-I decided to document some steps of the inital setup for the NeoVim part, since
+MacOS mostly ships very aged Free Software. That's why you should make sure, that
+especially Bash and groff are up to date.
+
+## NeoVim
+
+I decided to document some steps of the initial setup for the NeoVim part, since
 it requires some dependencies and could be cumbersome otherwise.
 
 Make sure to use the master build from [NeoVim](https://github.com/neovim/neovim/releases),

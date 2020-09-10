@@ -3,7 +3,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/bufonly.vim
-source $HOME/.config/nvim/plug-config/vim-be-good.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/themes/chrisfroeschl.vim
 source $HOME/.config/nvim/general/settings.vim

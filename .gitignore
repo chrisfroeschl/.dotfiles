@@ -1,0 +1,4 @@
+.config/nvim/autoload
+.DS_Store
+**/.DS_Store
+.netrwhist
