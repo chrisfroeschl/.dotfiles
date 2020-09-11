@@ -77,9 +77,6 @@ extensions included inside this config.
 
 ### Coc-Extensions
 
-The versions of below extensions don't really matter, since I just listed them here
-to keep track of the names of my Coc-extensions.
-
 ```json
 {
   "dependencies": {
