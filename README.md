@@ -7,6 +7,7 @@ A collection of several dotfiles for daily used CLIs.
 Includes settings for:
 
 - [Bash](https://www.gnu.org/software/bash/) (shell)
+- [Git](https://git-scm.com/) (version management)
 - [MongoDB](https://www.mongodb.com/) (database)
 - [rtorrent](https://github.com/rakshasa/rtorrent) (torrent)
 - [groff](https://www.gnu.org/software/groff/) (markdown)
