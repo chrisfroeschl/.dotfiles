@@ -1,1 +1,5 @@
-/Users/chris/.gitconfig
+[user]
+	name = Chris Fröschl
+	email = 43684610+chrisfroeschl@users.noreply.github.com
+[pull]
+	rebase = false
