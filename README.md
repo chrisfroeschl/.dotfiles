@@ -15,19 +15,19 @@ Includes settings for:
 - [newsboat](https://github.com/newsboat/newsboat) (RSS client)
 - [tmux](https://github.com/tmux/tmux) (terminal multiplexer)
 - [Zathura](https://wiki.archlinux.org/index.php/Zathura) (PDF reader)
-- [NeoVim](https://neovim.io/) (text editor)
+- [Neovim](https://neovim.io/) (text editor)
 
 ## Issues
 
 MacOS mostly ships very aged Free Software. That's why you should make sure, that
 especially Bash and groff are up to date.
 
-## NeoVim
+## Neovim
 
-I decided to document some steps of the initial setup for the NeoVim part, since
+I decided to document some steps of the initial setup for the Neovim part, since
 it requires some dependencies and could be cumbersome otherwise.
 
-Make sure to use the master build from [NeoVim](https://github.com/neovim/neovim/releases),
+Make sure to use the master build from [Neovim](https://github.com/neovim/neovim/releases),
 since some of my plugins won't work otherwise.
 
 ### Theme
