@@ -62,7 +62,7 @@ set nowritebackup
 set updatetime=300                      
 set timeoutlen=500                      
 set shortmess+=c
-set clipboard=unnamedplus               
+set clipboard+=unnamedplus               
 set guicursor=                          
 set colorcolumn=80                      
 if has("patch-8.1.1564")

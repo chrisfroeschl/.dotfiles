@@ -57,12 +57,6 @@
 %D 2016
 %I Fitch Madison Publishers, LLC
 
-%K tk2
-%A Theodore J. Kaczynski
-%T Technological Slavery
-%D 2010
-%I Fitch Madison Publishers, LLC
-
 %K pf0
 %A Paul Feyerabend
 %T Against Method
@@ -74,8 +68,15 @@
 %D 1953
 %I Ballantine Books
 
-%K re0
-%A Ralph Ellison
-%T Invisible Man
-%D 1952
-%I Random House
+%K virgil0 
+%A Vergil
+%A (Translation) Johann Heinrich Voß
+%T Die Aeneis (Äneide)
+%D 1895
+%I Verlag von Otto Hendel, Halle
+
+%K virgil1
+%A Virgil
+%A (Translation) John Dryden
+%T The Aeneid
+%D 70-19 BC
