@@ -28,7 +28,7 @@ I decided to document some steps of the initial setup for the Neovim part, since
 it requires some dependencies and could be cumbersome otherwise.
 
 Make sure to use the master build from [Neovim](https://github.com/neovim/neovim/releases),
-since some of my plugins won't work otherwise.
+since some of my plugins may not work otherwise.
 
 ### Theme
 

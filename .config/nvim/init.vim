@@ -15,8 +15,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'preservim/nerdcommenter'  
-    Plug 'ThePrimeagen/vim-apm'
-    Plug 'ThePrimeagen/vim-be-good'
 
 call plug#end()
 
