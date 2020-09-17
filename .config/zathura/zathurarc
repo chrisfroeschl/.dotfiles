@@ -1,8 +1,13 @@
-set selection-clipboard clipboard
-set statusbar-h-padding 0
-set statusbar-v-padding 0
-set page-padding 1
-map u scroll half-up
+# General
+
+set selection-clipboard clipboard           # Enable cc by selection.
+set statusbar-h-padding 0                   # Horizontal padding.            
+set statusbar-v-padding 0                   # Vertical padding.
+set page-padding 1                          # Page padding.
+
+# Bindings
+
+map u scroll half-up                        
 map d scroll half-down
 map D toggle_page_mode
 map r reload
