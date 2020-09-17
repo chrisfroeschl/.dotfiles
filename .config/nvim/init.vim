@@ -1,3 +1,6 @@
+" NOTE: Plugins
+
+" Automatically install vim-plug.
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -5,78 +8,84 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    Plug 'sheerun/vim-polyglot'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'vim-utils/vim-man'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
-    Plug 'mhinz/vim-signify'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'preservim/nerdcommenter'  
+    Plug 'sheerun/vim-polyglot'                                 " Necessary for 'gf' to properly work.
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Intellisense engine.
+    Plug 'vim-utils/vim-man'                                    " Vim man pages.
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Fuzzy finder.
+    Plug 'junegunn/fzf.vim'                                     " Fuzzy finder.
+    Plug 'airblade/vim-rooter'                                  " Set appropiate base for FZF.
+    Plug 'mhinz/vim-signify'                                    " Git signs.
+    Plug 'tpope/vim-fugitive'                                   " Git commands.
+    Plug 'tpope/vim-rhubarb'                                    " Git commands.
+    Plug 'preservim/nerdcommenter'                              " Multiline commenting.
 
 call plug#end()
 
+" Automatically install missing plugins on startup.
 autocmd VimEnter *
     \ if len(filter(values(g:plugs), 'isdirectory(v:val.dir)'))
     \| PlugInstall | q
     \| endif
 
-let g:mapleader = "\<Space>"
-let g:netrw_banner = 0
-let g:netrw_liststyle = 1
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25 
+" NOTE: General
 
-syntax enable                           
-set hidden                              
-set nowrap                              
-set encoding=utf-8                      
-set pumheight=10                        
-set fileencoding=utf-8                  
-set cmdheight=2                         
-set iskeyword+=-                      	
-set splitbelow                          
-set splitright                          
-set t_Co=256                            
-set conceallevel=0                      
-set tabstop=4                           
-set shiftwidth=4                        
-set smarttab                            
-set expandtab                           
-set noswapfile                          
-set smartindent                         
-set autoindent                          
-set laststatus=0                        
-set relativenumber                      
-set nu                                  
-set cursorline                          
-set background=dark                     
-set showtabline=2                       
-set nobackup                            
-set nowritebackup                       
-set updatetime=300                      
-set timeoutlen=500                      
-set shortmess+=c
-set clipboard+=unnamedplus               
-set guicursor=                          
-set colorcolumn=80                      
-if has("patch-8.1.1564")
+let g:mapleader = "\<Space>"                                    " Set leader key.
+let g:netrw_banner = 0                                          " Show no banner in the vim explorer.
+let g:netrw_liststyle = 1                                       " Set style of the vim explorer.
+let g:netrw_browse_split = 4                                    " Set how to split if vim explorer is called.
+let g:netrw_altv = 1                                            " Left/Right splitting.
+let g:netrw_winsize = 25                                        " Size of the vim explorer.
+
+syntax enable                                                   " Enable syntax highlighting.
+set hidden                                                      " TextEdit might fail if hidden is not set.
+set nowrap                                                      " Display long lines as just one line.
+set encoding=utf-8                                              " The encoding displayed.
+set fileencoding=utf-8                                          " The encoding written to files.
+set pumheight=10                                                " Makes pop menu smaller.
+set cmdheight=2                                                 " More space for displaying messages.
+set iskeyword+=-                                                " Treat dash seperated words as a word text object.
+set splitbelow                                                  " Horizontal splits will automatically be below.
+set splitright                                                  " Vertical splits will automatically be to the right.
+set t_Co=256                                                    " Support 256 colors.
+set conceallevel=0                                              " So that I can see `` in markdown files.
+set tabstop=4                                                   " Insert 4 spaces for a tab.
+set shiftwidth=4                                                " Change the number of space character inserted for indentation.
+set smarttab                                                    " Makes tabbing smarter will realize you have 2 vs 4.
+set smartindent                                                 " Makes indeting smart.
+set autoindent                                                  " Good auto indent.
+set expandtab                                                   " Converts tabs to spaces.
+set noswapfile                                                  " Avoid creating swap files.
+set nobackup                                                    " This is recommended by coc.
+set nowritebackup                                               " This is recommended by coc. 
+set laststatus=0                                                " Always display the status line.
+set relativenumber                                              " Line numbers.
+set nu                                                          " Current line number.
+set cursorline                                                  " Enable highlighting of the current line.
+set background=dark                                             " Set background color.
+set showtabline=2                                               " Always show tabs.
+set updatetime=300                                              " Faster completion.
+set timeoutlen=500                                              " By default timeoutlen is 1000 ms.
+set shortmess+=c                                                " Don't pass messages to ins-completion-menu.
+set clipboard+=unnamedplus                                      " Copy paste between vim and system.
+set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
+set colorcolumn=80                                              " Create color column to prevent going to far to the right.
+if has("patch-8.1.1564")                                        " Alwyas show the signcolumn.
   set signcolumn=number
 else
   set signcolumn=yes
 endif
 
-colorscheme chrisfroeschl 
-
+colorscheme chrisfroeschl                                       " My colorscheme.
+ 
+" Ensure files are read as what I expect them to be.
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 " Disables automatic commenting on newline.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-let g:fzf_history_dir = '~/.local/share/fzf-history'
+" NOTE: FZF
+
+let g:fzf_history_dir = '~/.local/share/fzf-history'            " Enable per-command history.
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 let $FZF_DEFAULT_COMMAND="rg --files --hidden"
 
@@ -107,9 +116,9 @@ command! -bang -nargs=* GGrep
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
+" NOTE: COC
+
 " Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -124,19 +133,12 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
-" position. Coc only does snippet and additional edit on confirm.
-" <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position. 
 if exists('*complete_info')
   inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
-
-" Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -174,11 +176,6 @@ omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
-" Use CTRL-S for selections ranges.
-" Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
-
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
 
@@ -189,13 +186,13 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 " Add (Neo)Vim's native statusline support.
-" NOTE: Please see `:h coc-status` for integrations with external plugins that
-" provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" TAB will move between buffers.
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" NOTE: BufOnly
 
 command! -nargs=? -complete=buffer -bang Bonly
     \ :call BufOnly('<args>', '<bang>')
