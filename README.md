@@ -6,16 +6,19 @@ A collection of several dotfiles for daily used CLIs.
 
 Includes settings for:
 
-- [Bash](https://www.gnu.org/software/bash/) (shell)
-- [Git](https://git-scm.com/) (version management)
-- [MongoDB](https://www.mongodb.com/) (database)
-- [rtorrent](https://github.com/rakshasa/rtorrent) (torrent)
-- [groff](https://www.gnu.org/software/groff/) (markdown)
-- [irssi](https://github.com/irssi/irssi) (IRC client)
-- [newsboat](https://github.com/newsboat/newsboat) (RSS client)
-- [tmux](https://github.com/tmux/tmux) (terminal multiplexer)
-- [Zathura](https://wiki.archlinux.org/index.php/Zathura) (PDF reader)
-- [Neovim](https://neovim.io/) (text editor)
+| Name           | Location                 | Description           |
+| :------------- | :----------------------: | --------------------: |
+| Bash           | `~/.bash*`               | Shell                 |
+| Git            | `~/.git*`                | Version management    |
+| MongoDB        | `~/.mongorc.js`          | Database              |
+| rtorrent       | `~/.rtorrent.rc`         | Torrent               |
+| Groff          | `~/.config/groff/*`      | Markdown              |
+| irssi          | `~/.irssi/*`             | IRC client            |
+| newsboat       | `~/.config/newsboat/*`   | RSS client            |
+| tmux           | `~/.tmux.conf`           | Terminal multiplexer  |
+| Zathura        | `~/.config/zathura/*`    | PDF reader            |
+| MPV            | `~/.config/mpv/*`        | Media player          |
+| Neovim         | `~/.config/nvim/*`       | Text editor           |
 
 ## Issues
 

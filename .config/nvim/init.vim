@@ -146,14 +146,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -176,76 +168,6 @@ omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
-
-" Add `:Fold` command to fold current buffer.
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-
-" Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-
-" Add (Neo)Vim's native statusline support.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
 " TAB will move between buffers.
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
-
-" NOTE: BufOnly
-
-command! -nargs=? -complete=buffer -bang Bonly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang BOnly \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang Bufonly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang BufOnly
-    \ :call BufOnly('<args>', '<bang>')
-
-function! BufOnly(buffer, bang)
-	if a:buffer == ''
-		" No buffer provided, use the current buffer.
-		let buffer = bufnr('%')
-	elseif (a:buffer + 0) > 0
-		" A buffer number was provided.
-		let buffer = bufnr(a:buffer + 0)
-	else
-		" A buffer name was provided.
-		let buffer = bufnr(a:buffer)
-	endif
-
-	if buffer == -1
-		echohl ErrorMsg
-		echomsg "No matching buffer for" a:buffer
-		echohl None
-		return
-	endif
-
-	let last_buffer = bufnr('$')
-
-	let delete_count = 0
-	let n = 1
-	while n <= last_buffer
-		if n != buffer && buflisted(n)
-			if a:bang == '' && getbufvar(n, '&modified')
-				echohl ErrorMsg
-				echomsg 'No write since last change for buffer'
-							\ n '(add ! to override)'
-				echohl None
-			else
-				silent exe 'bdel' . a:bang . ' ' . n
-				if ! buflisted(n)
-					let delete_count = delete_count+1
-				endif
-			endif
-		endif
-		let n = n+1
-	endwhile
-
-	if delete_count == 1
-		echomsg delete_count "buffer deleted"
-	elseif delete_count > 1
-		echomsg delete_count "buffers deleted"
-	endif
-
-endfunction
