@@ -12,7 +12,7 @@ Includes settings for:
 | Git            | `~/.git*`                | Version management    |
 | MongoDB        | `~/.mongorc.js`          | Database              |
 | rtorrent       | `~/.rtorrent.rc`         | Torrent               |
-| Groff          | `~/.config/groff/*`      | Markdown              |
+| groff          | `~/.config/groff/*`      | Markdown              |
 | irssi          | `~/.irssi/*`             | IRC client            |
 | newsboat       | `~/.config/newsboat/*`   | RSS client            |
 | tmux           | `~/.tmux.conf`           | Terminal multiplexer  |
