@@ -1,5 +1,3 @@
-" NOTE: Plugins
-
 " Automatically install vim-plug.
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -15,8 +13,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'                                     " Fuzzy finder.
     Plug 'airblade/vim-rooter'                                  " Set appropiate base for FZF.
     Plug 'mhinz/vim-signify'                                    " Git signs.
-    Plug 'tpope/vim-fugitive'                                   " Git commands.
-    Plug 'tpope/vim-rhubarb'                                    " Git commands.
     Plug 'preservim/nerdcommenter'                              " Multiline commenting.
 
 call plug#end()
@@ -26,8 +22,6 @@ autocmd VimEnter *
     \ if len(filter(values(g:plugs), 'isdirectory(v:val.dir)'))
     \| PlugInstall | q
     \| endif
-
-" NOTE: General
 
 let g:mapleader = "\<Space>"                                    " Set leader key.
 let g:netrw_banner = 0                                          " Show no banner in the vim explorer.
@@ -83,8 +77,6 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 " Disables automatic commenting on newline.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" NOTE: FZF
-
 let g:fzf_history_dir = '~/.local/share/fzf-history'            " Enable per-command history.
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 let $FZF_DEFAULT_COMMAND="rg --files --hidden"
@@ -115,8 +107,6 @@ command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
-
-" NOTE: COC
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
