@@ -24,8 +24,6 @@ autocmd VimEnter *
     \| endif
 
 let g:mapleader = "\<Space>"                                    " Set leader key.
-let g:netrw_banner = 0                                          " Show no banner in the vim explorer.
-let g:netrw_liststyle = 1                                       " Set style of the vim explorer.
 let g:netrw_browse_split = 4                                    " Set how to split if vim explorer is called.
 let g:netrw_altv = 1                                            " Left/Right splitting.
 let g:netrw_winsize = 25                                        " Size of the vim explorer.
@@ -68,7 +66,6 @@ if has("patch-8.1.1564")                                        " Alwyas show th
 else
   set signcolumn=yes
 endif
-
 colorscheme chrisfroeschl                                       " My colorscheme.
  
 " Ensure files are read as what I expect them to be.
@@ -99,14 +96,7 @@ function! RipgrepFzf(query, fullscreen)
   let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
   call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
 endfunction
-
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
-
-" Git grep.
-command! -bang -nargs=* GGrep
-  \ call fzf#vim#grep(
-  \   'git grep --line-number '.shellescape(<q-args>), 0,
-  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
@@ -135,6 +125,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+" TAB will move between buffers.
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -157,7 +150,3 @@ xmap ic <Plug>(coc-classobj-i)
 omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
-
-" TAB will move between buffers.
-nnoremap <TAB> :bnext<CR>
-nnoremap <S-TAB> :bprevious<CR>
