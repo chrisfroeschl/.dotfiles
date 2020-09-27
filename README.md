@@ -18,6 +18,7 @@ Includes settings for:
 | tmux           | `~/.tmux.conf`           | Terminal multiplexer  |
 | Zathura        | `~/.config/zathura/*`    | PDF reader            |
 | MPV            | `~/.config/mpv/*`        | Media player          |
+| Ranger         | `~/.config/ranger/*`     | Filemanager           |
 | Neovim         | `~/.config/nvim/*`       | Text editor           |
 
 ## Issues
