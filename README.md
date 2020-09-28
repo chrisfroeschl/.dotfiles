@@ -36,7 +36,7 @@ since some of my plugins may not work otherwise.
 
 ### Theme
 
-![theme preview](https://i.imgur.com/D9nsARX.png)
+![theme preview](https://i.imgur.com/Z2pM3z9.png)
 
 ### Setup
 

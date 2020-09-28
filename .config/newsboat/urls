@@ -6,7 +6,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA    
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw        # ThePrimeagen
 https://stallman.org/rss/rss.xml                                                    # Richard Stallman
 https://planet.gnu.org/rss20.xml                                                    # GNU
-https://www.archlinux.org/feeds/news/                                               # Arch Linux
+https://planet.gentoo.org/universe/atom.xml                                         # Gentoo
+https://www.archlinux.org/feeds/news/                                               # Arch
 https://news.ycombinator.com/rss                                                    # Hacker News
 https://tutanota.com/blog/feed.xml                                                  # Tutanota
 https://protonmail.com/blog/feed/                                                   # ProtonMail
@@ -20,12 +21,9 @@ https://openjsf.org/feed/                                                       
 https://blog.angular.io/feed                                                        # Angular
 https://nodejs.org/en/feed/releases.xml                                             # Node.js 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCyjKBSGMcxdGbSD86iq_SBw        # drain gang
-https://www.reddit.com/r/sadboys/.rss                                               # sad boys
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQSUJUDbJMzph0_vpyzvzZQ        # Yung Lean
+https://www.reddit.com/r/sadboys/.rss                                               # sad boys
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTa23iZGmKYdyQ_hijXl3bg        # YABUJIN
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIWqTEwwfnlhory4fAdVw_Q        # Clams Casino
-https://www.youtube.com/feeds/videos.xml?channel_id=UCwolwTPDNMSzHV-HRii4gFQ        # Crystal Castles
-https://www.reddit.com/r/hexmusic/.rss                                              # hexd
 https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA        # dismiss yourself
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5mDRBHsZxA4VAwiXf8PvdA        # Weatherday
 https://www.reddit.com/r/Weatherday/.rss                                            # Weatherday
