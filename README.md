@@ -36,7 +36,7 @@ since some of my plugins may not work otherwise.
 
 ### Theme
 
-![theme preview](https://i.imgur.com/Z2pM3z9.png)
+![theme preview](https://i.imgur.com/EsD3G8J.png)
 
 ### Setup
 
@@ -90,7 +90,6 @@ extensions included inside this config.
     "coc-docker": ">=0.3.0",
     "coc-emmet": ">=1.1.4",
     "coc-eslint": ">=1.2.7",
-    "coc-explorer": ">=0.7.11",
     "coc-html": ">=1.2.4",
     "coc-json": ">=1.2.6",
     "coc-markdownlint": ">=1.5.0",
