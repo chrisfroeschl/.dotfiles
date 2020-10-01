@@ -1,7 +1,4 @@
-/**
- * Default configuration using vim as editor.
- */
-EDITOR = "vim";
+EDITOR = "vi";
 host = db.serverStatus().host;
 
 prompt = function () {
