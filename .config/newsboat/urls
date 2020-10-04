@@ -1,14 +1,13 @@
-https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3                           # Luke Smith Blog
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA        # Luke Smith YouTube
-https://lukesmith.xyz/rss.xml                                                       # Luke Smith NotRelated
-https://notrelated.libsyn.com/rss                                                   # Luke Smith PeerTube
+https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending                       # Luke Smith Videos
+https://notrelated.libsyn.com/rss                                                   # Luke Smith NotRelated
+https://lukesmith.xyz/rss.xml                                                       # Luke Smith Blog
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA        # Mental Outlaw 
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw        # ThePrimeagen
+https://news.ycombinator.com/rss                                                    # Hacker News
 https://stallman.org/rss/rss.xml                                                    # Richard Stallman
 https://planet.gnu.org/rss20.xml                                                    # GNU
 https://planet.gentoo.org/universe/atom.xml                                         # Gentoo
 https://www.archlinux.org/feeds/news/                                               # Arch
-https://news.ycombinator.com/rss                                                    # Hacker News
 https://tutanota.com/blog/feed.xml                                                  # Tutanota
 https://protonmail.com/blog/feed/                                                   # ProtonMail
 https://blog.torproject.org/rss.xml                                                 # Tor Project
@@ -20,12 +19,6 @@ https://devblogs.microsoft.com/typescript/feed/                                 
 https://openjsf.org/feed/                                                           # OpenJS
 https://blog.angular.io/feed                                                        # Angular
 https://nodejs.org/en/feed/releases.xml                                             # Node.js 
-https://www.youtube.com/feeds/videos.xml?channel_id=UCyjKBSGMcxdGbSD86iq_SBw        # drain gang
-https://www.youtube.com/feeds/videos.xml?channel_id=UCQSUJUDbJMzph0_vpyzvzZQ        # Yung Lean
-https://www.reddit.com/r/sadboys/.rss                                               # sad boys
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTa23iZGmKYdyQ_hijXl3bg        # YABUJIN
-https://www.youtube.com/feeds/videos.xml?channel_id=UCF81AytfSxkAMGjKFnsswnA        # dismiss yourself
-https://www.youtube.com/feeds/videos.xml?channel_id=UC5mDRBHsZxA4VAwiXf8PvdA        # Weatherday
 https://www.reddit.com/r/Weatherday/.rss                                            # Weatherday
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZYYCPfraK1kGPMEggULlWQ        # jommeez
+https://www.reddit.com/r/sadboys/.rss                                               # sad boys
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfzdUDBKNMAEWXjVox4KrJA        # 108 Mics

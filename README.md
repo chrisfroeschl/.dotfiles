@@ -52,7 +52,7 @@ extensions included inside this config.
 - MacOS
 
     ```bash
-        # Recommended: You can use fnm or nvim as an alternative.
+        # Recommended: You can use fnm or nvm as an alternative.
         brew install node
         brew install --HEAD neovim
         brew install fzf
@@ -68,7 +68,7 @@ extensions included inside this config.
 - Arch
 
     ```bash
-        # Recommended: You can use fnm or nvim as an alternative.
+        # Recommended: You can use fnm or nvm as an alternative.
         sudo pacman -S nodejs npm
         sudo pacman -S neovim
         sudo pacman -S fzf
