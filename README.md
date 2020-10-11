@@ -2,7 +2,9 @@
 
 ## Description
 
-A collection of several dotfiles for daily used CLIs.
+A collection of several dotfiles for daily used CLIs. I placed them in seperate
+folders so you're able to use utilities like [stow](https://www.gnu.org/software/stow/)
+to create symlinks.
 
 Includes settings for:
 
@@ -20,6 +22,15 @@ Includes settings for:
 | MPV            | `~/.config/mpv/*`        | Media player          |
 | Ranger         | `~/.config/ranger/*`     | Filemanager           |
 | Neovim         | `~/.config/nvim/*`       | Text editor           |
+
+## Setup
+
+### Stow
+
+Make sure to place this repository in your users root directory.
+
+1. Remove the README: `rm README`.
+2. Run `stow *` to place all symlinks.
 
 ## Issues
 

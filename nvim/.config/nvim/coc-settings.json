@@ -1,0 +1,16 @@
+{
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "java",
+    "typescriptreact",
+    "html",
+    "css",
+    "yaml",
+    "json"
+  ],
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.autoFixOnSave": true
+}
