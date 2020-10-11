@@ -91,6 +91,7 @@ extensions included inside this config.
     "coc-emmet": ">=1.1.4",
     "coc-eslint": ">=1.2.7",
     "coc-html": ">=1.2.4",
+    "coc-java": ">=1.4.12",
     "coc-json": ">=1.2.6",
     "coc-markdownlint": ">=1.5.0",
     "coc-pairs": ">=1.2.21",
