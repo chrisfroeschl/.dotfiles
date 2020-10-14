@@ -3,7 +3,7 @@
 ## Description
 
 A collection of several dotfiles for daily used CLIs. I placed them in seperate
-folders so you're able to use utilities like [stow](https://www.gnu.org/software/stow/)
+folders so you're able to use utilities like [Stow](https://www.gnu.org/software/stow/)
 to create symlinks.
 
 Includes settings for:
@@ -27,15 +27,11 @@ Includes settings for:
 
 ### Stow
 
-Make sure to place this repository in your users root directory.
-
-1. Remove the README: `rm README`.
-2. Run `stow *` to place all symlinks.
-
-## Issues
-
-MacOS mostly ships very aged Free Software. That's why you should make sure, that
-especially Bash and groff are up to date.
+1. Clone this repository into your users home directory.
+2. Install [Stow](https://www.gnu.org/software/stow/) with your preferred package
+manager.
+3. Run `rm README.md` to remove the README file.
+4. Run `stow *` to place all symlinks.
 
 ## Neovim
 
