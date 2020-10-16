@@ -8,20 +8,20 @@ to create symlinks.
 
 Includes settings for:
 
-| Name           | Location                 | Description           |
-| :------------- | :----------------------: | --------------------: |
-| Bash           | `~/.bash*`               | Shell                 |
-| Git            | `~/.git*`                | Version management    |
-| MongoDB        | `~/.mongorc.js`          | Database              |
-| rtorrent       | `~/.rtorrent.rc`         | Torrent               |
-| groff          | `~/.config/groff/*`      | Markdown              |
-| irssi          | `~/.irssi/*`             | IRC client            |
-| newsboat       | `~/.config/newsboat/*`   | RSS client            |
-| tmux           | `~/.tmux.conf`           | Terminal multiplexer  |
-| Zathura        | `~/.config/zathura/*`    | PDF reader            |
-| MPV            | `~/.config/mpv/*`        | Media player          |
-| Ranger         | `~/.config/ranger/*`     | Filemanager           |
-| Neovim         | `~/.config/nvim/*`       | Text editor           |
+| Name     |        Location        |          Description |
+| :------- | :--------------------: | -------------------: |
+| Bash     |       `~/.bash*`       |                Shell |
+| Git      |       `~/.git*`        |   Version management |
+| MongoDB  |    `~/.mongorc.js`     |             Database |
+| rtorrent |    `~/.rtorrent.rc`    |              Torrent |
+| groff    |  `~/.config/groff/*`   |             Markdown |
+| irssi    |      `~/.irssi/*`      |           IRC client |
+| newsboat | `~/.config/newsboat/*` |           RSS client |
+| tmux     |     `~/.tmux.conf`     | Terminal multiplexer |
+| Zathura  | `~/.config/zathura/*`  |           PDF reader |
+| MPV      |   `~/.config/mpv/*`    |         Media player |
+| Ranger   |  `~/.config/ranger/*`  |          Filemanager |
+| Neovim   |   `~/.config/nvim/*`   |          Text editor |
 
 ## Setup
 
@@ -29,7 +29,7 @@ Includes settings for:
 
 1. Clone this repository into your users home directory.
 2. Install [Stow](https://www.gnu.org/software/stow/) with your preferred package
-manager.
+   manager.
 3. Run `rm README.md` to remove the README file.
 4. Run `stow *` to place all symlinks.
 
@@ -58,34 +58,34 @@ extensions included inside this config.
 
 - MacOS
 
-    ```bash
-        # Recommended: You can use fnm or nvm as an alternative.
-        brew install node
-        brew install --HEAD neovim
-        brew install fzf
-        $(brew --prefix)/opt/fzf/install
-        brew install ripgrep
-        brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-        brew install the_silver_searcher
-        brew install fd
-        pip install neovim
-        sudo npm install -g neovim
-    ```
+  ```bash
+      # Recommended: You can use fnm or nvm as an alternative.
+      brew install node
+      brew install --HEAD neovim
+      brew install fzf
+      $(brew --prefix)/opt/fzf/install
+      brew install ripgrep
+      brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+      brew install the_silver_searcher
+      brew install fd
+      pip install neovim
+      sudo npm install -g neovim
+  ```
 
 - Arch
 
-    ```bash
-        # Recommended: You can use fnm or nvm as an alternative.
-        sudo pacman -S nodejs npm
-        sudo pacman -S neovim
-        sudo pacman -S fzf
-        sudo pacman -S ripgrep
-        yay -S universal-ctags-git
-        sudo pacman -S the_silver_searcher
-        pacman -S fd
-        pip install neovim
-        sudo npm install -g neovim
-    ```
+  ```bash
+      # Recommended: You can use fnm or nvm as an alternative.
+      sudo pacman -S nodejs npm
+      sudo pacman -S neovim
+      sudo pacman -S fzf
+      sudo pacman -S ripgrep
+      yay -S universal-ctags-git
+      sudo pacman -S the_silver_searcher
+      pacman -S fd
+      pip install neovim
+      sudo npm install -g neovim
+  ```
 
 ### Coc-Extensions
 
@@ -93,6 +93,7 @@ extensions included inside this config.
 {
   "dependencies": {
     "coc-angular": ">=0.901.11",
+    "coc-clangd": ">=0.4.14",
     "coc-css": ">=1.2.3",
     "coc-docker": ">=0.3.0",
     "coc-emmet": ">=1.1.4",
