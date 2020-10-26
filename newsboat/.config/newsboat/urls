@@ -1,23 +1,20 @@
-https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending                       # Luke Smith Videos
-https://notrelated.libsyn.com/rss                                                   # Luke Smith NotRelated
-https://lukesmith.xyz/rss.xml                                                       # Luke Smith Blog
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA        # Mental Outlaw 
-https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw        # ThePrimeagen
-https://news.ycombinator.com/rss                                                    # Hacker News
 https://boards.4channel.org/g/index.rss                                             # Technology
+https://news.ycombinator.com/rss                                                    # Hacker News
 https://stallman.org/rss/rss.xml                                                    # Richard Stallman
-https://www.reddit.com/r/gnu/.rss                                                   # GNU
-https://www.reddit.com/r/freesoftware/.rss                                          # Freesoftware
 https://planet.gnu.org/rss20.xml                                                    # GNU
 https://planet.gentoo.org/universe/atom.xml                                         # Gentoo
 https://www.archlinux.org/feeds/news/                                               # Arch
-https://tutanota.com/blog/feed.xml                                                  # Tutanota
-https://protonmail.com/blog/feed/                                                   # ProtonMail
 https://blog.torproject.org/rss.xml                                                 # Tor Project
 https://suckless.org/atom.xml                                                       # Suckless.org
-https://neovim.io/news.xml                                                          # Neovim
+https://tutanota.com/blog/feed.xml                                                  # Tutanota
+https://protonmail.com/blog/feed/                                                   # ProtonMail
 https://www.docker.com/blog/feed/                                                   # Docker
 https://kubernetes.io/feed.xml                                                      # K8S 
 https://devblogs.microsoft.com/typescript/feed/                                     # TypeScript
 https://openjsf.org/feed/                                                           # OpenJS
 https://blog.angular.io/feed                                                        # Angular
+https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending                       # Luke Smith Videos
+https://notrelated.libsyn.com/rss                                                   # Luke Smith NotRelated
+https://lukesmith.xyz/rss.xml                                                       # Luke Smith Blog
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA        # Mental Outlaw 
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw        # ThePrimeagen

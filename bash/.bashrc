@@ -17,6 +17,7 @@ export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
 alias mongod='brew services run mongodb-community' 
 alias mongod-status='brew services list' 
 alias mongod-stop='brew services stop mongodb-community' 
+alias mvi='mpv --config-dir=$HOME/.config/mvi'
 
 export PATH="/usr/local/Cellar/mongodb-community-shell/4.2.0/bin:$PATH" 
 export PATH="/Users/chris/.deno/bin:$PATH"
