@@ -2,10 +2,7 @@
 
 ## Description
 
-A collection of several dotfiles for daily used CLIs. I placed them in seperate
-folders so you're able to use utilities like [Stow](https://www.gnu.org/software/stow/)
-to create symlinks.
-
+A collection of several dotfiles for daily used CLIs.
 Includes settings for:
 
 | Name     |        Location        |          Description |
@@ -20,6 +17,7 @@ Includes settings for:
 | tmux     |     `~/.tmux.conf`     | Terminal multiplexer |
 | Zathura  | `~/.config/zathura/*`  |           PDF reader |
 | MPV      |   `~/.config/mpv/*`    |         Media player |
+| MPI      |   `~/.config/mpi/*`    |         Image viewer |
 | Ranger   |  `~/.config/ranger/*`  |          Filemanager |
 | Neovim   |   `~/.config/nvim/*`   |          Text editor |
 
@@ -31,7 +29,7 @@ Includes settings for:
 2. Install [Stow](https://www.gnu.org/software/stow/) with your preferred package
    manager.
 3. Run `rm README.md` to remove the README file.
-4. Run `stow *` to place all symlinks.
+4. Run `stow -DR *` to place all symlinks.
 
 ## Neovim
 
