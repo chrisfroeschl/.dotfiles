@@ -18,8 +18,3 @@ alias mongod='brew services run mongodb-community'
 alias mongod-status='brew services list' 
 alias mongod-stop='brew services stop mongodb-community' 
 alias mvi='mpv --config-dir=$HOME/.config/mvi'
-
-export PATH="/usr/local/Cellar/mongodb-community-shell/4.2.0/bin:$PATH" 
-export PATH="/Users/chris/.deno/bin:$PATH"
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash 
-eval "$(fnm env --multi)"
