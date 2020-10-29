@@ -24,6 +24,6 @@ Includes settings for:
 ## Setup
 
 1. Clone this repository into your users home directory.
-2. Install [Stow](https://www.gnu.org/software/stow/) with your preferred package
+2. Install [GNU Stow](https://www.gnu.org/software/stow/) with your preferred package
    manager.
 3. Run the `stow.sh` script to place all symlinks.

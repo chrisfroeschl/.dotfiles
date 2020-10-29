@@ -66,7 +66,7 @@ if has("patch-8.1.1564")                                        " Alwyas show th
 else
   set signcolumn=yes
 endif
-colorscheme chrisfroeschl                                       " My colorscheme.
+colorscheme deathconsciousness                                  " My colorscheme.
  
 " Ensure files are read as what I expect them to be.
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom set filetype=groff

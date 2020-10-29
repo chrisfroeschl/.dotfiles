@@ -7,6 +7,6 @@ case $1 in
         stow -D $(ls -d */) && echo "Removed all symlinks!"
         ;;
     *)
-        stow -DR $(ls -d */) && echo "Created symlinks!"
+        stow -R $(ls -d */) && echo "Created symlinks!"
         ;;
 esac
