@@ -1,25 +1,22 @@
 # dotfiles
 
-## Description
-
-A collection of several dotfiles for daily used CLIs.
 Includes settings for:
 
 | Name     |        Location        |          Description |
 | :------- | :--------------------: | -------------------: |
-| Bash     |       `~/.bash*`       |                Shell |
-| Git      |       `~/.git*`        |   Version management |
-| MongoDB  |    `~/.mongorc.js`     |             Database |
-| rtorrent |    `~/.rtorrent.rc`    |              Torrent |
-| groff    |  `~/.config/groff/*`   |             Markdown |
+| bash     |       `~/.bash*`       |                Shell |
+| git      |       `~/.git*`        |      Content tracker |
+| groff    |  `~/.config/groff/*`   |   Typesetting system |
 | irssi    |      `~/.irssi/*`      |           IRC client |
+| mongodb  |    `~/.mongorc.js`     |       NoSQL Database |
+| mpv      |   `~/.config/mpv/*`    |         Media player |
+| mpi      |   `~/.config/mpi/*`    |         Image viewer |
 | newsboat | `~/.config/newsboat/*` |           RSS client |
+| nvim     |   `~/.config/nvim/*`   |          Text editor |
+| ranger   |  `~/.config/ranger/*`  |          Filemanager |
+| rtorrent |    `~/.rtorrent.rc`    |              Torrent |
 | tmux     |     `~/.tmux.conf`     | Terminal multiplexer |
-| Zathura  | `~/.config/zathura/*`  |           PDF reader |
-| MPV      |   `~/.config/mpv/*`    |         Media player |
-| MPI      |   `~/.config/mpi/*`    |         Image viewer |
-| Ranger   |  `~/.config/ranger/*`  |          Filemanager |
-| Neovim   |   `~/.config/nvim/*`   |          Text editor |
+| zathura  | `~/.config/zathura/*`  |           PDF reader |
 
 ## Setup
 
