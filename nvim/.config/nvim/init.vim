@@ -6,14 +6,13 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    Plug 'sheerun/vim-polyglot'                                 " Necessary for 'gf' to properly work.
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Intellisense engine.
+    Plug 'chrisfroeschl/deathconsciousness'                     " Vim theme.
     Plug 'vim-utils/vim-man'                                    " Vim man pages.
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Fuzzy finder.
-    Plug 'junegunn/fzf.vim'                                     " Fuzzy finder.
-    Plug 'airblade/vim-rooter'                                  " Set appropiate base for FZF.
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Intellisense engine.
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Search utility.
+    Plug 'junegunn/fzf.vim'                                     " Search utility.
+    Plug 'airblade/vim-rooter'                                  " Appropiate base for searching.
     Plug 'mhinz/vim-signify'                                    " Git signs.
-    Plug 'preservim/nerdcommenter'                              " Multiline commenting.
 
 call plug#end()
 
@@ -24,8 +23,6 @@ autocmd VimEnter *
     \| endif
 
 let g:mapleader = "\<Space>"                                    " Set leader key.
-let g:netrw_browse_split = 4                                    " Set how to split if vim explorer is called.
-let g:netrw_altv = 1                                            " Left/Right splitting.
 let g:netrw_winsize = 25                                        " Size of the vim explorer.
 
 syntax enable                                                   " Enable syntax highlighting.
@@ -77,10 +74,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let g:fzf_history_dir = '~/.local/share/fzf-history'            " Enable per-command history.
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 let $FZF_DEFAULT_COMMAND="rg --files --hidden"
-
-"Get Files.
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 
 " Get text in files with Rg.
 command! -bang -nargs=* Rg
