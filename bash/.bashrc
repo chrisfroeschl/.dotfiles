@@ -20,7 +20,3 @@ alias mongod-stop='brew services stop mongodb-community'
 alias mvi='mpv --config-dir=$HOME/.config/mvi'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash        # Better search
-
-javamon() {
-  npx nodemon -e java -w src -x 'javac --class-path ./src -d ./bin '$1'; java --class-path ./bin '$1 
-}

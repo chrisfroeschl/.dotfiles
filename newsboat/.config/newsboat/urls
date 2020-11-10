@@ -1,9 +1,10 @@
 https://boards.4channel.org/g/index.rss                                             # Technology
+http://jthnx5wyvjvzsxtu.onion/g/index.rss                                           # Technology
+http://jthnx5wyvjvzsxtu.onion/tech/index.rss                                        # Technology
 https://news.ycombinator.com/rss                                                    # Hacker News
 https://stallman.org/rss/rss.xml                                                    # Richard Stallman
 https://planet.gnu.org/rss20.xml                                                    # GNU
 https://planet.gentoo.org/universe/atom.xml                                         # Gentoo
-https://www.archlinux.org/feeds/news/                                               # Arch
 https://blog.torproject.org/rss.xml                                                 # Tor Project
 https://suckless.org/atom.xml                                                       # Suckless.org
 https://tutanota.com/blog/feed.xml                                                  # Tutanota
@@ -13,8 +14,7 @@ https://kubernetes.io/feed.xml                                                  
 https://devblogs.microsoft.com/typescript/feed/                                     # TypeScript
 https://openjsf.org/feed/                                                           # OpenJS
 https://blog.angular.io/feed                                                        # Angular
-https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending                       # Luke Smith Videos
 https://notrelated.libsyn.com/rss                                                   # Luke Smith NotRelated
 https://lukesmith.xyz/rss.xml                                                       # Luke Smith Blog
+https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending                       # Luke Smith Videos
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw        # ThePrimeagen
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJetJ7nDNLlEzDLXv7KIo0w        # Gavin Freeborn
