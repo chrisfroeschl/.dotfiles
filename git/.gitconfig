@@ -1,5 +1,6 @@
 [user]
 	name = Chris Fröschl
 	email = 43684610+chrisfroeschl@users.noreply.github.com
+	signingkey = B73B8C331945EBAB
 [pull]
 	rebase = false
