@@ -10,12 +10,14 @@ Includes settings for:
 | irssi    |      `~/.irssi/*`      |           IRC client |
 | mongodb  |    `~/.mongorc.js`     |       NoSQL Database |
 | mpv      |   `~/.config/mpv/*`    |         Media player |
-| mpi      |   `~/.config/mpi/*`    |         Image viewer |
+| mutt     |      `~/.mutt/*`       |         Email client |
+| mvi      |   `~/.config/mvi/*`    |         Image viewer |
 | newsboat | `~/.config/newsboat/*` |           RSS client |
 | nvim     |   `~/.config/nvim/*`   |          Text editor |
 | ranger   |  `~/.config/ranger/*`  |          Filemanager |
 | rtorrent |    `~/.rtorrent.rc`    |              Torrent |
 | tmux     |     `~/.tmux.conf`     | Terminal multiplexer |
+| vim      |       `~/.vim*`        |          Text editor |
 | zathura  | `~/.config/zathura/*`  |           PDF reader |
 
 ## Setup
