@@ -1,0 +1,15 @@
+set folder = "imaps://chrisfroeschl@cock.li@mail.cock.li:993"
+set smtp_url = "smtps://chrisfroeschl@cock.li@mail.cock.li:465"
+
+set from = "chrisfroeschl@cock.li"
+set realname = "Chris Fröschl"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts =Junk
+
+source colors.muttrc
+source mappings.muttrc
