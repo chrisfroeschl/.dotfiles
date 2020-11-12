@@ -1,3 +1,5 @@
+source colors.muttrc
+
 set folder = "imaps://chrisfroeschl@cock.li@mail.cock.li:993"
 set smtp_url = "smtps://chrisfroeschl@cock.li@mail.cock.li:465"
 
@@ -11,5 +13,4 @@ set postponed = "+Drafts"
 
 mailboxes =INBOX =Sent =Trash =Drafts =Junk
 
-source colors.muttrc
-source mappings.muttrc
+bind index,pager B sidebar-toggle-visible
