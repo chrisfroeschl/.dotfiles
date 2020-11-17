@@ -13,6 +13,7 @@ GIT_PS1_SHOWSTASHSTATE="yes"
 GIT_PS1_SHOWUNTRACKEDFILES="yes"
 source ~/.git-prompt.sh
 export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
+export GPG_TTY=$(tty)
 
 alias mongod='brew services run mongodb-community' 
 alias mongod-status='brew services list' 

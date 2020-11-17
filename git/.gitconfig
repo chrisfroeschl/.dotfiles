@@ -1,7 +1,7 @@
 [user]
 	name = Chris Fröschl
-	email = chris.froeschl@tutanota.com
-	signingkey = B73B8C331945EBAB
+	email = cfroeschl@protonmail.com
+	signingkey = 261E4B9B709AB2B9
 [pull]
 	rebase = false
 [gpg]
