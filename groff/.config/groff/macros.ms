@@ -1,3 +1,7 @@
+.de IPD
+.IP - 2
+..
+
 .de CHAPTER
 . NH 1
 \\$1
