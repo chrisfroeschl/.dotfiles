@@ -20,9 +20,13 @@ Includes settings for:
 | vim      |       `~/.vim*`        |          Text editor |
 | zathura  | `~/.config/zathura/*`  |           PDF reader |
 
-## Setup
+## Requirements
 
-1. Clone this repository into your users home directory.
-2. Install [GNU Stow](https://www.gnu.org/software/stow/) with your preferred package
-   manager.
-3. Run the `stow.sh` script to place all symlinks.
+- [GNU Make](https://www.gnu.org/software/make/)
+- [GNU Stow](https://www.gnu.org/software/stow/)
+
+## Installation
+
+```bash
+make
+```
