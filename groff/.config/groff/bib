@@ -1,49 +1,65 @@
 %K kylesimpson0
 %A Kyle Simpson
-%T You Don't Know JS: Up & Going
+%T Up & Going
+%S You Don't Know JS
+%V 1
 %D 2015
 %I O'Reilly Media, Inc.
 
 %K kylesimpson1
 %A Kyle Simpson
-%T You Don't Know JS: Scope and Closure
+%T Scope and Closure
+%S You Don't Know JS
+%V 2
 %D 2014
 %I O'Reilly Media, Inc.
 
 %K kylesimpson2
 %A Kyle Simpson
-%T You Don't Know JS: this & Object Prototypes
+%T this & Object Prototypes
+%S You Don't Know JS
+%V 3
 %D 2014
 %I O'Reilly Media, Inc.
 
 %K kylesimpson3
 %A Kyle Simpson
-%T You Don't Know JS: Types & Grammar
+%T Types & Grammar
+%S You Don't Know JS
+%V 4
 %D 2014
 %I O'Reilly Media, Inc.
 
 %K kylesimpson4
 %A Kyle Simpson
-%T You Don't Know JS: Async & Performance
+%T Async & Performance
+%S You Don't Know JS
+%V 5
 %D 2014
 %I O'Reilly Media, Inc.
 
 %K kylesimpson5
 %A Kyle Simpson
-%T You Don't Know JS: ES6 & Beyond
+%T ES6 & Beyond
+%S You Don't Know JS
+%V 6
 %D 2014
 %I O'Reilly Media, Inc.
 
 %K kylesimpson6
 %A Kyle Simpson
 %A Simon St.Laurent (Editor)
-%T You Don't Know JS Yet: Get Started
+%T Get Started
+%S You Don't Know JS Yet
+%V 1
 %D 2020
 %I GetiPub & Leanpub
 
 %K kylesimpson7
 %A Kyle Simpson
-%T You Don't Know JS Yet: Scope & Closures
+%T Scope & Closures
+%S You Don't Know JS Yet
+%V 2
 %D 2020
 
 %K theodorekaczynski0
@@ -85,6 +101,7 @@
 %A Ralph Ellison
 %T Invisible Man (3rd Edition)
 %D 1952
+%I Vintage
 
 %K unknown0
 %A unknown
@@ -92,10 +109,11 @@
 %D 2008
 %I Enemies List Home Recordings
 
-%K peterwesselzapffe
+%K peterwesselzapffe0
 %A Peter Wessel Zapffe
-%T The Last Messiah
+%T The Last Messiah (Nihilistic Buddhism, Antinatalism, Pessimism)
 %D 1933
+%I unknown
 
 %K deanallenprovins0
 %A Dean Allen Provins
@@ -125,3 +143,4 @@
 %A Carl Zuckmayer
 %T Der Hauptmann von Köpenick
 %D 1931
+%I Fischer
