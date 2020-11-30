@@ -114,3 +114,14 @@
 %T Capitalism, Socialism and Democracy
 %D 1942
 %I Routledge
+
+%K karlmarx0
+%A Karl Marx
+%T Das Kapitel
+%D 1867
+%I Verlag von Otto Meisner
+
+%K carlzuckmayer0
+%A Carl Zuckmayer
+%T Der Hauptmann von Köpenick
+%D 1931
