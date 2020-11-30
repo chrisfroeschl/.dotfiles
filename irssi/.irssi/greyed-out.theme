@@ -117,3 +117,6 @@ abstracts = {
   sb_uc_space = " ";
 };
 
+formats = {
+  "fe-common/core" = { own_msg = "{ownmsgnick $2 {ownnick $0}}%g$1"; };
+};

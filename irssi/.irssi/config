@@ -1,7 +1,3 @@
-hilights = (
-  { text = "chris_"; color = "%M"; nick = "yes"; word = "yes"; },
-  { text = "chris_"; nick = "yes"; word = "yes"; }
-);
 servers = (
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
   {
@@ -23,6 +19,7 @@ servers = (
     port = "6697";
     use_tls = "yes";
     tls_verify = "yes";
+    autoconnect = "yes";
   },
   {
     address = "irc.gamesurge.net";
@@ -151,10 +148,10 @@ chatnets = {
 channels = (
   { name = "#lobby"; chatnet = "EsperNet"; autojoin = "No"; },
   { name = "#freenode"; chatnet = "Freenode"; autojoin = "No"; },
-  { name = "#draingang"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#gentoo"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#horriblesubs"; chatnet = "Rizon"; autojoin = "Yes"; },
-  { name = "#bookz"; chatnet = "Undernet"; autojoin = "Yes"; },
-  { name = "#ebooks"; chatnet = "Highwaynet"; autojoin = "Yes"; },
+  { name = "#bookz"; chatnet = "Undernet"; autojoin = "No"; },
+  { name = "#ebooks"; chatnet = "Highwaynet"; autojoin = "No"; },
   { name = "#fc"; chatnet = "Highwaynet"; autojoin = "Yes"; },
   { name = "#irssi"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gamesurge"; chatnet = "GameSurge"; autojoin = "No"; },
@@ -322,18 +319,17 @@ settings = {
   core = {
     real_name = "chris";
     user_name = "chris";
-    nick = "chris_";
+    nick = "chris";
     timestamp_format = "%H:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "irc/dcc" = {
-    dcc_autoget = "yes";
+    dcc_autoget = "no";
     dcc_autoget_masks = "";
     dcc_file_create_mode = "600";
     dcc_download_path = "~/Downloads";
     dcc_upload_path = "~/Downloads";
   };
-  "irc/core" = { alternate_nick = "chris"; };
   "fe-common/core" = {
     hilight_nick_matches_everywhere = "yes";
     theme = "greyed-out";
