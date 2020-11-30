@@ -2,7 +2,7 @@
 
 auto-reload yes                                 # Refetch every feed at startup. 
 reload-time  30                                 # Refetch every 30 minutes.
-max-items 1000                                  # Maximun amout of items per feed.
+max-items 100                                   # Maximun amout of items per feed.
 datetime-format "%D, %R"                        # Date formatting.
 show-keymap-hint no                             # No hints.
 download-retries 4                              # How many retries of fetching until drop.
