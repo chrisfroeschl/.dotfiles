@@ -2,23 +2,23 @@
 
 Includes settings for:
 
-| Name     |        Location        |          Description |
-| :------- | :--------------------: | -------------------: |
-| bash     |       `~/.bash*`       |                Shell |
-| git      |       `~/.git*`        |      Content tracker |
-| groff    |  `~/.config/groff/*`   |   Typesetting system |
-| irssi    |      `~/.irssi/*`      |           IRC client |
-| mongodb  |    `~/.mongorc.js`     |       NoSQL Database |
-| mpv      |   `~/.config/mpv/*`    |         Media player |
-| mutt     |      `~/.mutt/*`       |         Email client |
-| mvi      |   `~/.config/mvi/*`    |         Image viewer |
-| newsboat | `~/.config/newsboat/*` |           RSS client |
-| nvim     |   `~/.config/nvim/*`   |          Text editor |
-| ranger   |  `~/.config/ranger/*`  |          Filemanager |
-| rtorrent |    `~/.rtorrent.rc`    |              Torrent |
-| tmux     |     `~/.tmux.conf`     | Terminal multiplexer |
-| vim      |       `~/.vim*`        |          Text editor |
-| zathura  | `~/.config/zathura/*`  |           PDF reader |
+| Name     | Description          |
+| :------- | :------------------- |
+| bash     | Shell                |
+| git      | Content tracker      |
+| groff    | Typesetting system   |
+| irssi    | IRC client           |
+| mongodb  | NoSQL Database       |
+| mpv      | Media player         |
+| mutt     | Email client         |
+| mvi      | Image viewer         |
+| newsboat | RSS client           |
+| nvim     | Text editor          |
+| ranger   | Filemanager          |
+| rtorrent | Torrent              |
+| tmux     | Terminal multiplexer |
+| vim      | Text editor          |
+| zathura  | PDF reader           |
 
 ## Requirements
 
