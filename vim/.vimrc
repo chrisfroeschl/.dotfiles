@@ -51,6 +51,10 @@ set nowritebackup                                               " This is recomm
 set laststatus=0                                                " Always display the status line.
 set relativenumber                                              " Line numbers.
 set nu                                                          " Current line number.
+set incsearch                                                   " Activate incremental search.
+set ignorecase                                                  " Ignore casing in searches.
+set hlsearch                                                    " Highlicht search matches.
+set shortmess-=S                                                " Show index of search matches.
 set cursorline                                                  " Enable highlighting of the current line.
 set background=dark                                             " Set background color.
 set showtabline=2                                               " Always show tabs.
@@ -59,7 +63,7 @@ set timeoutlen=500                                              " By default tim
 set shortmess+=c                                                " Don't pass messages to ins-completion-menu.
 set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
 set colorcolumn=80                                              " Create color column to prevent going to far to the right.
-if has("patch-8.1.1564")                                        " Alwyas show the signcolumn.
+if has("patch-8.1.1564")                                        " Always show the signcolumn.
   set signcolumn=number
 else
   set signcolumn=yes
@@ -105,7 +109,11 @@ function! s:check_back_space() abort
 endfunction
 
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position. 
 if exists('*complete_info')
