@@ -15,6 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-signify'                                    " Git signs.
     Plug 'puremourning/vimspector'                              " Debugger.
     Plug 'szw/vim-maximizer'                                    " Window handler.
+    Plug 'leafgarland/typescript-vim'                           " TypeScript support
 
 call plug#end()
 
