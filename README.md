@@ -13,7 +13,6 @@ Includes settings for:
 | mutt        | Email client         |
 | mvi         | Image viewer         |
 | newsboat    | RSS client           |
-| nvim        | Text editor          |
 | qutebrowser | Browser              |
 | ranger      | Filemanager          |
 | rtorrent    | Torrent              |
