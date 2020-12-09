@@ -28,7 +28,7 @@ interceptor.register(filter_yt)
 # config.load_autoconfig()
 
 # Setting dark mode
-# config.set("colors.webpage.darkmode.enabled", True)
+config.set("colors.webpage.darkmode.enabled", True)
 
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
@@ -61,7 +61,7 @@ c.auto_save.interval = 15000
 # session which was last loaded. This behavior can be customized via the
 # `session.default_name` setting.
 # Type: Bool
-c.auto_save.session = True
+c.auto_save.session = False
 
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
@@ -275,7 +275,7 @@ c.url.searchengines = {'DEFAULT': 'https://searx.xyz/?q={}', 's': 'https://searx
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = '/'
+c.url.start_pages = 'about:blank'
 
 # URL parameters to strip with `:yank url`.
 # Type: List of String
