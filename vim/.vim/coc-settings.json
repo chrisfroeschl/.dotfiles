@@ -4,7 +4,8 @@
     ],
     "coc.preferences.extensionUpdateCheck": "daily",
     "eslint.autoFixOnSave": true,
-    "snippets.userSnippetsDirectory": "~/.vim/snippets/*",
     "prettier.formatterPriority": -1,
+    "snippets.loadFromExtensions": false,
+    "snippets.userSnippetsDirectory": "~/.vim/snips",
     "clangd.path": "/Users/chris/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
 }

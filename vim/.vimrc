@@ -1,8 +1,10 @@
 " Automatically install vim-plug.
+augroup PLUGGED
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
+augroup end
 
 call plug#begin('~/.vim/plugged')
 
@@ -12,7 +14,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Search utility.
     Plug 'junegunn/fzf.vim'                                     " Search utility.
     Plug 'airblade/vim-rooter'                                  " Appropiate base for searching.
-    Plug 'mhinz/vim-signify'                                    " Git signs.
+    Plug 'airblade/vim-gitgutter'                               " Git signs.
     Plug 'leafgarland/typescript-vim'                           " TypeScript support
 
 call plug#end()
@@ -89,11 +91,7 @@ set timeoutlen=500                                              " By default tim
 set shortmess+=c                                                " Don't pass messages to ins-completion-menu.
 set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
 set colorcolumn=80                                              " Create color column to prevent going to far to the right.
-if has("patch-8.1.1564")                                        " Always show the signcolumn.
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+set signcolumn=yes                                              " Create column for git signs.
 colorscheme deathconsciousness                                  " My colorscheme.
  
 " Ensure files are read as what I expect them to be.
