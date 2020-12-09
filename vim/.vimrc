@@ -28,12 +28,10 @@ autocmd VimEnter *
 
 let g:coc_global_extensions = [
             \'coc-json',
-            \'coc-word',
             \'coc-prettier',
             \'coc-pairs',
             \'coc-eslint',
             \'coc-emmet',
-            \'coc-dictionary',
             \'coc-yaml',
             \'coc-tsserver',
             \'coc-sh',
@@ -92,6 +90,7 @@ set shortmess+=c                                                " Don't pass mes
 set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
 set colorcolumn=80                                              " Create color column to prevent going to far to the right.
 set signcolumn=yes                                              " Create column for git signs.
+set dictionary+=~/.vim/dict/en_common
 colorscheme deathconsciousness                                  " My colorscheme.
  
 " Ensure files are read as what I expect them to be.
