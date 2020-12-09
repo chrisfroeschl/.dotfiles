@@ -20,12 +20,38 @@ call plug#end()
 " Automatically install missing plugins on startup.
 autocmd VimEnter *
     \ if len(filter(values(g:plugs), 'isdirectory(v:val.dir)'))
-    \| PlugInstall | q
+    \| PlugInstall |
+    \| PlugUpdate | q
     \| endif
+
+let g:coc_global_extensions = [
+            \'coc-json',
+            \'coc-word',
+            \'coc-prettier',
+            \'coc-pairs',
+            \'coc-eslint',
+            \'coc-emmet',
+            \'coc-dictionary',
+            \'coc-yaml',
+            \'coc-tsserver',
+            \'coc-sh',
+            \'coc-markdownlint',
+            \'coc-java',
+            \'coc-html',
+            \'coc-docthis',
+            \'coc-docker',
+            \'coc-css',
+            \'coc-clangd',
+            \'coc-angular',
+            \]
 
 let g:mapleader = "\<Space>"                                    " Set leader key.
 let g:netrw_browse_split = 4                                    " act like 'P' (ie. open previous window)
 let g:netrw_winsize = 25                                        " Size of the vim explorer.
+let g:netrw_banner = 0                                          " Enable banner.
+let g:netrw_fastbrowser = 0                                     " Never re-use directory listings
+let g:netrw_liststyle = 1                                       " Long listing.
+let g:netrw_sizestyle = "b"                                     " Size in bytes.
 
 syntax enable                                                   " Enable syntax highlighting.
 set hidden                                                      " TextEdit might fail if hidden is not set.
