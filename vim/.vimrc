@@ -69,7 +69,7 @@ set conceallevel=0                                              " So that I can 
 set tabstop=4                                                   " Insert 4 spaces for a tab.
 set shiftwidth=4                                                " Change the number of space character inserted for indentation.
 set smarttab                                                    " Makes tabbing smarter will realize you have 2 vs 4.
-set smartindent                                                 " Makes indeting smart.
+set smartindent                                                 " Makes indent smart.
 set autoindent                                                  " Good auto indent.
 set expandtab                                                   " Converts tabs to spaces.
 set noswapfile                                                  " Avoid creating swap files.
@@ -99,13 +99,10 @@ filetype plugin on                                              " Enable ftplugi
 colorscheme deathconsciousness                                  " My colorscheme.
 
 if has("spell")
-    autocmd BufRead,BufNewFile .vimrc,*.vim,*.tmac,*.ms, setlocal spell
+    autocmd BufRead,BufNewFile .vimrc,*.vim,*.tmac,*.ms,*.md setlocal spell
     setlocal spelllang=en_us
 endif
 
-" Ensure files are read as what I expect them to be.
-autocmd BufRead,BufNewFile *.groff,*.tmac,*.ms,*.me,*.mom,*.troff set filetype=groff
-autocmd BufRead,BufNewFile *.tex set filetype=tex
 " Disables automatic commenting on newline.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
