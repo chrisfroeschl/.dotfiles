@@ -28,7 +28,7 @@ interceptor.register(filter_yt)
 # config.load_autoconfig()
 
 # Setting dark mode
-config.set("colors.webpage.darkmode.enabled", True)
+# config.set("colors.webpage.darkmode.enabled", True)
 
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
