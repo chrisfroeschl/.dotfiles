@@ -9,12 +9,13 @@ augroup end
 call plug#begin('~/.vim/plugged')
 
     Plug 'chrisfroeschl/deathconsciousness'                     " Vim theme.
-    Plug 'vim-utils/vim-man'                                    " Vim man pages.
     Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Intellisense engine.
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Search utility.
     Plug 'junegunn/fzf.vim'                                     " Search utility.
     Plug 'airblade/vim-rooter'                                  " Appropiate base for searching.
-    Plug 'airblade/vim-gitgutter'                               " Git signs.
+    if v:version >= 700
+        Plug 'airblade/vim-gitgutter'                           " Git signs.
+    endif
     Plug 'leafgarland/typescript-vim'                           " TypeScript support
 
 call plug#end()
@@ -79,7 +80,8 @@ set relativenumber                                              " Line numbers.
 set nu                                                          " Current line number.
 set incsearch                                                   " Activate incremental search.
 set ignorecase                                                  " Ignore casing in searches.
-set hlsearch                                                    " Highlicht search matches.
+set smartcase                                                   " Consider casing if there is an uppercase letter.
+set hlsearch                                                    " Highlight search matches.
 set shortmess-=S                                                " Show index of search matches.
 set cursorline                                                  " Enable highlighting of the current line.
 set background=dark                                             " Set background color.
@@ -90,14 +92,25 @@ set shortmess+=c                                                " Don't pass mes
 set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
 set colorcolumn=80                                              " Create color column to prevent going to far to the right.
 set signcolumn=yes                                              " Create column for git signs.
-set dictionary+=~/.vim/dict/en_common
+set ruler                                                       " Show line and column number of the cursor position.
+set showcmd                                                     " Show partial command.
+set dictionary+=~/.vim/dict/en_common                           " What dictionary to use.
+filetype plugin on                                              " Enable ftplugins.
 colorscheme deathconsciousness                                  " My colorscheme.
- 
+
+if has("spell")
+    autocmd BufRead,BufNewFile .vimrc,*.vim,*.tmac,*.ms, setlocal spell
+    setlocal spelllang=en_us
+endif
+
 " Ensure files are read as what I expect them to be.
-autocmd BufRead,BufNewFile *.ms,*.me,*.mom set filetype=groff
+autocmd BufRead,BufNewFile *.groff,*.tmac,*.ms,*.me,*.mom,*.troff set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 " Disables automatic commenting on newline.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+let g:rooter_resolve_links = 1
+let g:rooter_targets = '*'
 
 let g:fzf_history_dir = '~/.local/share/fzf-history'            " Enable per-command history.
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
