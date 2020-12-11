@@ -19,3 +19,8 @@ newline
 Disables
 Ripgrep
 Rg/!
+placeholder
+filetype
+formatexpr/!
+uppercase
+seperated

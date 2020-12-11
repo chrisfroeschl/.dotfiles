@@ -26,25 +26,6 @@ autocmd VimEnter *
     \| PlugUpdate | q
     \| endif
 
-let g:coc_global_extensions = [
-            \'coc-json',
-            \'coc-prettier',
-            \'coc-pairs',
-            \'coc-eslint',
-            \'coc-emmet',
-            \'coc-yaml',
-            \'coc-tsserver',
-            \'coc-sh',
-            \'coc-markdownlint',
-            \'coc-java',
-            \'coc-html',
-            \'coc-docthis',
-            \'coc-docker',
-            \'coc-css',
-            \'coc-clangd',
-            \'coc-angular',
-            \]
-
 let g:mapleader = "\<Space>"                                    " Set leader key.
 let g:netrw_browse_split = 4                                    " act like 'P' (ie. open previous window)
 let g:netrw_winsize = 25                                        " Size of the vim explorer.
@@ -85,7 +66,7 @@ set shortmess-=S                                                " Show index of 
 set cursorline                                                  " Enable highlighting of the current line.
 set background=dark                                             " Set background color.
 set showtabline=2                                               " Always show tabs.
-set updatetime=300                                              " Faster completion.
+set updatetime=100                                              " Faster completion.
 set timeoutlen=500                                              " By default timeoutlen is 1000 ms.
 set shortmess+=c                                                " Don't pass messages to ins-completion-menu.
 set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
@@ -108,44 +89,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let g:rooter_resolve_links = 1
 let g:rooter_targets = '*'
 
-let g:fzf_history_dir = '~/.local/share/fzf-history'            " Enable per-command history.
-let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-let $FZF_DEFAULT_COMMAND="rg --files --hidden"
-
-" Get text in files with Rg.
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-  \   fzf#vim#with_preview(), <bang>0)
-
-" Ripgrep advanced.
-function! RipgrepFzf(query, fullscreen)
-  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
-  let initial_command = printf(command_fmt, shellescape(a:query))
-  let reload_command = printf(command_fmt, '{q}')
-  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
-  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
-endfunction
-command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
-
-" Use tab for trigger completion with characters ahead and navigate.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position. 
 if exists('*complete_info')
@@ -154,33 +101,17 @@ else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 " TAB will move between buffers.
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
-augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
-
 " Map function and class text objects.
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-omap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap ic <Plug>(coc-classobj-i)
-omap ic <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
+" xmap if <Plug>(coc-funcobj-i)
+" omap if <Plug>(coc-funcobj-i)
+" xmap af <Plug>(coc-funcobj-a)
+" omap af <Plug>(coc-funcobj-a)
+" xmap ic <Plug>(coc-classobj-i)
+" omap ic <Plug>(coc-classobj-i)
+" xmap ac <Plug>(coc-classobj-a)
+" omap ac <Plug>(coc-classobj-a)
