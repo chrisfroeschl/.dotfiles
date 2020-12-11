@@ -8,12 +8,11 @@ augroup end
 
 call plug#begin('~/.vim/plugged')
 
-    Plug 'chrisfroeschl/deathconsciousness'                     " Vim theme.
     Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Intellisense engine.
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Search utility.
     Plug 'junegunn/fzf.vim'                                     " Search utility.
     Plug 'airblade/vim-rooter'                                  " Appropiate base for searching.
-    if v:version >= 700
+    if version >= 730
         Plug 'airblade/vim-gitgutter'                           " Git signs.
     endif
     Plug 'leafgarland/typescript-vim'                           " TypeScript support
