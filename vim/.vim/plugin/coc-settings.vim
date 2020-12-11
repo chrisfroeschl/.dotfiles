@@ -12,8 +12,10 @@ let g:coc_global_extensions = [
             \'coc-html',
             \'coc-docker',
             \'coc-css',
+            \'coc-snippets',
             \'coc-clangd',
             \'coc-angular',
+            \'coc-dictionary',
             \]
 
 " Goto code navigation.
@@ -46,4 +48,9 @@ augroup FORMATEXPR
   " Update signature help on jump placeholder.
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 

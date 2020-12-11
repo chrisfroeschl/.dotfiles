@@ -80,7 +80,9 @@ colorscheme deathconsciousness                                  " My colorscheme
 
 if has("spell")
     autocmd BufRead,BufNewFile .vimrc,*.vim,*.tmac,*.ms,*.md setlocal spell
-    setlocal spelllang=en_us
+    if has("syntax")
+        setlocal spelllang=en
+    endif
 endif
 
 " Disables automatic commenting on newline.
@@ -88,11 +90,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 let g:rooter_resolve_links = 1
 let g:rooter_targets = '*'
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position. 
 if exists('*complete_info')
@@ -107,11 +104,11 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " Map function and class text objects.
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-" xmap if <Plug>(coc-funcobj-i)
-" omap if <Plug>(coc-funcobj-i)
-" xmap af <Plug>(coc-funcobj-a)
-" omap af <Plug>(coc-funcobj-a)
-" xmap ic <Plug>(coc-classobj-i)
-" omap ic <Plug>(coc-classobj-i)
-" xmap ac <Plug>(coc-classobj-a)
-" omap ac <Plug>(coc-classobj-a)
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
