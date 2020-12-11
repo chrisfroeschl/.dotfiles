@@ -20,11 +20,13 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " Automatically install missing plugins on startup.
-autocmd VimEnter *
-    \ if len(filter(values(g:plugs), 'isdirectory(v:val.dir)'))
-    \| PlugInstall |
-    \| PlugUpdate | q
-    \| endif
+if has("autocmd")
+    autocmd VimEnter *
+        \ if len(filter(values(g:plugs), 'isdirectory(v:val.dir)'))
+        \| PlugInstall |
+        \| PlugUpdate | q
+        \| endif
+endif
 
 let g:mapleader = "\<Space>"                                    " Set leader key.
 let g:netrw_browse_split = 4                                    " act like 'P' (ie. open previous window)
@@ -79,7 +81,7 @@ filetype plugin on                                              " Enable ftplugi
 colorscheme deathconsciousness                                  " My colorscheme.
 
 if has("spell")
-    autocmd BufRead,BufNewFile .vimrc,*.vim,*.tmac,*.ms,*.md setlocal spell
+    autocmd BufRead,BufNewFile .vimrc,*.man,*.t,*.roff,*.ms,*.mom,*.me,*.mm,*.tr,*.troff,*.tmac,*.md,*.tex setlocal spell
     if has("syntax")
         setlocal spelllang=en
     endif
@@ -102,13 +104,13 @@ endif
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
-" Map function and class text objects.
-" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-omap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap ic <Plug>(coc-classobj-i)
-omap ic <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
+if has("autocmd")
+    augroup templates
+      au!
+      " read in template files
+      autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
+
+      " parse special text in the templates after the read
+      autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge|normal G
+    augroup END
+endif
