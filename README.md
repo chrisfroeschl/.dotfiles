@@ -11,7 +11,6 @@ Includes settings for:
 | mongodb     | NoSQL database       |
 | mpv         | Media player         |
 | mutt        | Email client         |
-| mvi         | Image viewer         |
 | nnn         | File manager         |
 | qutebrowser | Web browser          |
 | rtorrent    | Torrent              |
