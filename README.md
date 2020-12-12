@@ -8,25 +8,25 @@ Includes settings for:
 | git         | Content tracker      |
 | groff       | Typesetting system   |
 | irssi       | IRC client           |
-| mongodb     | NoSQL Database       |
+| mongodb     | NoSQL database       |
 | mpv         | Media player         |
 | mutt        | Email client         |
 | mvi         | Image viewer         |
-| newsboat    | RSS client           |
-| qutebrowser | Browser              |
-| ranger      | Filemanager          |
+| nnn         | File manager         |
+| qutebrowser | Web browser          |
 | rtorrent    | Torrent              |
+| sfeed       | RSS parser           |
 | tmux        | Terminal multiplexer |
 | vim         | Text editor          |
 | zathura     | PDF reader           |
 
 ## Requirements
 
-- [GNU Make](https://www.gnu.org/software/make/)
-- [GNU Stow](https://www.gnu.org/software/stow/)
+- [Make](https://www.gnu.org/software/make/)
+- [Stow](https://www.gnu.org/software/stow/)
 
 ## Installation
 
-```bash
+```sh
 make
 ```

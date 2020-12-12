@@ -1,4 +1,5 @@
 from qutebrowser.api import interceptor
+import os
 
 # Block YouTube ads
 def filter_yt(info: interceptor.Request):
@@ -257,7 +258,10 @@ c.url.searchengines = {'DEFAULT': 'https://searx.xyz/?q={}', 's': 'https://searx
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = 'about:blank'
+home_dir = os.environ['HOME']
+file_prefix = 'file://'
+rss_path = '/.sfeed/feeds.html' 
+c.url.start_pages = file_prefix + home_dir + rss_path
 
 # URL parameters to strip with `:yank url`.
 # Type: List of String
