@@ -1,3 +1,13 @@
+" File: .vimrc
+" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+" Last Modified: Sat 12 Dec 2020 03:36:14 PM CET
+" License:
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
+"
+" Description:
+" Main config file for Vim.
+
 " Automatically install vim-plug.
 augroup PLUGGED
 if empty(glob('~/.vim/autoload/plug.vim'))

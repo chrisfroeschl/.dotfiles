@@ -1,0 +1,59 @@
+# File: all.snippets
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Sat 12 Dec 2020 03:37:30 PM CET
+# License:
+# Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+# See :help license
+#
+# Description:
+# Snippets for all file types.
+
+snippet dqmeta "Meta data with double quote comments." b
+" File: `!v expand('%:t')`
+" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+" Last Modified: `!v strftime('%a %d %b %Y %I:%M:%S %p %Z')`
+" License:
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
+"
+" Description:
+" ${1:Your description}
+endsnippet
+
+snippet jsmeta "Meta data with jsdoc comments." b
+/**
+ * File: `!v expand('%:t')`
+ * Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+ * Last Modified: `!v strftime('%a %d %b %Y %I:%M:%S %p %Z')`
+ * License:
+ * Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+ * See :help license
+ *
+ * Description:
+ * ${1:Your description}
+ */
+endsnippet
+
+snippet hmeta "Meta data with hash comments" b
+# File: `!v expand('%:t')`
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: `!v strftime('%a %d %b %Y %I:%M:%S %p %Z')`
+# License:
+# Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+# See :help license
+#
+# Description:
+# ${1:Your description}
+endsnippet
+
+snippet tmeta "Meta data with backward slash comments" b
+\" File: `!v expand('%:t')`
+\" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+\" Last Modified: `!v strftime('%a %d %b %Y %I:%M:%S %p %Z')`
+\" License:
+\" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+\" See :help license
+\"
+\" Description:
+\"
+endsnippet

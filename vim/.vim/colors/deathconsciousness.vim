@@ -1,3 +1,13 @@
+" File: deathconsciousness.vim
+" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+" Last Modified: Sat 12 Dec 2020 03:36:53 PM CET
+" License:
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
+"
+" Description:
+" My Vim theme.
+
 if version > 580
   hi clear
   if exists("syntax_on")

@@ -1,3 +1,13 @@
+" File: fzf.vim
+" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+" Last Modified: Sat 12 Dec 2020 03:41:45 PM CET
+" License:
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
+"
+" Description:
+" Plugin settings for FZF.
+
 let g:fzf_history_dir = '~/.local/share/fzf-history'            " Enable per-command history.
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 let $FZF_DEFAULT_COMMAND="rg --files --hidden"
