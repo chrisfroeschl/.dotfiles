@@ -1,10 +1,14 @@
-source colors.muttrc
-
 set folder = "imaps://chrisfroeschl@cock.li@mail.cock.li:993"
 set smtp_url = "smtps://chrisfroeschl@cock.li@mail.cock.li:465"
 
 set from = "chrisfroeschl@cock.li"
 set realname = "Chris Fröschl"
+
+set sidebar_visible
+set sidebar_width = 25
+set sidebar_divider_char = '|'
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
 
 set spoolfile = "+INBOX"
 set record = "+Sent"
