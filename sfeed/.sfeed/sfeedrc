@@ -1,12 +1,23 @@
+# File: sfeedrc
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Sun 13 Dec 2020 02:13:10 PM CET
+# License:
+# Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+# See :help license
+#
+# Description:
+# Main sfeed config file containing overrides and RSS URLs.
+
 #sfeedpath="$HOME/.sfeed/feeds"
 
 # list of feeds to fetch:
 feeds() {
 	# feed <name> <feedurl> [basesiteurl] [encoding]
-	feed '4chan /g/' 'https://boards.4channel.org/g/index.rss'
-	feed '8chan /g/ - Technology' 'http://jthnx5wyvjvzsxtu.onion/g/index.rss'
-	feed '8chan /tech/ - Technology' 'http://jthnx5wyvjvzsxtu.onion/tech/index.rss'
-	feed '8chan /pdfs/' 'http://jthnx5wyvjvzsxtu.onion/pdfs/index.rss'
+	feed '4chan g' 'https://boards.4channel.org/g/index.rss'
+	feed '8chan g' 'http://jthnx5wyvjvzsxtu.onion/g/index.rss'
+	feed '8chan tech' 'http://jthnx5wyvjvzsxtu.onion/tech/index.rss'
+    feed '8chan pnd' 'http://jthnx5wyvjvzsxtu.onion/pnd/index.rss'
+	feed '8chan pdfs' 'http://jthnx5wyvjvzsxtu.onion/pdfs/index.rss'
 	feed 'Hacker News' 'https://news.ycombinator.com/rss'
 	feed 'Richard Stallman' 'https://stallman.org/rss/rss.xml'
 	feed 'Planet GNU' 'https://planet.gnu.org/rss20.xml'
@@ -20,4 +31,15 @@ feeds() {
 	feed 'Luke Smith Podcast' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
+}
+
+# Fetch a feed via TOR proxy as long as it's not one of the soy providers who
+# keep blocking TOR.
+# fetch(name, url, feedfile)
+fetch() {
+    if [ "$2" = "https://boards.4channel.org/g/index.rss" ]; then
+        curl --max-redirs 0 -L -m 15 -H "User-Agent:" -f -s "$2" 2>/dev/null
+    else
+        curl --max-redirs 0 -L -m 15 -H "User-Agent:" -f -s --socks5-hostname localhost:9050 "$2" 2>/dev/null
+    fi
 }
