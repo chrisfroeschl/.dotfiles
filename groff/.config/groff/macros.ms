@@ -1,9 +1,8 @@
 .\" File: macros.ms
 .\" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-.\" Last Modified: Sun 13 Dec 2020 09:38:37 AM CET
+.\" Last Modified: Sun 13 Dec 2020 03:21:22 PM CET
 .\" License:
-.\" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
-.\" See :help license
+.\" Copyright (c) Chris Fröschl. Distributed under the same terms as Groff itself.
 .\"
 .\" Description:
 .\" General .ms macros.

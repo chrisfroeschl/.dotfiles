@@ -1,9 +1,8 @@
 # File: update.sh
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 02:07:25 PM CET
+# Last Modified: Sun 13 Dec 2020 03:40:33 PM CET
 # License:
-# Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
-# See :help license
+# Copyright (c) 2020 Chris Fröschl
 #
 # Description:
 # Cronjob: Update feeds directory and create HMTL file.

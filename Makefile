@@ -1,9 +1,8 @@
 # File: Makefile
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 02:31:19 PM CET
+# Last Modified: Sun 13 Dec 2020 03:39:32 PM CET
 # License:
-# Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
-# See :help license
+# Copyright (c) 2020 Chris Fröschl
 
 all:
 	stow --target=$(HOME) -R $(shell ls -d */)
