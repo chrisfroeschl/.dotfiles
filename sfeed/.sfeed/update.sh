@@ -1,8 +1,8 @@
 # File: update.sh
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 03:40:33 PM CET
+# Last Modified: Sun 13 Dec 2020 04:07:13 PM CET
 # License:
-# Copyright (c) 2020 Chris Fröschl
+# Copyright (c) 2020 Chris Fröschl.
 #
 # Description:
 # Cronjob: Update feeds directory and create HMTL file.

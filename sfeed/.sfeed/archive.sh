@@ -1,8 +1,8 @@
 # File: archive.sh
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 03:40:54 PM CET
+# Last Modified: Sun 13 Dec 2020 04:07:09 PM CET
 # License:
-# Copyright (c) 2020 Chris Fröschl
+# Copyright (c) 2020 Chris Fröschl.
 #
 # Description:
 # Cronjob: Archive entries that are older than one week.

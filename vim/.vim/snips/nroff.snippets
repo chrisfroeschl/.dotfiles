@@ -1,6 +1,6 @@
 # File: nroff.snippets
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sat 12 Dec 2020 03:19:03 PM CET
+# Last Modified: Mon 14 Dec 2020 06:53:44 AM CET
 # License:
 # Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 # See :help license
@@ -8,7 +8,9 @@
 # Description:
 # Nroff snippets.
 
-snippet book "Book reference" b
+extends groff
+
+snippet book "Book reference." b
 %K ${1:Keywords}
 %A ${2:Author}
 %T ${3:Title}
@@ -16,4 +18,20 @@ snippet book "Book reference" b
 %V ${5:Volume}
 %D ${6:Date}
 %I ${7:Issuer}
+endsnippet
+
+snippet fb "Bold text." b
+\f[B]${1:Your text}\f[]
+endsnippet
+
+snippet fi "Italic text." b
+\f[I]${1:Your text}\f[]
+endsnippet
+
+snippet fbi "Bold italic text." b
+\f[BI]${1:Your text}\f[]
+endsnippet
+
+snippet fcw "Constant with text." b
+\f[CW]${1:Your text}\f[]
 endsnippet
