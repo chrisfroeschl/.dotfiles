@@ -1,6 +1,6 @@
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 04:07:21 PM CET
+# Last Modified: Mon 14 Dec 2020 09:17:00 AM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
@@ -15,7 +15,6 @@ feeds() {
 	feed '4chan g' 'https://boards.4channel.org/g/index.rss'
 	feed '8chan g' 'http://jthnx5wyvjvzsxtu.onion/g/index.rss'
 	feed '8chan tech' 'http://jthnx5wyvjvzsxtu.onion/tech/index.rss'
-    feed '8chan pnd' 'http://jthnx5wyvjvzsxtu.onion/pnd/index.rss'
 	feed '8chan pdfs' 'http://jthnx5wyvjvzsxtu.onion/pdfs/index.rss'
 	feed 'Hacker News' 'https://news.ycombinator.com/rss'
 	feed 'Richard Stallman' 'https://stallman.org/rss/rss.xml'

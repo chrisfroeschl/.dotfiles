@@ -21,9 +21,8 @@ Includes settings for:
 
 ## Prerequisites
 
-You should of course install all the above listed packages you are going to need
-with your preferred package manager. Besides those you are going to need following
-packages:
+You should of course install the above listed packages you are going to use with
+your preferred package manager. Besides those you are going to need following packages:
 
 - [Make](https://www.gnu.org/software/make/)
 - [Stow](https://www.gnu.org/software/stow/)
