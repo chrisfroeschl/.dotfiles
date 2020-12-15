@@ -1,5 +1,9 @@
+# set folder = "~/Mail/cock/"
 set folder = "imaps://chrisfroeschl@cock.li@mail.cock.li:993"
 set smtp_url = "smtps://chrisfroeschl@cock.li@mail.cock.li:465"
+
+set imap_pass = "`pass general/cock.li`"
+set smtp_pass = "`pass general/cock.li`"
 
 set from = "chrisfroeschl@cock.li"
 set realname = "Chris Fröschl"
