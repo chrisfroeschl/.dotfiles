@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Mon 14 Dec 2020 10:27:48 AM CET
+" Last Modified: Thu 17 Dec 2020 09:42:52 AM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -88,7 +88,7 @@ set ruler                                                       " Show line and 
 set showcmd                                                     " Show partial command.
 set dictionary+=~/.vim/dict/en_common                           " What dictionary to use.
 filetype plugin on                                              " Enable ftplugins.
-colorscheme deathconsciousness                                  " My colorscheme.
+colorscheme theme                                               " My colorscheme.
 
 if has("spell")
     autocmd BufRead,BufNewFile .vimrc,*.man,*.t,*.roff,*.ms,*.mom,*.me,*.mm,*.tr,*.troff,*.tmac,*.md,*.tex setlocal spell

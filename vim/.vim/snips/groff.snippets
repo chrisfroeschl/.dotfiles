@@ -1,6 +1,6 @@
 # File: groff.snippets
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Mon 14 Dec 2020 06:51:30 AM CET
+# Last Modified: Thu 17 Dec 2020 09:05:17 AM CET
 # License:
 # Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 # See :help license
@@ -15,14 +15,14 @@ snippet tbl "Basic table." b
 allbox tab(:);
 lb lb
 lb | lx.
-${1}:${2}
+${1:Erste Überschrift}:${2:Zweite Überschrift}
 .TH
 .TE
 endsnippet
 
 snippet chapter "Chapter header with dynamic TOC support." b
-.NH ${1:Number of nested heading.}
-${2}
+.NH ${1:Number of nested heading}
+${2:Heading}
 .XS
 $2
 .XE
