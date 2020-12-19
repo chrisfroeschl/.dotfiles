@@ -1,25 +1,25 @@
-HISTSIZE= HISTFILESIZE=                         # Infinite history
-set -o vi                                       # Vim mode
+# File: .bashrc
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Sat 19 Dec 2020 11:43:37 AM CET
+# License:
+# Copyright (c) 2020 Chris Fröschl.
 
-export NNN_PLUG='p:preview-tui'
-export NNN_FIFO=/tmp/nnn.fifo
+# Infinite history.
+export HISTSIZE= 
+# Infinte history size for the file itself.
+export HISTFILESIZE=
+# Ignore duplicates.
+export HISTCONTROL=ignoredups
 
-export EDITOR='vim'                             # Default editor
-export CLICOLOR=1                               # Enable colors
-#export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43" 
-export LSCOLORS=exfxcxdxbxegedabagacad          # Define colors
-export DEFAULT=$PS1 
-GIT_PS1_SHOWUPSTREAM="auto"
-GIT_PS1_SHOWCOLORHINTS="yes"
-GIT_PS1_SHOWDIRTYSTATE="yes"
-GIT_PS1_SHOWSTASHSTATE="yes"
-GIT_PS1_SHOWUNTRACKEDFILES="yes"
-source ~/.git-prompt.sh
-export PROMPT_COMMAND='__git_ps1 "\[\033[32m\]\u:\[\033[37;1m\]\W" "\\\$ ";'
+# Vim mode.
+set -o vi
+# Default editor.
+export EDITOR='vim'
+
+# Required for gpg to work properly with git.
 export GPG_TTY=$(tty)
 
-alias mongod='brew services run mongodb-community' 
-alias mongod-status='brew services list' 
-alias mongod-stop='brew services stop mongodb-community' 
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash        # Better search
+# nnn plugins.
+export NNN_PLUG='p:preview-tui'
+# tmp file for nnn plugins.
+export NNN_FIFO=/tmp/nnn.fifo
