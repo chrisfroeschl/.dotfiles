@@ -1,6 +1,7 @@
+#!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Mon 14 Dec 2020 09:17:00 AM CET
+# Last Modified: Sat 19 Dec 2020 05:12:14 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
@@ -13,19 +14,14 @@
 feeds() {
 	# feed <name> <feedurl> [basesiteurl] [encoding]
 	feed '4chan g' 'https://boards.4channel.org/g/index.rss'
-	feed '8chan g' 'http://jthnx5wyvjvzsxtu.onion/g/index.rss'
-	feed '8chan tech' 'http://jthnx5wyvjvzsxtu.onion/tech/index.rss'
-	feed '8chan pdfs' 'http://jthnx5wyvjvzsxtu.onion/pdfs/index.rss'
 	feed 'Hacker News' 'https://news.ycombinator.com/rss'
 	feed 'Richard Stallman' 'https://stallman.org/rss/rss.xml'
 	feed 'Planet GNU' 'https://planet.gnu.org/rss20.xml'
 	feed 'Planet Gentoo' 'https://planet.gentoo.org/universe/atom.xml'
-	feed 'ProtonMail' 'https://protonmail.com/blog/feed/'
 	feed 'Tor' 'https://blog.torproject.org/rss.xml'
 	feed 'suckless.org' 'https://suckless.org/atom.xml'
     feed 'cat -v' 'http://harmful.cat-v.org/Blog/index.rss'
 	feed 'TypeScript' 'https://devblogs.microsoft.com/typescript/feed/'
-	feed 'Angular' 'https://blog.angular.io/feed'
 	feed 'Luke Smith Podcast' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
