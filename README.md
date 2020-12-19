@@ -6,6 +6,7 @@ Includes settings for:
 | :---------- | :------------------- |
 | bash        | Shell                |
 | git         | Content tracker      |
+| gnupg       | Encryption           |
 | groff       | Typesetting system   |
 | irssi       | IRC client           |
 | mongodb     | NoSQL database       |
