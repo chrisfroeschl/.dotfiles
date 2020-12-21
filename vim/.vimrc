@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Thu 17 Dec 2020 09:42:52 AM CET
+" Last Modified: Mon 21 Dec 2020 03:02:06 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -58,12 +58,12 @@ set splitbelow                                                  " Horizontal spl
 set splitright                                                  " Vertical splits will automatically be to the right.
 set t_Co=256                                                    " Support 256 colors.
 set conceallevel=0                                              " So that I can see `` in markdown files.
-set tabstop=4                                                   " Insert 4 spaces for a tab.
+set tabstop=8                                                   " Insert 4 spaces for a tab.
+set softtabstop=4	                                        " Number of spaces a tab counts for while editing.
 set shiftwidth=4                                                " Change the number of space character inserted for indentation.
-set smarttab                                                    " Makes tabbing smarter will realize you have 2 vs 4.
+set expandtab                                                   " Converts tabs to spaces.
 set smartindent                                                 " Makes indent smart.
 set autoindent                                                  " Good auto indent.
-set expandtab                                                   " Converts tabs to spaces.
 set noswapfile                                                  " Avoid creating swap files.
 set nobackup                                                    " This is recommended by coc.
 set nowritebackup                                               " This is recommended by coc. 
