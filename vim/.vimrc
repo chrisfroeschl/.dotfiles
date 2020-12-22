@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Tue 22 Dec 2020 12:10:07 PM CET
+" Last Modified: Tue 22 Dec 2020 01:50:07 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -17,15 +17,20 @@ endif
 augroup end
 
 call plug#begin('~/.vim/plugged')
-
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}             " Intellisense engine.
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }         " Search utility.
-    Plug 'junegunn/fzf.vim'                                     " Search utility.
-    Plug 'airblade/vim-rooter'                                  " Appropiate base for searching.
+    " Intellisense engine.
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Search utility.
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Search utility.
+    Plug 'junegunn/fzf.vim'
+    " Appropiate base for searching.
+    Plug 'airblade/vim-rooter'
+    " Git signs.
     if version >= 730
-        Plug 'airblade/vim-gitgutter'                           " Git signs.
+        Plug 'airblade/vim-gitgutter'
     endif
-    Plug 'leafgarland/typescript-vim'                           " TypeScript support
+    " TypeScript support
+    Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
@@ -37,58 +42,109 @@ if has("autocmd")
         \| PlugUpdate | q
         \| endif
 endif
+" Set leader key.
+let g:mapleader = "\<Space>"
+" act like 'P' (ie. Open previous window)
+let g:netrw_browse_split = 4
+" Size of the vim explorer.
+let g:netrw_winsize = 25
+" Disable banner.
+let g:netrw_banner = 0
+" Never re-use directory listings
+let g:netrw_fastbrowser = 0
+" Long listing.
+let g:netrw_liststyle = 1
+" Size in Bytes.
+let g:netrw_sizestyle = "b"
 
-let g:mapleader = "\<Space>"                                    " Set leader key.
-let g:netrw_browse_split = 4                                    " act like 'P' (ie. Open previous window)
-let g:netrw_winsize = 25                                        " Size of the vim explorer.
-let g:netrw_banner = 0                                          " Enable banner.
-let g:netrw_fastbrowser = 0                                     " Never re-use directory listings
-let g:netrw_liststyle = 1                                       " Long listing.
-let g:netrw_sizestyle = "b"                                     " Size in bytes.
-
-syntax enable                                                   " Enable syntax highlighting.
-set hidden                                                      " TextEdit might fail if hidden is not set.
-set nowrap                                                      " Display long lines as just one line.
-set encoding=utf-8                                              " The encoding displayed.
-set fileencoding=utf-8                                          " The encoding written to files.
-set pumheight=10                                                " Makes pop menu smaller.
-set cmdheight=2                                                 " More space for displaying messages.
-set iskeyword+=-                                                " Treat dash seperated words as a word text object.
-set splitbelow                                                  " Horizontal splits will automatically be below.
-set splitright                                                  " Vertical splits will automatically be to the right.
-set t_Co=16                                                     " Support 16 colors.
-set conceallevel=0                                              " So that I can see `` in markdown files.
-set tabstop=8                                                   " Insert 4 spaces for a tab.
-set softtabstop=4	                                        " Number of spaces a tab counts for while editing.
-set shiftwidth=4                                                " Change the number of space character inserted for indentation.
-set expandtab                                                   " Converts tabs to spaces.
-set smartindent                                                 " Makes indent smart.
-set autoindent                                                  " Good auto indent.
-set noswapfile                                                  " Avoid creating swap files.
-set nobackup                                                    " This is recommended by coc.
-set nowritebackup                                               " This is recommended by coc. 
-set laststatus=0                                                " Always display the status line.
-set relativenumber                                              " Line numbers.
-set nu                                                          " Current line number.
-set incsearch                                                   " Activate incremental search.
-set ignorecase                                                  " Ignore casing in searches.
-set smartcase                                                   " Consider casing if there is an uppercase letter.
-set hlsearch                                                    " Highlight search matches.
-set shortmess-=S                                                " Show index of search matches.
-set cursorline                                                  " Enable highlighting of the current line.
-set background=dark                                             " Set background color.
-set showtabline=2                                               " Always show tabs.
-set updatetime=100                                              " Faster completion.
-set timeoutlen=500                                              " By default timeoutlen is 1000 ms.
-set shortmess+=c                                                " Don't pass messages to ins-completion-menu.
-set guicursor=                                                  " Ignore Neovim cursor settings and go back to vim.
-set colorcolumn=80                                              " Create color column to prevent going to far to the right.
-set signcolumn=yes                                              " Create column for git signs.
-set ruler                                                       " Show line and column number of the cursor position.
-set showcmd                                                     " Show partial command.
-set dictionary+=~/.vim/dict/en_common                           " What dictionary to use.
-filetype plugin on                                              " Enable ftplugins.
-colorscheme theme                                               " My colorscheme.
+" Enable syntax highlighting.
+syntax enable
+" TextEdit might fail if hidden is not set.
+set hidden
+" Display long lines as just one line.
+set nowrap
+" The encoding displayed.
+set encoding=utf-8
+" The encoding written to files.
+set fileencoding=utf-8
+" Makes pop menu smaller.
+set pumheight=10
+" More space for displaying messages.
+set cmdheight=2
+" Treat dash seperated words as a word text object.
+set iskeyword+=-
+" Horizontal splits will automatically be below.
+set splitbelow
+" Vertical splits will automatically be to the right.
+set splitright
+" Support 16 colors.
+set t_Co=16
+" So that I can see `` in markdown files.
+set conceallevel=0
+" Insert 8 spaces for a tab.
+set tabstop=8
+" Number of spaces a tab counts for while editing.
+set softtabstop=4
+" Change the number of space character inserted for indentation.
+set shiftwidth=4
+" Converts tabs to spaces.
+set expandtab
+" Makes indent smart.
+set smartindent
+" Good auto indent.
+set autoindent
+" Avoid creating swap files.
+set noswapfile
+" This is recommended by coc.
+set nobackup
+" This is recommended by coc.
+set nowritebackup
+" Always display the status line.
+set laststatus=0
+" Line numbers.
+set relativenumber
+" Current line number.
+set nu
+" Activate incremental search.
+set incsearch
+" Ignore casing in searches.
+set ignorecase
+" Consider casing if there is an uppercase letter.
+set smartcase
+" Highlight search matches.
+set hlsearch
+" Show index of search matches.
+set shortmess-=S
+" Enable highlighting of the current line.
+set cursorline
+" Set background color.
+set background=dark
+" Always show tabs.
+set showtabline=2
+" Faster completion.
+set updatetime=100
+" By default timeoutlen is 1000 ms.
+set timeoutlen=500
+" Don't pass messages to ins-completion-menu.
+set shortmess+=c
+" Ignore Neovim cursor settings and go back to vim.
+set guicursor=
+" Create color column to prevent going to far to the right.
+set colorcolumn=80
+" Create column for git signs.
+set signcolumn=yes
+" Show line and column number of the cursor position.
+set ruler
+" Show partial command.
+set showcmd
+" Show current mode.
+set showmode
+" What dictionary to use.
+set dictionary+=~/.vim/dict/en_common
+" Enable ftplugins.
+filetype plugin on
+" My colorscheme.
+colorscheme theme
 
 if has("spell")
     autocmd BufRead,BufNewFile .vimrc,*.man,*.t,*.roff,*.ms,*.mom,*.me,*.mm,*.tr,*.troff,*.tmac,*.md,*.tex setlocal spell
@@ -103,7 +159,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let g:rooter_resolve_links = 1
 let g:rooter_targets = '*'
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position. 
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 if exists('*complete_info')
   inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
@@ -114,13 +170,16 @@ endif
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
+let b:nroff_is_groff = 1
+let nroff_space_errors = 1
+
 if has("autocmd")
     augroup templates
       au!
-      " read in template files
+      " Read in template files.
       autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
 
-      " parse special text in the templates after the read
+      " Parse special text in the templates after the read.
       autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge|normal G
     augroup END
 endif

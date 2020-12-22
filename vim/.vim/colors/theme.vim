@@ -1,6 +1,6 @@
 " File: theme.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Tue 22 Dec 2020 12:08:14 PM CET
+" Last Modified: Tue 22 Dec 2020 01:50:56 PM CET
 " License:
 " Copyright (c) Chris Fröschl.
 "
@@ -92,15 +92,15 @@ function! s:HL(group, fg, ...)
   execute join(histring, ' ')
 endfunction
 
-call s:HL('Normal', s:white, s:black)
+call s:HL('Normal', s:white)
 
 if version >= 700
     call s:HL('CursorLine', s:none, s:dark_grey)
     call s:HL('CursorColumn', s:none, s:dark_grey)
 
     call s:HL('TabLineFill', s:white)
-    call s:HL('TabLine', s:white, s:black)
-    call s:HL('TabLineSel', s:white, s:black)
+    call s:HL('TabLine', s:white)
+    call s:HL('TabLineSel', s:white)
 
     call s:HL('MatchParen', s:none, s:dark_grey, s:bold)
 endif
@@ -110,7 +110,7 @@ if version >= 703
 
     call s:HL('Conceal', s:cyan)
 
-    call s:HL('CursorLineNr', s:white, s:black)
+    call s:HL('CursorLineNr', s:white)
 endif
 
 call s:HL('Visual', s:none, s:dark_grey)
@@ -121,10 +121,10 @@ call s:HL('InSearch', s:white, s:black, s:inverse)
 
 call s:HL('Underline', s:red, s:none, s:underline)
 
-call s:HL('StatusLine', s:black, s:white, s:inverse)
-call s:HL('StatusLineNC', s:black, s:white, s:inverse)
+call s:HL('StatusLine', s:black, s:white)
+call s:HL('StatusLineNC', s:black, s:white)
 
-call s:HL('VertSplit', s:white, s:black)
+call s:HL('VertSplit', s:white)
 call s:HL('Terminal', s:white, s:black)
 
 call s:HL('WildMenu', s:white, s:black, s:bold)
@@ -134,11 +134,11 @@ call s:HL('MoreMsg', s:black, s:yellow, s:bold)
 call s:HL('Question', s:black, s:yellow, s:bold)
 call s:HL('WarningMsg', s:black, s:red, s:bold)
 
-call s:HL('LineNr', s:white, s:black)
-call s:HL('SignColumn', s:white, s:black)
+call s:HL('LineNr', s:white)
+call s:HL('SignColumn', s:white)
 
-call s:HL('Folded', s:light_grey, s:black, s:italic)
-call s:HL('FoldColum', s:light_grey, s:black)
+call s:HL('Folded', s:white, s:black, s:italic)
+call s:HL('FoldColum', s:white)
 
 call s:HL('Cursor', s:none, s:none, s:inverse)
 call s:HL('vCursor', s:none, s:none, s:inverse)
@@ -150,17 +150,17 @@ call s:HL('Comment', s:light_grey)
 call s:HL('Todo', s:yellow, s:none, s:bold)
 call s:HL('Error', s:red, s:none, s:bold)
 
-call s:HL('Statement', s:red, s:none)
-call s:HL('Conditional', s:dark_red, s:none)
-call s:HL('Repeat', s:magenta, s:none)
-call s:HL('Label', s:dark_red, s:none)
-call s:HL('Exception', s:dark_red, s:none)
-call s:HL('Operator', s:white, s:none)
-call s:HL('Keyword', s:dark_red, s:none)
-call s:HL('Identifier', s:cyan, s:none)
-call s:HL('Function', s:green, s:none)
+call s:HL('Statement', s:red)
+call s:HL('Conditional', s:magenta)
+call s:HL('Repeat', s:magenta)
+call s:HL('Label', s:magenta)
+call s:HL('Exception', s:red)
+call s:HL('Operator', s:white)
+call s:HL('Keyword', s:red)
+call s:HL('Identifier', s:magenta)
+call s:HL('Function', s:green)
 
-call s:HL('PreProc', s:cyan, s:none)
+call s:HL('PreProc', s:green, s:none)
 call s:HL('Include', s:cyan, s:none)
 call s:HL('Define', s:cyan, s:none)
 call s:HL('Macro', s:cyan, s:none)
@@ -180,7 +180,7 @@ call s:HL('Typedef', s:green, s:none)
 
 if version >= 700
     call s:HL('Pmenu', s:black, s:white)
-    call s:HL('PmenuSel', s:white, s:black)
+    call s:HL('PmenuSel', s:white)
     call s:HL('PmenuSbar', s:none, s:light_grey)
     call s:HL('PmenuThumb', s:none, s:black)
 endif
@@ -195,21 +195,21 @@ call s:HL('DiffText', s:yellow, s:black, s:inverse)
 
 if has("spell")
     call s:HL('SpellCap', s:yellow, s:none, s:bold, s:italic)
-    call s:HL('SpellBad', s:red, s:none, s:undercurl, s:dark_blue)
+    call s:HL('SpellBad', s:red, s:none, s:undercurl, s:blue)
     call s:HL('SpellLocal', s:cyan, s:none, s:undercurl, s:dark_cyan)
     call s:HL('SpellRare', s:dark_magenta, s:none, s:undercurl, s:dark_magenta)
 endif
 
-call s:HL('netrwDir', s:dark_green, s:black)
-call s:HL('netrwClassify', s:dark_green, s:black)
-call s:HL('netrwLink', s:light_grey, s:black)
-call s:HL('netrwLink', s:magenta, s:black)
-call s:HL('netrwExe', s:dark_red, s:black)
-call s:HL('netrwComment', s:light_grey, s:black)
-call s:HL('netrwList', s:cyan, s:black)
-call s:HL('netrwHelpCmd', s:cyan, s:black)
-call s:HL('netrwCmdSep', s:dark_grey, s:black)
-call s:HL('netrwVersion', s:green, s:black)
+call s:HL('netrwDir', s:dark_green)
+call s:HL('netrwClassify', s:dark_green)
+call s:HL('netrwLink', s:light_grey)
+call s:HL('netrwLink', s:magenta)
+call s:HL('netrwExe', s:dark_red)
+call s:HL('netrwComment', s:light_grey)
+call s:HL('netrwList', s:cyan)
+call s:HL('netrwHelpCmd', s:cyan)
+call s:HL('netrwCmdSep', s:dark_grey)
+call s:HL('netrwVersion', s:green)
 
 call s:HL('CocErrorSign', s:red)
 call s:HL('CocWarningSign', s:yellow)
