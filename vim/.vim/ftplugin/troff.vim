@@ -1,20 +1,19 @@
 " File: troff.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sat 12 Dec 2020 03:40:28 PM CET
+" Last Modified: Tue 22 Dec 2020 02:45:14 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
 "
 " Description:
-" Plugin functionaly for troff files.
+" Plugin functionality for troff.
 
-augroup AUTOCOMP
-	autocmd!
-	try
-		autocmd BufWrite <buffer> :silent! Make!
-	catch /.*/
-		echo 'busy'
-	endtry
-augroup END
+" Only do this when not done yet for this buffer.
+if exists("b:did_ftplugin")
+  finish
+endif
+let b:did_ftplugin = 1
 
-setlocal autoindent
+if !exists('g:groff_install_prefix')
+    let g:groff_install_prefix='/usr/share'
+endif
