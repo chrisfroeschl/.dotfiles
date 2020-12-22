@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Mon 21 Dec 2020 03:02:06 PM CET
+" Last Modified: Tue 22 Dec 2020 12:10:07 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -39,7 +39,7 @@ if has("autocmd")
 endif
 
 let g:mapleader = "\<Space>"                                    " Set leader key.
-let g:netrw_browse_split = 4                                    " act like 'P' (ie. open previous window)
+let g:netrw_browse_split = 4                                    " act like 'P' (ie. Open previous window)
 let g:netrw_winsize = 25                                        " Size of the vim explorer.
 let g:netrw_banner = 0                                          " Enable banner.
 let g:netrw_fastbrowser = 0                                     " Never re-use directory listings
@@ -56,7 +56,7 @@ set cmdheight=2                                                 " More space for
 set iskeyword+=-                                                " Treat dash seperated words as a word text object.
 set splitbelow                                                  " Horizontal splits will automatically be below.
 set splitright                                                  " Vertical splits will automatically be to the right.
-set t_Co=256                                                    " Support 256 colors.
+set t_Co=16                                                     " Support 16 colors.
 set conceallevel=0                                              " So that I can see `` in markdown files.
 set tabstop=8                                                   " Insert 4 spaces for a tab.
 set softtabstop=4	                                        " Number of spaces a tab counts for while editing.
