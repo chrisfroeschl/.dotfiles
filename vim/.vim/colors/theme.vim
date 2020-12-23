@@ -1,14 +1,15 @@
 " File: theme.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Tue 22 Dec 2020 01:50:56 PM CET
+" Last Modified: Wed 23 Dec 2020 01:45:17 PM CET
 " License:
-" Copyright (c) Chris Fröschl.
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
 "
 " Description:
-" My Vim theme.
+" Vim theme.
 
 highlight clear
-if exists("synta_on")
+if exists("g:syntax_on")
     syntax reset
 endif
 
@@ -26,7 +27,6 @@ let s:undercurl = 'undercurl,'
 let s:inverse = 'inverse,'
 let s:none = ['NONE', 'NONE']
 
-" Setup palette dictionary.
 let s:black = ['#000000', 0]
 let s:dark_red = ['#800000', 1]
 let s:dark_green = ['#008000', 2]
@@ -44,7 +44,7 @@ let s:magenta = ['#ff00ff', 13]
 let s:cyan = ['#00ffff', 14]
 let s:white = ['#ffffff', 15]
 
-" Highlighting Function
+" Highlighting Function.
 
 function! s:HL(group, fg, ...)
   " Arguments: group, fg, bg, gui/xterm, guisp.
@@ -115,36 +115,26 @@ endif
 
 call s:HL('Visual', s:none, s:dark_grey)
 call s:HL('VisualNOS', s:none, s:dark_grey)
-
 call s:HL('Search', s:yellow, s:black, s:inverse)
 call s:HL('InSearch', s:white, s:black, s:inverse)
-
 call s:HL('Underline', s:red, s:none, s:underline)
-
 call s:HL('StatusLine', s:black, s:white)
 call s:HL('StatusLineNC', s:black, s:white)
-
 call s:HL('VertSplit', s:white)
 call s:HL('Terminal', s:white, s:black)
-
 call s:HL('WildMenu', s:white, s:black, s:bold)
-
 call s:HL('ErrorMsg', s:red, s:black, s:bold)
-call s:HL('MoreMsg', s:black, s:yellow, s:bold)
-call s:HL('Question', s:black, s:yellow, s:bold)
-call s:HL('WarningMsg', s:black, s:red, s:bold)
-
+call s:HL('MoreMsg', s:white, s:none, s:bold)
+call s:HL('Question', s:white, s:blue, s:bold)
+call s:HL('WarningMsg', s:red, s:none, s:bold)
 call s:HL('LineNr', s:white)
 call s:HL('SignColumn', s:white)
-
 call s:HL('Folded', s:white, s:black, s:italic)
 call s:HL('FoldColum', s:white)
-
 call s:HL('Cursor', s:none, s:none, s:inverse)
 call s:HL('vCursor', s:none, s:none, s:inverse)
 call s:HL('iCursor', s:none, s:none, s:inverse)
 call s:HL('lCursor', s:none, s:none, s:inverse)
-
 call s:HL('Special', s:light_grey)
 call s:HL('Comment', s:light_grey)
 call s:HL('Todo', s:yellow, s:none, s:bold)
@@ -159,20 +149,17 @@ call s:HL('Operator', s:white)
 call s:HL('Keyword', s:red)
 call s:HL('Identifier', s:magenta)
 call s:HL('Function', s:green)
-
 call s:HL('PreProc', s:green, s:none)
 call s:HL('Include', s:cyan, s:none)
 call s:HL('Define', s:cyan, s:none)
 call s:HL('Macro', s:cyan, s:none)
 call s:HL('PreCondit', s:cyan, s:none)
-
 call s:HL('Constant', s:magenta, s:none)
 call s:HL('Character', s:magenta, s:none)
 call s:HL('String', s:dark_green, s:none)
 call s:HL('Boolean', s:green, s:none)
 call s:HL('Number', s:white, s:none)
 call s:HL('Float', s:white, s:none)
-
 call s:HL('Type', s:black, s:white)
 call s:HL('StorageClass', s:yellow)
 call s:HL('Structure', s:green, s:none)
@@ -223,9 +210,8 @@ call s:HL('CocDiagnosticsError', s:red, s:dark_grey)
 call s:HL('CocDiagnosticsWarning', s:yellow, s:dark_grey)
 call s:HL('CocDiagnosticsInfo', s:magenta, s:dark_grey)
 call s:HL('CocDiagnosticsHint', s:cyan, s:dark_grey)
-
 call s:HL('CocErrorHighlight', s:none, s:none, s:undercurl, s:red)
-call s:HL('CocWarningHighlight', s:none, s:none, s:undercurl, s:dark_yellow)
+call s:HL('CocWarningHighlight', s:none, s:none, s:undercurl, s:yellow)
 call s:HL('CocInfoHighlight', s:none, s:none, s:undercurl, s:yellow)
 call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
 
@@ -455,12 +441,12 @@ call s:HL('javaOperator', s:blue)
 call s:HL('javaVarArg', s:green)
 
 call s:HL('markdownItalic', s:light_grey, s:none, s:italic)
-call s:HL('markdownH1', s:magenta, s:none, s:bold)
-call s:HL('markdownH2', s:magenta, s:none, s:bold)
-call s:HL('markdownH3', s:magenta, s:none, s:bold)
-call s:HL('markdownH4', s:magenta, s:none, s:bold)
-call s:HL('markdownH5', s:magenta, s:none, s:bold)
-call s:HL('markdownH6', s:magenta, s:none, s:bold)
+call s:HL('markdownH1', s:white, s:none, s:bold)
+call s:HL('markdownH2', s:white, s:none, s:bold)
+call s:HL('markdownH3', s:white, s:none, s:bold)
+call s:HL('markdownH4', s:white, s:none, s:bold)
+call s:HL('markdownH5', s:white, s:none, s:bold)
+call s:HL('markdownH6', s:white, s:none, s:bold)
 call s:HL('markdownCode', s:green)
 call s:HL('markdownCodeBlock', s:dark_green)
 call s:HL('markdownCodeDelimiter', s:dark_green)
@@ -472,7 +458,7 @@ call s:HL('markdownHeadingRule', s:light_grey)
 call s:HL('markdownUrlDelimiter', s:light_grey)
 call s:HL('markdownLinkDelimiter', s:light_grey)
 call s:HL('markdownTextDelimiter', s:light_grey)
-call s:HL('markdownHeadingDelimiter', s:dark_magenta)
+call s:HL('markdownHeadingDelimiter', s:magenta)
 call s:HL('markdownUrl', s:red)
 call s:HL('markdownTitleDelimiter', s:magenta)
 call s:HL('markdownLinkText', s:light_grey, s:none, s:underline)
