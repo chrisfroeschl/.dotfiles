@@ -146,32 +146,17 @@ chatnets = {
 };
 
 channels = (
-  { name = "#lobby"; chatnet = "EsperNet"; autojoin = "No"; },
-  { name = "#freenode"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gentoo"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#horriblesubs"; chatnet = "Rizon"; autojoin = "Yes"; },
   { name = "#bookz"; chatnet = "Undernet"; autojoin = "No"; },
   { name = "#ebooks"; chatnet = "Highwaynet"; autojoin = "No"; },
   { name = "#fc"; chatnet = "Highwaynet"; autojoin = "Yes"; },
-  { name = "#irssi"; chatnet = "Freenode"; autojoin = "No"; },
-  { name = "#gamesurge"; chatnet = "GameSurge"; autojoin = "No"; },
-  { name = "#irssi"; chatnet = "IRCNet"; autojoin = "No"; },
-  { name = "#ircsource"; chatnet = "IRCSource"; autojoin = "No"; },
-  { name = "#netfuze"; chatnet = "NetFuze"; autojoin = "No"; },
-  { name = "#oftc"; chatnet = "OFTC"; autojoin = "No"; },
-  { name = "silc"; chatnet = "SILC"; autojoin = "No"; }
 );
 
 aliases = {
   ATAG = "WINDOW SERVER";
   ADDALLCHANS = "SCRIPT EXEC foreach my \\$channel (Irssi::channels()) { Irssi::command(\"CHANNEL ADD -auto \\$channel->{name} \\$channel->{server}->{tag} \\$channel->{key}\")\\;}";
-  B = "BAN";
   BACK = "AWAY";
-  BANS = "BAN";
-  BYE = "QUIT";
-  C = "CLEAR";
   CALC = "EXEC - if command -v bc >/dev/null 2>&1\\; then printf '%s=' '$*'\\; echo '$*' | bc -l\\; else echo bc was not found\\; fi";
-  CHAT = "DCC CHAT";
   DATE = "TIME";
   DEHIGHLIGHT = "DEHILIGHT";
   DESCRIBE = "ACTION";
@@ -180,42 +165,22 @@ aliases = {
   EXIT = "QUIT";
   GOTO = "SCROLLBACK GOTO";
   HIGHLIGHT = "HILIGHT";
-  HL = "HILIGHT";
   HOST = "USERHOST";
   INVITELIST = "MODE $C +I";
-  J = "JOIN";
-  K = "KICK";
-  KB = "KICKBAN";
-  KN = "KNOCKOUT";
   LAST = "LASTLOG";
   LEAVE = "PART";
-  M = "MSG";
   MUB = "UNBAN *";
-  N = "NAMES";
   NMSG = "^MSG";
-  P = "PART";
-  Q = "QUERY";
   RESET = "SET -default";
   RUN = "SCRIPT LOAD";
   SAY = "MSG *";
-  SB = "SCROLLBACK";
-  SBAR = "STATUSBAR";
   SIGNOFF = "QUIT";
   SV = "MSG * Irssi $J ($V) - https://irssi.org";
-  T = "TOPIC";
-  UB = "UNBAN";
   UMODE = "MODE $N";
   UNSET = "SET -clear";
-  W = "WHO";
   WC = "WINDOW CLOSE";
-  WG = "WINDOW GOTO";
   WJOIN = "JOIN -window";
-  WI = "WHOIS";
-  WII = "WHOIS $0 $0";
-  WL = "WINDOW LIST";
-  WN = "WINDOW NEW HIDDEN";
   WQUERY = "QUERY -window";
-  WW = "WHOWAS";
 };
 
 statusbar = {
@@ -332,6 +297,5 @@ settings = {
   };
   "fe-common/core" = {
     hilight_nick_matches_everywhere = "yes";
-    theme = "greyed-out";
   };
 };
