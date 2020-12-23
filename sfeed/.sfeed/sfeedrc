@@ -1,14 +1,12 @@
 #!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sat 19 Dec 2020 05:12:14 PM CET
+# Last Modified: Wed 23 Dec 2020 03:33:16 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
 # Description:
 # Main sfeed config file containing overrides and RSS URLs.
-
-#sfeedpath="$HOME/.sfeed/feeds"
 
 # list of feeds to fetch:
 feeds() {
@@ -16,19 +14,18 @@ feeds() {
 	feed '4chan g' 'https://boards.4channel.org/g/index.rss'
 	feed 'Hacker News' 'https://news.ycombinator.com/rss'
 	feed 'Richard Stallman' 'https://stallman.org/rss/rss.xml'
-	feed 'Planet GNU' 'https://planet.gnu.org/rss20.xml'
-	feed 'Planet Gentoo' 'https://planet.gentoo.org/universe/atom.xml'
-	feed 'Tor' 'https://blog.torproject.org/rss.xml'
-	feed 'suckless.org' 'https://suckless.org/atom.xml'
-    feed 'cat -v' 'http://harmful.cat-v.org/Blog/index.rss'
-	feed 'TypeScript' 'https://devblogs.microsoft.com/typescript/feed/'
 	feed 'Luke Smith Podcast' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
+	feed 'Planet GNU' 'https://planet.gnu.org/rss20.xml'
+	feed 'Planet Gentoo' 'https://planet.gentoo.org/universe/atom.xml'
+	feed 'suckless.org' 'https://suckless.org/atom.xml'
+        feed 'cat -v' 'http://harmful.cat-v.org/Blog/index.rss'
+	feed 'Tor' 'https://blog.torproject.org/rss.xml'
 }
 
 # Fetch a feed via TOR proxy as long as it's not one of the soy providers who
-# keep blocking TOR.
+# keep blocking TOR requesters.
 # fetch(name, url, feedfile)
 fetch() {
     if [ "$2" = "https://boards.4channel.org/g/index.rss" ]; then
