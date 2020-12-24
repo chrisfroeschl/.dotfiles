@@ -15,7 +15,6 @@ Includes settings for:
 | mutt        | Email client          |
 | nnn         | File manager          |
 | qutebrowser | World Wide Web client |
-| rtorrent    | Torrent client        |
 | sfeed       | RSS parser            |
 | tmux        | Terminal multiplexer  |
 | vim         | Text editor           |
