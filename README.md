@@ -4,10 +4,10 @@ Includes settings for:
 
 | Name        | Description           |
 | :---------- | :-------------------- |
-| bash        | Shell                 |
+| bash        | Interactive shell     |
 | git         | Content tracker       |
 | gnupg       | Encryption            |
-| groff       | Typesetting system    |
+| roff        | Typesetting system    |
 | irssi       | IRC client            |
 | lynx        | World Wide Web client |
 | mongodb     | NoSQL database        |
@@ -15,7 +15,7 @@ Includes settings for:
 | mutt        | Email client          |
 | nnn         | File manager          |
 | qutebrowser | World Wide Web client |
-| rtorrent    | Torrent               |
+| rtorrent    | Torrent client        |
 | sfeed       | RSS parser            |
 | tmux        | Terminal multiplexer  |
 | vim         | Text editor           |
