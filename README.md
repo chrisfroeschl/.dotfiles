@@ -13,7 +13,6 @@ Includes settings for:
 | mongodb     | NoSQL database        |
 | mpv         | Media player          |
 | mutt        | Email client          |
-| nnn         | File manager          |
 | qutebrowser | World Wide Web client |
 | sfeed       | RSS parser            |
 | tmux        | Terminal multiplexer  |
