@@ -1,6 +1,6 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 20 Dec 2020 10:48:55 AM CET
+# Last Modified: Fri 25 Dec 2020 10:02:58 AM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 
@@ -27,8 +27,3 @@ fi
 
 # Required for gpg to work properly with git.
 export GPG_TTY=$(tty)
-
-# nnn plugins.
-export NNN_PLUG='p:preview-tui'
-# tmp file for nnn plugins.
-export NNN_FIFO=/tmp/nnn.fifo
