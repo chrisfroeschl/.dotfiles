@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Thu 24 Dec 2020 04:03:09 PM CET
+# Last Modified: Mon 28 Dec 2020 01:23:58 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
@@ -11,22 +11,22 @@
 # list of feeds to fetch:
 feeds() {
 	# feed <name> <feedurl> [basesiteurl] [encoding]
-	feed '4chan g' 'https://boards.4channel.org/g/index.rss'
+	feed '4channel g' 'https://boards.4channel.org/g/index.rss'
 	feed 'Hacker News' 'https://news.ycombinator.com/rss'
-	feed 'Richard Stallman' 'https://stallman.org/rss/rss.xml'
-	feed 'Luke Smith Podcast' 'https://notrelated.libsyn.com/rss'
+	feed 'RMS' 'https://stallman.org/rss/rss.xml'
+	feed 'NotRelated' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
-	feed 'Planet GNU' 'https://planet.gnu.org/rss20.xml'
-	feed 'Planet Gentoo' 'https://planet.gentoo.org/universe/atom.xml'
-	feed 'suckless.org' 'https://suckless.org/atom.xml'
-        feed 'cat -v' 'http://harmful.cat-v.org/Blog/index.rss'
-        feed 'NineTimes' 'http://ninetimes.cat-v.org/index.atom'
-	feed 'Tor' 'https://blog.torproject.org/rss.xml'
+	feed 'Gentoo' 'https://planet.gentoo.org/universe/atom.xml'
+	feed 'GNU' 'https://planet.gnu.org/rss20.xml'
+	feed 'TOR' 'https://blog.torproject.org/rss.xml'
+	feed 'Suckless.org' 'https://suckless.org/atom.xml'
+        feed 'Cat -v: harmful' 'http://harmful.cat-v.org/Blog/index.rss'
+        feed 'Cat -v: helpful' 'http://helpful.cat-v.org/Blog/index.rss'
+        feed 'Cat -v: ninetimes' 'http://ninetimes.cat-v.org/index.atom'
 }
 
-# Fetch a feed via TOR proxy as long as it's not one of the soy providers who
-# keep blocking TOR requesters.
+# Fetch a feed via TOR proxy if source allows it.
 # fetch(name, url, feedfile)
 fetch() {
     if [ "$2" = "https://boards.4channel.org/g/index.rss" ]; then
