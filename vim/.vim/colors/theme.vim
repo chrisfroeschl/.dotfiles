@@ -1,6 +1,6 @@
 " File: theme.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Wed 23 Dec 2020 01:45:17 PM CET
+" Last Modified: Tue 29 Dec 2020 01:09:41 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -117,15 +117,18 @@ call s:HL('Visual', s:none, s:dark_grey)
 call s:HL('VisualNOS', s:none, s:dark_grey)
 call s:HL('Search', s:yellow, s:black, s:inverse)
 call s:HL('InSearch', s:white, s:black, s:inverse)
+call s:HL('SpecialKey', s:light_grey)
+call s:HL('NonText', s:white)
 call s:HL('Underline', s:red, s:none, s:underline)
 call s:HL('StatusLine', s:black, s:white)
 call s:HL('StatusLineNC', s:black, s:white)
 call s:HL('VertSplit', s:white)
-call s:HL('Terminal', s:white, s:black)
-call s:HL('WildMenu', s:white, s:black, s:bold)
-call s:HL('ErrorMsg', s:red, s:black, s:bold)
+call s:HL('Terminal', s:white, s:none)
+call s:HL('EndOfBuffer', s:white)
+call s:HL('WildMenu', s:white, s:none, s:bold)
+call s:HL('ErrorMsg', s:red, s:none, s:bold)
 call s:HL('MoreMsg', s:white, s:none, s:bold)
-call s:HL('Question', s:white, s:blue, s:bold)
+call s:HL('Question', s:white, s:none, s:bold)
 call s:HL('WarningMsg', s:red, s:none, s:bold)
 call s:HL('LineNr', s:white)
 call s:HL('SignColumn', s:white)
