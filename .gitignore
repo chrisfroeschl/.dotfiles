@@ -3,5 +3,3 @@
 sfeed/**/*.html
 vim/.vim/autoload/plug.vim
 vim/.vim/plugged
-gnupg/.gnupg/**/*
-!/gnupg/.gnupg/gpg-agent.conf

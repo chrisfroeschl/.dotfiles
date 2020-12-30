@@ -6,7 +6,6 @@ Includes settings for:
 | :---------- | :-------------------- |
 | bash        | Interactive shell     |
 | git         | Content tracker       |
-| gnupg       | Encryption            |
 | roff        | Typesetting system    |
 | irssi       | IRC client            |
 | lynx        | World Wide Web client |
