@@ -1,6 +1,6 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Fri 25 Dec 2020 10:02:58 AM CET
+# Last Modified: Wed 30 Dec 2020 07:31:48 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 

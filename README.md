@@ -8,6 +8,7 @@ Includes settings for:
 | git         | Content tracker       |
 | roff        | Typesetting system    |
 | irssi       | IRC client            |
+| local       | Custom scripts        |
 | lynx        | World Wide Web client |
 | mongodb     | NoSQL database        |
 | mpv         | Media player          |

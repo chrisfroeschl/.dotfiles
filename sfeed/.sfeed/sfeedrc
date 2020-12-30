@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Mon 28 Dec 2020 01:23:58 PM CET
+# Last Modified: Wed 30 Dec 2020 11:03:53 AM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
@@ -11,19 +11,18 @@
 # list of feeds to fetch:
 feeds() {
 	# feed <name> <feedurl> [basesiteurl] [encoding]
-	feed '4channel g' 'https://boards.4channel.org/g/index.rss'
-	feed 'Hacker News' 'https://news.ycombinator.com/rss'
 	feed 'RMS' 'https://stallman.org/rss/rss.xml'
+	feed 'suckless.org' 'https://suckless.org/atom.xml'
+        feed 'cat -v: harmful' 'http://harmful.cat-v.org/Blog/index.rss'
+        feed 'cat -v: helpful' 'http://helpful.cat-v.org/Blog/index.rss'
+        feed 'cat -v: ninetimes' 'http://ninetimes.cat-v.org/index.atom'
+	feed 'gentoo' 'https://planet.gentoo.org/universe/atom.xml'
+	feed 'GNU' 'https://planet.gnu.org/rss20.xml'
+	feed 'TOR' 'https://blog.torproject.org/rss.xml'
 	feed 'NotRelated' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
-	feed 'Gentoo' 'https://planet.gentoo.org/universe/atom.xml'
-	feed 'GNU' 'https://planet.gnu.org/rss20.xml'
-	feed 'TOR' 'https://blog.torproject.org/rss.xml'
-	feed 'Suckless.org' 'https://suckless.org/atom.xml'
-        feed 'Cat -v: harmful' 'http://harmful.cat-v.org/Blog/index.rss'
-        feed 'Cat -v: helpful' 'http://helpful.cat-v.org/Blog/index.rss'
-        feed 'Cat -v: ninetimes' 'http://ninetimes.cat-v.org/index.atom'
+	feed 'Hacker News' 'https://news.ycombinator.com/rss'
 }
 
 # Fetch a feed via TOR proxy if source allows it.

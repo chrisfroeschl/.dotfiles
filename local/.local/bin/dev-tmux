@@ -1,0 +1,36 @@
+#!/bin/sh
+# File: dev-tmux
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Thu 24 Dec 2020 12:01:21 PM CET
+# License:
+# Copyright (c) 2020 Chris Fröschl.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# Description:
+# Default tmux window setup for daily development.
+
+cd ~ && tmux new-session -s dev -n files \; \
+            send-keys 'cd '$1 C-m \; \
+            split-window -v -p 20\; \
+            send-keys 'top' C-m \; \
+            select-pane -t 0 \; \
+            new-window -n server \; \
+            send-keys 'cd '$1 C-m \; \
+            split-window -v -p 50 \; \
+            send-keys 'cd '$1 C-m \; \
+            new-window -n information \; \
+            send-keys 'mutt' C-m \; \
+            split-window -v -p 50 \; \
+            send-keys 'torsocks irssi' C-m \;

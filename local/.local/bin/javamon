@@ -1,0 +1,24 @@
+#!/bin/sh
+# File: javamon
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Sun 13 Dec 2020 03:59:36 PM CET
+# License:
+# Copyright (c) 2020 Chris Fröschl.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# Description:
+# Java server based on nodemon.
+
+npx nodemon -e java -w src -x 'javac --class-path ./src -d ./bin '$1'; java --class-path ./bin '$1 
