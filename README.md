@@ -17,6 +17,7 @@ Includes settings for:
 | sfeed       | RSS parser            |
 | tmux        | Terminal multiplexer  |
 | vim         | Text editor           |
+| x11         | Window System         |
 | zathura     | PDF reader            |
 
 ## Prerequisites
