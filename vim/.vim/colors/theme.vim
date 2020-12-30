@@ -1,6 +1,6 @@
 " File: theme.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Tue 29 Dec 2020 01:09:41 PM CET
+" Last Modified: Wed 30 Dec 2020 08:07:04 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -11,10 +11,6 @@
 highlight clear
 if exists("g:syntax_on")
     syntax reset
-endif
-
-if !exists('g:theme_guisp_fallback') || index(['fg', 'bg'], g:theme_guisp_fallback) == -1
-  let g:theme_guisp_fallback='NONE'
 endif
 
 set background=dark
@@ -64,18 +60,6 @@ function! s:HL(group, fg, ...)
     let emstr = a:2
   else
     let emstr = 'NONE,'
-  endif
-
-  " Special fallback.
-  if a:0 >= 3
-    if g:theme_guisp_fallback != 'NONE'
-      let fg = a:3
-    endif
-
-    " bg fallback mode should invert highlighting.
-    if g:theme_guisp_fallback == 'bg'
-      let emstr .= 'inverse,'
-    endif
   endif
 
   let histring = [ 'hi', a:group,
