@@ -254,7 +254,7 @@ c.url.default_page = 'about:blank'
 # the search engine name to the search term, e.g. `:open google
 # qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://searx.xyz/?q={}', 's': 'https://searx.fmac.xyz/?q={}', 'aw': 'https://wiki.archlinux.org/?search={}', 'gw': 'https://wiki.gentoo.org/index.php?title=Special:Search&profile=advanced&search={}', 'w': 'https://en.wikipedia.org/wiki/Special:Search?search={}'}
+c.url.searchengines = {'DEFAULT': 'https://searx.fmac.xyz/?q={}', 'gw': 'https://wiki.gentoo.org/index.php?title=Special:Search&profile=advanced&search={}', 'w': 'https://en.wikipedia.org/wiki/Special:Search?search={}'}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
