@@ -1,6 +1,6 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Wed 30 Dec 2020 07:31:48 PM CET
+# Last Modified: Fri 01 Jan 2021 11:35:20 AM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 
@@ -22,7 +22,7 @@ if [ $(id -u) -eq 0 ];
 then
   PS1="\[\033[01;31m\]# \[\033[0m\]"
 else
-  PS1="\[\033[01;32m\]$ \[\033[0m\]"
+  PS1="\[\033[01;32m\]# \[\033[0m\]"
 fi
 
 # Required for gpg to work properly with git.
