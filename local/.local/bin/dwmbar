@@ -1,0 +1,28 @@
+#!/bin/sh
+# File: dwmbar
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Sat 02 Jan 2021 04:30:23 PM CET
+# License:
+# Copyright (c) 2021 Chris Fröschl.
+#
+# Description:
+# Statusbar for dwm.
+
+# Set the delimiter character.
+delim="|"
+
+status() {
+    # Wifi connection status. TODO
+    
+    # Battery status.
+    echo "BAT0 $(cat /sys/class/power_supply/BAT0/capacity)%"
+
+    echo "$delim"
+
+    # Date and time.
+    date '+%a %d %b %Y %I:%M:%S %p %Z'
+}
+
+while :; do
+    xsetroot -name "$(status | tr '\n' ' ')"
+done

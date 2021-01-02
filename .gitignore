@@ -4,3 +4,4 @@ sfeed/**/*.html
 vim/.vim/autoload/plug.vim
 vim/.vim/plugged
 local/.local/share
+mpv/.config/mpv/watch_later

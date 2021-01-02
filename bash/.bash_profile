@@ -6,5 +6,3 @@
 
 # Use .bashrc if given.
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi  
-# pyenv support.
-eval "$(pyenv init -)"

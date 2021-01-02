@@ -1,6 +1,6 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Fri 01 Jan 2021 11:35:20 AM CET
+# Last Modified: Sat 02 Jan 2021 04:41:53 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 
@@ -12,6 +12,9 @@ export HISTFILESIZE=
 export HISTCONTROL=ignoredups
 # Better history search with FZF.
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Add my custom script directory to PATH.
+export PATH="$PATH:$HOME/.local/bin"
 
 # Vim mode.
 set -o vi
