@@ -1,9 +1,9 @@
 #!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Wed 30 Dec 2020 11:03:53 AM CET
+# Last Modified: Sun 03 Jan 2021 02:44:36 PM CET
 # License:
-# Copyright (c) 2020 Chris Fröschl.
+# Copyright (c) 2021 Chris Fröschl.
 #
 # Description:
 # Main sfeed config file containing overrides and RSS URLs.
@@ -16,7 +16,10 @@ feeds() {
         feed 'cat -v: harmful' 'http://harmful.cat-v.org/Blog/index.rss'
         feed 'cat -v: helpful' 'http://helpful.cat-v.org/Blog/index.rss'
         feed 'cat -v: ninetimes' 'http://ninetimes.cat-v.org/index.atom'
-	feed 'gentoo' 'https://planet.gentoo.org/universe/atom.xml'
+	feed 'n-gate: hackernews' 'http://n-gate.com/hackernews/index.rss'
+	feed 'n-gate: fossdem' 'http://n-gate.com/fosdem/index.rss'
+	feed 'n-gate: software' 'http://n-gate.com/software/index.rss'
+	feed 'Gentoo: Universe' 'https://planet.gentoo.org/universe/atom.xml'
 	feed 'GNU' 'https://planet.gnu.org/rss20.xml'
 	feed 'TOR' 'https://blog.torproject.org/rss.xml'
 	feed 'NotRelated' 'https://notrelated.libsyn.com/rss'

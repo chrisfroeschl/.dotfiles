@@ -1,8 +1,8 @@
 # File: .bash_profile
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sat 19 Dec 2020 06:35:06 PM CET
+# Last Modified: Sun 03 Jan 2021 02:47:52 PM CET
 # License:
-# Copyright (c) 2020 Chris Fröschl.
+# Copyright (c) 2021 Chris Fröschl.
 
 # Use .bashrc if given.
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi  

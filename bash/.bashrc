@@ -1,8 +1,8 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sat 02 Jan 2021 04:41:53 PM CET
+# Last Modified: Sun 03 Jan 2021 02:47:43 PM CET
 # License:
-# Copyright (c) 2020 Chris Fröschl.
+# Copyright (c) 2021 Chris Fröschl.
 
 # Infinite history.
 export HISTSIZE= 
