@@ -292,8 +292,8 @@ settings = {
     dcc_autoget = "no";
     dcc_autoget_masks = "";
     dcc_file_create_mode = "600";
-    dcc_download_path = "~/docs";
-    dcc_upload_path = "~/docs";
+    dcc_download_path = "~/tmp";
+    dcc_upload_path = "~/tmp";
   };
   "fe-common/core" = {
     hilight_nick_matches_everywhere = "yes";
