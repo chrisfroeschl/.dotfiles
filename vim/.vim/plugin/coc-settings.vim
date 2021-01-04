@@ -1,6 +1,6 @@
 " File: coc-settings.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sat 12 Dec 2020 03:41:53 PM CET
+" Last Modified: Mon 04 Jan 2021 02:14:14 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -23,7 +23,6 @@ let g:coc_global_extensions = [
             \'coc-docker',
             \'coc-css',
             \'coc-snippets',
-            \'coc-clangd',
             \'coc-angular',
             \'coc-dictionary',
             \]
