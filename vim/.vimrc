@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Wed 30 Dec 2020 08:06:08 PM CET
+" Last Modified: Wed 06 Jan 2021 09:20:05 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -36,15 +36,6 @@ call plug#end()
 
 if has('syntax') && has('eval')
     packadd! matchit
-endif
-
-" Automatically install missing plugins on startup.
-if has("autocmd")
-    autocmd VimEnter *
-        \ if len(filter(values(g:plugs), 'isdirectory(v:val.dir)'))
-        \| PlugInstall |
-        \| PlugUpdate | q
-        \| endif
 endif
 
 let g:mapleader = "\<Space>"
