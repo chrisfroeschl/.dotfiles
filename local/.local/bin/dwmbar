@@ -1,19 +1,38 @@
 #!/bin/sh
 # File: dwmbar
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Mon 04 Jan 2021 08:17:27 PM CET
+# Last Modified: Wed 06 Jan 2021 04:48:19 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 #
 # Description:
 # Statusbar for dwm.
 
-# Set the delimiter character.
+# Delimiter character.
 delim="|"
+# Battery.
+battery="BAT0"
+# Network card/type.
+net="wls1"
 
 status() {
     # Battery status.
-    echo "BAT0 $(cat /sys/class/power_supply/BAT0/capacity)%"
+    echo "$battery $(cat /sys/class/power_supply/$battery/capacity)%"
+
+    echo "$delim"
+
+    # Received/Transmitted status.
+    ifstat $net | awk -v net="$net" '$1==net {printf "%s %6dKiB/%6dKiB\n", net, $6, $8}'
+
+    echo "$delim"
+
+    # RAM status.
+    free -m | awk 'NR==2 {printf "RAM %s/%sMiB\n", $3,$2}'
+
+    echo "$delim"
+
+    # CPU status.
+    top -bn1 | grep load | awk '{printf "CPU %.2f\n", $(NF-2)}' 
 
     echo "$delim"
 
