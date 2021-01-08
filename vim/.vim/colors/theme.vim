@@ -1,6 +1,6 @@
 " File: theme.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Mon 04 Jan 2021 04:37:55 PM CET
+" Last Modified: Fri 08 Jan 2021 09:55:05 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -18,8 +18,8 @@ let g:colors_name='theme'
 
 
 if version >= 700
-    hi CursorLine ctermfg=NONE ctermbg=8 cterm=NONE
-    hi CursorColumn ctermfg=NONE ctermbg=8 cterm=NONE
+    hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi TabLineFill ctermfg=15 ctermbg=NONE cterm=NONE
     hi TabLine ctermfg=15 ctermbg=NONE cterm=NONE
     hi TabLineSel ctermfg=15 ctermbg=NONE cterm=NONE

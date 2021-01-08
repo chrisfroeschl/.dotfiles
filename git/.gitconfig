@@ -8,3 +8,6 @@
 	program = gpg
 [commit]
 	gpgsign = true
+[http]
+        sslbackend = openssl
+	sslverify = false
