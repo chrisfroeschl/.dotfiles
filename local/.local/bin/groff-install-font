@@ -20,7 +20,8 @@ font=${1:?No font file given}; shift
 groffname=${1:?No groff font name given, eg TimesR, TimesI, TimesB, etc}; shift
 name=$(basename "$font" .${font##*.})
 
-prefix=/usr/local/share/groff
+# This path may vary depending on your OS.
+prefix=/usr/share/groff
 fontdir=$prefix/current/font
 textmap=$fontdir/devps/generate/textmap
 sitefont=$prefix/site-font
