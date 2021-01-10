@@ -1,7 +1,7 @@
 #!/bin/sh
-# File: javamon
+# File: javad
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Fri 08 Jan 2021 10:12:48 PM CET
+# Last Modified: Sun 10 Jan 2021 03:41:01 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
@@ -19,7 +19,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 # Description:
-# Java server based on nodemon.
+# Java demon based on nodemon.
 
 # Global variables.
 SRC="src"

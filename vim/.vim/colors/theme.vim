@@ -1,6 +1,6 @@
 " File: theme.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Fri 08 Jan 2021 09:55:05 PM CET
+" Last Modified: Sun 10 Jan 2021 03:55:19 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -15,7 +15,6 @@ endif
 
 set background=dark
 let g:colors_name='theme'
-
 
 if version >= 700
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -57,15 +56,15 @@ hi Question ctermfg=15 ctermbg=NONE cterm=bold
 hi WarningMsg ctermfg=9 ctermbg=NONE cterm=bold
 hi LineNr ctermfg=15 ctermbg=NONE cterm=NONE
 hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-hi Folded ctermfg=15 ctermbg=0 cterm=italic
-hi FoldColumn ctermfg=15 ctermbg=NONE cterm=NONE
+hi Folded ctermfg=8 ctermbg=0 cterm=italic,bold
+hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Cursor ctermfg=NONE ctermbg=NONE cterm=inverse
 hi vCursor ctermfg=NONE ctermbg=NONE cterm=inverse
 hi iCursor ctermfg=NONE ctermbg=NONE cterm=inverse
 hi lCursor ctermfg=NONE ctermbg=NONE cterm=inverse
 hi Special ctermfg=7 ctermbg=NONE cterm=NONE
 hi Comment ctermfg=7 ctermbg=NONE cterm=NONE
-hi Todo ctermfg=11 ctermbg=NONE cterm=bold,underline
+hi Todo ctermfg=15 ctermbg=NONE cterm=bold,underline
 hi Error ctermfg=9 ctermbg=NONE cterm=bold
 
 hi Statement ctermfg=9 ctermbg=NONE cterm=NONE
@@ -93,17 +92,16 @@ hi StorageClass ctermfg=11 ctermbg=NONE cterm=NONE
 hi Structure ctermfg=10 ctermbg=NONE cterm=NONE
 hi Typedef ctermfg=10 ctermbg=NONE cterm=NONE
 
-
 hi DiffDelete ctermfg=1 ctermbg=NONE cterm=NONE
 hi GitGutterDelete ctermfg=1 ctermbg=NONE cterm=NONE
 hi DiffAdd ctermfg=2 ctermbg=NONE cterm=NONE
 hi GitGutterAdd ctermfg=2 ctermbg=NONE cterm=NONE
-hi DiffChange ctermfg=3 ctermbg=NONE cterm=NONE
-hi GitGutterChange ctermfg=3 ctermbg=NONE cterm=NONE
+hi DiffChange ctermfg=4 ctermbg=NONE cterm=NONE
+hi GitGutterChange ctermfg=4 ctermbg=NONE cterm=NONE
 hi DiffText ctermfg=15 ctermbg=NONE cterm=NONE
 hi diffAdded ctermfg=2 ctermbg=NONE cterm=NONE
 hi diffRemoved ctermfg=1 ctermbg=NONE cterm=NONE
-hi diffChanged ctermfg=3 ctermbg=NONE cterm=NONE
+hi diffChanged ctermfg=4 ctermbg=NONE cterm=NONE
 hi diffFile ctermfg=11 ctermbg=NONE cterm=NONE
 hi diffNewFile ctermfg=11 ctermbg=NONE cterm=NONE
 hi diffLine ctermfg=14 ctermbg=NONE cterm=NONE
@@ -345,7 +343,6 @@ hi javaParen4 ctermfg=15 ctermbg=NONE cterm=NONE
 hi javaParen5 ctermfg=15 ctermbg=NONE cterm=NONE
 hi javaOperator ctermfg=15 ctermbg=NONE cterm=bold
 hi javaVarArg ctermfg=10 ctermbg=NONE cterm=NONE
-
 
 hi markdownItalic ctermfg=7 ctermbg=NONE cterm=italic
 hi markdownH1 ctermfg=15 ctermbg=NONE cterm=bold
