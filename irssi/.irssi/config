@@ -146,14 +146,14 @@ chatnets = {
 };
 
 channels = (
-  { name = "#gentoo"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#gentoo"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#cat-v"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#bookz"; chatnet = "Undernet"; autojoin = "No"; },
   { name = "#ebooks"; chatnet = "Highwaynet"; autojoin = "No"; },
-  { name = "#fc"; chatnet = "Highwaynet"; autojoin = "Yes"; },
+  { name = "#fc"; chatnet = "Highwaynet"; autojoin = "Yes"; }
 );
 
 aliases = {
-  ATAG = "WINDOW SERVER";
   ADDALLCHANS = "SCRIPT EXEC foreach my \\$channel (Irssi::channels()) { Irssi::command(\"CHANNEL ADD -auto \\$channel->{name} \\$channel->{server}->{tag} \\$channel->{key}\")\\;}";
   BACK = "AWAY";
   CALC = "EXEC - if command -v bc >/dev/null 2>&1\\; then printf '%s=' '$*'\\; echo '$*' | bc -l\\; else echo bc was not found\\; fi";
@@ -164,10 +164,7 @@ aliases = {
   EXEMPTLIST = "MODE $C +e";
   EXIT = "QUIT";
   GOTO = "SCROLLBACK GOTO";
-  HIGHLIGHT = "HILIGHT";
-  HOST = "USERHOST";
   INVITELIST = "MODE $C +I";
-  LAST = "LASTLOG";
   LEAVE = "PART";
   MUB = "UNBAN *";
   NMSG = "^MSG";
@@ -295,7 +292,5 @@ settings = {
     dcc_download_path = "~/tmp";
     dcc_upload_path = "~/tmp";
   };
-  "fe-common/core" = {
-    hilight_nick_matches_everywhere = "yes";
-  };
+  "fe-common/core" = { hilight_nick_matches_everywhere = "yes"; };
 };
