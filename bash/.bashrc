@@ -1,6 +1,6 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Mon 04 Jan 2021 12:29:13 PM CET
+# Last Modified: Sat 16 Jan 2021 01:23:54 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 
@@ -18,6 +18,8 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Vim mode.
 set -o vi
+# Lynx starting file.
+export WWW_HOME="file:///home/chris/.sfeed/feeds.html"
 # Default editor.
 export EDITOR='vim'
 # Custom PS1.
