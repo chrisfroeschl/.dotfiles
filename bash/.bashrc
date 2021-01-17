@@ -1,6 +1,6 @@
 # File: .bashrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sat 16 Jan 2021 01:23:54 PM CET
+# Last Modified: Sun 17 Jan 2021 03:19:49 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 
@@ -18,10 +18,12 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Vim mode.
 set -o vi
-# Lynx starting file.
-export WWW_HOME="file:///home/chris/.sfeed/feeds.html"
 # Default editor.
 export EDITOR='vim'
+# Required for gpg to work properly with git.
+export GPG_TTY=$(tty)
+# Lynx configuration file location.
+export LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
 # Custom PS1.
 if [ $(id -u) -eq 0 ];
 then
@@ -29,6 +31,3 @@ then
 else
   PS1="\[\033[01;32m\]# \[\033[0m\]"
 fi
-
-# Required for gpg to work properly with git.
-export GPG_TTY=$(tty)
