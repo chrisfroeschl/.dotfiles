@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: .mkshrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Tue 19 Jan 2021 10:01:56 PM CET
+# Last Modified: Wed 20 Jan 2021 07:26:40 AM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 
@@ -21,6 +21,10 @@ export GPG_TTY=$(tty)
 export LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
 # Custom PS1.
 PS1="> "
+
+# Useful aliases.
+alias youtube-dlp='youtube-dl --proxy socks5://127.0.0.1:9050 -ci --output "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
+alias youtube-dlpp='youtube-dl --proxy socks5://127.0.0.1:9050 -ci --output "%(autonumber)s - %(title)s.%(ext)s" --extract-audio --audio-format mp3'
 
 # $Id$
 # $MirOS: src/bin/mksh/dot.mkshrc,v 1.128 2020/04/13 18:39:03 tg Exp $
