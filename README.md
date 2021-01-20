@@ -10,6 +10,7 @@ Includes settings for:
 | irssi   | IRC client            |
 | local   | Custom scripts        |
 | lynx    | World Wide Web client |
+| mksh    | Interactive shell     |
 | mongodb | NoSQL database        |
 | mpv     | Media player          |
 | mutt    | Email client          |
