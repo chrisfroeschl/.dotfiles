@@ -5,7 +5,7 @@ xset r rate 300 50 &
 unclutter &
 
 while true; do
-    dwmbar
+    statusbar
     sleep 1s
 done &
 
