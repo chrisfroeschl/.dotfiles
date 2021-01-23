@@ -1,10 +1,14 @@
-#!/bin/sh
+#!/bin/mksh
 # File: .mkshrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Thu 21 Jan 2021 07:52:35 PM CET
+# Last Modified: Sat 23 Jan 2021 12:13:30 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 
+# Set some builtin environment variables.
+\: "${MKSH:=$(\\builtin whence -p mksh)}${MKSH:=/bin/mksh}"
+\\builtin export MKSH
+\\builtin export SHELL=$MKSH MANWIDTH=80 LESSHISTFILE=-
 # Add my custom script directory to PATH.
 export PATH="$PATH:$HOME/.local/bin"
 # History size.
