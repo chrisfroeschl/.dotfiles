@@ -1,6 +1,6 @@
 " File: coc-settings.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Mon 04 Jan 2021 02:14:14 PM CET
+" Last Modified: Sat 30 Jan 2021 02:47:18 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -12,15 +12,12 @@
 let g:coc_global_extensions = [
             \'coc-json',
             \'coc-prettier',
-            \'coc-pairs',
             \'coc-eslint',
             \'coc-emmet',
             \'coc-tsserver',
-            \'coc-sh',
             \'coc-markdownlint',
             \'coc-java',
             \'coc-html',
-            \'coc-docker',
             \'coc-css',
             \'coc-snippets',
             \'coc-angular',
@@ -62,4 +59,3 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
