@@ -1,6 +1,6 @@
 " File: troff.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 31 Jan 2021 03:00:54 PM CET
+" Last Modified: Sun 31 Jan 2021 07:41:45 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -14,7 +14,8 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-set nosmartindent
+" General troff specific settings.
+setlocal nosmartindent
 
 if !exists('g:troff_text_obj_enabled')
 	let g:troff_text_obj_enabled = 1

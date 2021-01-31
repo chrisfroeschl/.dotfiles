@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 31 Jan 2021 02:27:17 PM CET
+" Last Modified: Sun 31 Jan 2021 07:40:08 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -39,6 +39,7 @@ if has('syntax') && has('eval')
 endif
 
 let g:mapleader = "\<Space>"
+let g:maplocalleader = "-"
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 25
 let g:netrw_banner = 0
@@ -96,23 +97,38 @@ set dictionary+=~/.vim/dict/en_common
 filetype plugin on
 colorscheme theme
 
+" Tab jumping.
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
+" Open vimrc in a split.
+nnoremap <LEADER>ev :vsplit $MYVIMRC<CR>
+" Source vimrc.
+nnoremap <LEADER>sv :source $MYVIMRC<CR>
+" Quote surrounding.
+nnoremap <LEADER>" viw<ESC>a"<ESC>hbi"<ESC>lel
+nnoremap <LEADER>' viw<ESC>a'<ESC>hbi'<ESC>lel
+" Escape from INSERT Mode with jk.
+inoremap jk <ESC>
+" Unbind bad habits.
+inoremap <ESC> <Nop>
+inoremap <UP> <Nop>
+inoremap <DOWN> <Nop>
+inoremap <RIGHT> <Nop>
+inoremap <LEFT> <Nop>
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Use <CR> to confirm completion, `<C-g>u` means break undo chain at current position.
 if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <CR> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
 if has("autocmd")
 
+    " Read in template files.
     augroup SKELETON_TEMPLATES
       autocmd!
-      " Read in template files.
       autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
-
       " Parse special text in the templates after the read.
       autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge|normal G
     augroup END
@@ -124,6 +140,7 @@ if has("autocmd")
     augroup END
 
     if has("spell")
+        " Enable spell only for specific file types.
         augroup SPELL_ENABLED
             autocmd!
             autocmd BufRead,BufNewFile .vimrc,*.man,*.t,*.roff,*.ms,*.mom,*.me,*.mm,*.tr,*.troff,*.tmac,*.md,*.tex setlocal spell
@@ -134,3 +151,12 @@ if has("autocmd")
     endif
 
 endif
+
+" Abbreviations
+iabbrev <expr> lorem system('curl -s http://metaphorpsum.com/paragraphs/1')
+iabbrev @@ cfroeschl@protonmail.com
+iabbrev www www.chrisfroeschl.de
+iabbrev ccopy Copyright (c) Chris Fröschl.
+iabbrev waht what
+iabbrev tehn then
+iabbrev adn and
