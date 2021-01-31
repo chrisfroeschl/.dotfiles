@@ -1,0 +1,42 @@
+# File: java.snippets
+# Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+# Last Modified: Sun 31 Jan 2021 03:02:56 PM CET
+# License:
+# Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+# See :help license
+#
+# Description:
+# Java snippets.
+
+snippet main "Main function."
+public static void main(String args[]) {
+    System.out.println(${1});
+}
+endsnippet
+
+
+snippet pubfunc "Public function."
+public ${1:Return type} ${2:Function name} (${3:Arguments}) {
+    ${4};
+}
+endsnippet
+
+
+snippet prvfunc "Private function."
+public ${1:Return type} ${2:Function name} (${3:Arguments}) {
+    ${4};
+}
+endsnippet
+
+snippet prtfunc "Protected function."
+public ${1:Return type} ${2:Function name} (${3:Arguments}) {
+    ${4};
+}
+endsnippet
+
+snippet sys "System.out.println()."
+System.out.println("${1:Your text}");
+endsnippet
+
+
+

@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sat 09 Jan 2021 09:50:07 PM CET
+" Last Modified: Sun 31 Jan 2021 02:27:17 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -96,15 +96,8 @@ set dictionary+=~/.vim/dict/en_common
 filetype plugin on
 colorscheme theme
 
-if has("spell")
-    autocmd BufRead,BufNewFile .vimrc,*.man,*.t,*.roff,*.ms,*.mom,*.me,*.mm,*.tr,*.troff,*.tmac,*.md,*.tex setlocal spell
-    if has("syntax")
-        setlocal spelllang=en
-    endif
-endif
-
-" Disables automatic commenting on newline.
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 if exists('*complete_info')
@@ -113,16 +106,31 @@ else
   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
-nnoremap <TAB> :bnext<CR>
-nnoremap <S-TAB> :bprevious<CR>
-
 if has("autocmd")
-    augroup templates
-      au!
+
+    augroup SKELETON_TEMPLATES
+      autocmd!
       " Read in template files.
       autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
 
       " Parse special text in the templates after the read.
       autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge|normal G
     augroup END
+
+    " Disables automatic commenting on newline.
+    augroup DISABLE_COMMENTING
+        autocmd!
+        autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+    augroup END
+
+    if has("spell")
+        augroup SPELL_ENABLED
+            autocmd!
+            autocmd BufRead,BufNewFile .vimrc,*.man,*.t,*.roff,*.ms,*.mom,*.me,*.mm,*.tr,*.troff,*.tmac,*.md,*.tex setlocal spell
+        augroup END
+        if has("syntax")
+            setlocal spelllang=en
+        endif
+    endif
+
 endif

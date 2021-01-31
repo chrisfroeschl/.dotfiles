@@ -1,6 +1,6 @@
 " File: troff.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Tue 22 Dec 2020 03:31:01 PM CET
+" Last Modified: Sun 31 Jan 2021 03:00:54 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -13,6 +13,8 @@ if exists("b:did_ftplugin")
   finish
 endif
 let b:did_ftplugin = 1
+
+set nosmartindent
 
 if !exists('g:troff_text_obj_enabled')
 	let g:troff_text_obj_enabled = 1
@@ -29,3 +31,13 @@ endif
 
 " Allow for sourcing local macro packages.
 setlocal include=^\\.m\\?so
+
+augroup TROFF_AUTOCOMPILE
+    " TODO This doesnt feel right...
+    "autocmd!
+    try
+	autocmd BufWritePost <buffer> :make!
+    catch /.*/
+	echo 'busy'
+    endtry
+augroup END
