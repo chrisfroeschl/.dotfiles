@@ -1,6 +1,6 @@
 # File: java.snippets
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 31 Jan 2021 03:02:56 PM CET
+# Last Modified: Tue 02 Feb 2021 07:51:51 AM CET
 # License:
 # Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 # See :help license
@@ -8,19 +8,35 @@
 # Description:
 # Java snippets.
 
+snippet class "Class body."
+public class ${1:Name} {
+    ${2}
+}
+endsnippet
+
+snippet interface "Interface body."
+public interface ${1:Name} {
+    ${2}
+}
+endsnippet
+
+snippet for "For loop body."
+for(int i = 0; i < ${1:len}; i++) {
+    ${2}
+}
+endsnippet
+
 snippet main "Main function."
 public static void main(String args[]) {
     System.out.println(${1});
 }
 endsnippet
 
-
 snippet pubfunc "Public function."
 public ${1:Return type} ${2:Function name} (${3:Arguments}) {
     ${4};
 }
 endsnippet
-
 
 snippet prvfunc "Private function."
 public ${1:Return type} ${2:Function name} (${3:Arguments}) {
@@ -37,6 +53,3 @@ endsnippet
 snippet sys "System.out.println()."
 System.out.println("${1:Your text}");
 endsnippet
-
-
-

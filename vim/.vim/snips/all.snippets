@@ -1,6 +1,6 @@
 # File: all.snippets
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 03:45:44 PM CET
+# Last Modified: Tue 02 Feb 2021 08:00:27 AM CET
 # License:
 # Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 # See :help license
@@ -17,6 +17,17 @@ snippet dqmeta "Meta data with double quote comments." b
 "
 " Description:
 " ${1:Your description}
+endsnippet
+
+snippet smeta "Meta data with double quote comments." b
+// File: `!v expand('%:t')`
+// Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+// Last Modified: `!v strftime('%a %d %b %Y %I:%M:%S %p %Z')`
+// License:
+// Copyright (c) Chris Fröschl.
+//
+// Description:
+// ${1:Your description}
 endsnippet
 
 snippet jsmeta "Meta data with jsdoc comments." b

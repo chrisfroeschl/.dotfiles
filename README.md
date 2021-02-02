@@ -26,5 +26,5 @@ Includes settings for:
 ## Installation
 
 ```sh
-make
+make install
 ```

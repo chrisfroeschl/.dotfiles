@@ -8,7 +8,4 @@
 //
 
 public class [:VIM_EVAL:]expand('%:t:r')[:END_EVAL:] {
-    public static void main(String args[]) {
-
-    }
 }

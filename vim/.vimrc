@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 31 Jan 2021 07:40:08 PM CET
+" Last Modified: Tue 02 Feb 2021 07:54:36 AM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -107,10 +107,7 @@ nnoremap <LEADER>sv :source $MYVIMRC<CR>
 " Quote surrounding.
 nnoremap <LEADER>" viw<ESC>a"<ESC>hbi"<ESC>lel
 nnoremap <LEADER>' viw<ESC>a'<ESC>hbi'<ESC>lel
-" Escape from INSERT Mode with jk.
-inoremap jk <ESC>
 " Unbind bad habits.
-inoremap <ESC> <Nop>
 inoremap <UP> <Nop>
 inoremap <DOWN> <Nop>
 inoremap <RIGHT> <Nop>

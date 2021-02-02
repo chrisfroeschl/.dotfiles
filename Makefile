@@ -1,15 +1,15 @@
 # File: Makefile
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 13 Dec 2020 03:46:03 PM CET
+# Last Modified: Tue 02 Feb 2021 10:41:41 AM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 
-all:
+install: 
 	stow --target=$(HOME) -R $(shell ls -d */)
 	@echo "Created all symlinks in ${HOME}!"
 
-clean:
+uninstall:
 	stow --target=$(HOME) -D $(shell ls -d */)
 	@echo "Deleted all symlinks in ${HOME}!"
 
-.PHONY: clean all
+.PHONY: install uninstall
