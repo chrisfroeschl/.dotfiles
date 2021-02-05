@@ -1,12 +1,14 @@
 " File: troff.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 31 Jan 2021 07:41:45 PM CET
+" Last Modified: Fri 05 Feb 2021 08:06:38 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
 "
 " Description:
-" Plugin functionality for troff.
+" Troff file specific functionality.
+
+" Plugin pre check. {{{
 
 " Only do this when not done yet for this buffer.
 if exists("b:did_ftplugin")
@@ -14,8 +16,13 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-" General troff specific settings.
+" }}}
+
+" Troff settings. {{{
+
 setlocal nosmartindent
+setlocal foldmethod=marker
+setlocal foldlevelstart=0
 
 if !exists('g:troff_text_obj_enabled')
 	let g:troff_text_obj_enabled = 1
@@ -33,6 +40,10 @@ endif
 " Allow for sourcing local macro packages.
 setlocal include=^\\.m\\?so
 
+" }}}
+
+" Troff autocmds. {{{
+
 augroup TROFF_AUTOCOMPILE
     " TODO This doesnt feel right...
     "autocmd!
@@ -42,3 +53,5 @@ augroup TROFF_AUTOCOMPILE
 	echo 'busy'
     endtry
 augroup END
+
+" }}}

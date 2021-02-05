@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Tue 02 Feb 2021 07:54:36 AM CET
+" Last Modified: Fri 05 Feb 2021 07:56:08 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -8,7 +8,9 @@
 " Description:
 " Main config file for Vim.
 
-" Automatically install vim-plug.
+" Plugin specific {{{
+
+" Automatically install vim-plug. 
 augroup PLUGGED
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -37,6 +39,10 @@ call plug#end()
 if has('syntax') && has('eval')
     packadd! matchit
 endif
+
+" }}}
+
+" General settings {{{
 
 let g:mapleader = "\<Space>"
 let g:maplocalleader = "-"
@@ -73,7 +79,8 @@ set autoindent
 set noswapfile
 set nobackup
 set nowritebackup
-set laststatus=0
+set laststatus=2
+set statusline=%=%l:%L
 set relativenumber
 set nu
 set incsearch
@@ -97,6 +104,10 @@ set dictionary+=~/.vim/dict/en_common
 filetype plugin on
 colorscheme theme
 
+" }}}
+
+" General mappings {{{
+
 " Tab jumping.
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
@@ -112,13 +123,16 @@ inoremap <UP> <Nop>
 inoremap <DOWN> <Nop>
 inoremap <RIGHT> <Nop>
 inoremap <LEFT> <Nop>
-
 " Use <CR> to confirm completion, `<C-g>u` means break undo chain at current position.
 if exists('*complete_info')
   inoremap <expr> <CR> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
   inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
+
+" }}}
+
+" Autocmd general settings {{{
 
 if has("autocmd")
 
@@ -149,7 +163,10 @@ if has("autocmd")
 
 endif
 
-" Abbreviations
+" }}}
+
+" Abbreviations {{{
+
 iabbrev <expr> lorem system('curl -s http://metaphorpsum.com/paragraphs/1')
 iabbrev @@ cfroeschl@protonmail.com
 iabbrev www www.chrisfroeschl.de
@@ -157,3 +174,5 @@ iabbrev ccopy Copyright (c) Chris Fröschl.
 iabbrev waht what
 iabbrev tehn then
 iabbrev adn and
+
+" }}}

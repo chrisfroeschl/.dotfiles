@@ -1,6 +1,6 @@
 " File: coc-settings.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sat 30 Jan 2021 02:47:18 PM CET
+" Last Modified: Fri 05 Feb 2021 08:02:41 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -8,7 +8,8 @@
 " Description:
 " Plugin settings for coc related extensions.
 
-" Extensions used by with coc.
+" Extensions used by with coc. {{{
+
 let g:coc_global_extensions = [
             \'coc-json',
             \'coc-prettier',
@@ -24,14 +25,15 @@ let g:coc_global_extensions = [
             \'coc-dictionary',
             \]
 
+" }}}
+
+" Coc mappings. {{{
+
 " Goto code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
@@ -47,6 +49,13 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
+" }}}
+
+" Coc autocmds. {{{
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
 augroup FORMATEXPR
   autocmd!
   " Setup formatexpr specified filetype(s).
@@ -59,3 +68,5 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+" }}}
