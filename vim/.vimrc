@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Fri 05 Feb 2021 07:56:08 PM CET
+" Last Modified: Sun 07 Feb 2021 11:06:47 AM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -129,6 +129,13 @@ if exists('*complete_info')
 else
   inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
+" Hightlight trailing whitespaces.
+nnoremap <LEADER>w :match SpellBad /\m\s$/<CR>
+nnoremap <LEADER>W :match<CR>
+nnoremap <LEADER>/ /\v
+" Make count commands more accessible.
+nnoremap <LEADER>cn :cnext<CR>
+nnoremap <LEADER>cp :cprevious<CR>
 
 " }}}
 
@@ -168,7 +175,7 @@ endif
 " Abbreviations {{{
 
 iabbrev <expr> lorem system('curl -s http://metaphorpsum.com/paragraphs/1')
-iabbrev @@ cfroeschl@protonmail.com
+" iabbrev @@ cfroeschl@protonmail.com
 iabbrev www www.chrisfroeschl.de
 iabbrev ccopy Copyright (c) Chris Fröschl.
 iabbrev waht what

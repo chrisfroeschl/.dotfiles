@@ -1,6 +1,6 @@
 " File: troff.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Fri 05 Feb 2021 08:06:38 PM CET
+" Last Modified: Sun 07 Feb 2021 07:59:27 AM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -45,10 +45,8 @@ setlocal include=^\\.m\\?so
 " Troff autocmds. {{{
 
 augroup TROFF_AUTOCOMPILE
-    " TODO This doesnt feel right...
-    "autocmd!
     try
-	autocmd BufWritePost <buffer> :make!
+	autocmd BufWritePost <buffer> :silent make! | :silent redraw!
     catch /.*/
 	echo 'busy'
     endtry
