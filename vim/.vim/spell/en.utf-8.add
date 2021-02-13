@@ -152,3 +152,10 @@ Plugin
 whitespaces
 Hightlight
 Grep
+initramfs
+userspace
+busybox
+fstab
+fdisk
+grep
+Feb

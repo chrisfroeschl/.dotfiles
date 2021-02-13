@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Fri 29 Jan 2021 06:22:19 AM CET
+# Last Modified: Sat 13 Feb 2021 12:18:48 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 #
@@ -23,7 +23,6 @@ feeds() {
 	feed 'Luke Smith NotRelated' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
-        feed '8chan Library' 'http://jthnx5wyvjvzsxtu.onion/pdfs/index.rss'
         feed 'The Unists' 'https://theunists.wordpress.com/feed/'
 }
 
