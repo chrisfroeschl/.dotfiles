@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 14 Feb 2021 05:21:12 PM CET
+" Last Modified: Sun 14 Feb 2021 07:18:17 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -21,6 +21,8 @@ augroup end
 call plug#begin('~/.vim/plugged')
     " Colorscheme.
     Plug 'chrisfroeschl/minimalist.vim'
+    " Roff support.
+    Plug 'chrisfroeschl/roff.vim'
     " Intellisense engine.
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Search utility.
