@@ -11,3 +11,5 @@
 [http]
         sslbackend = openssl
 	sslverify = false
+[init]
+	defaultBranch = master

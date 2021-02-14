@@ -4,6 +4,7 @@ set selection-clipboard clipboard           # Enable cc by selection.
 set statusbar-h-padding 0                   # Horizontal padding.            
 set statusbar-v-padding 0                   # Vertical padding.
 set page-padding 1                          # Page padding.
+set sandbox none                            # Make hyperlinks work.
 
 # Bindings
 
