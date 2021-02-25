@@ -1,6 +1,6 @@
 " File: vim.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Fri 05 Feb 2021 08:06:53 PM CET
+" Last Modified: Thu 25 Feb 2021 08:06:28 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -10,7 +10,9 @@
 
 " Vim settings. {{{
 
-setlocal foldmethod=marker
-setlocal foldlevelstart=0
+if has('fold')
+    setlocal foldmethod=marker
+    setlocal foldlevelstart=0
+endif
 
 " }}}

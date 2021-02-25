@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 14 Feb 2021 07:18:17 PM CET
+" Last Modified: Thu 25 Feb 2021 08:05:49 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -58,11 +58,24 @@ let g:netrw_liststyle = 1
 let g:netrw_sizestyle = "b"
 let g:rooter_resolve_links = 1
 let g:rooter_targets = '*'
-let b:nroff_is_groff = 1
-let nroff_space_errors = 1
-let b:preprocs_as_sections = 1
 
-syntax enable
+if has('fold')
+    set foldcolumn=1
+endif
+
+if has('signs')
+    set signcolumn=yes
+endif
+
+if has('syntax')
+    syntax enable
+    set colorcolumn=80
+endif
+
+if has('statusline')
+    set statusline=%=%l:%L
+endif
+
 set hidden
 set nowrap
 set encoding=utf-8
@@ -84,7 +97,6 @@ set noswapfile
 set nobackup
 set nowritebackup
 set laststatus=2
-set statusline=%=%l:%L
 set relativenumber
 set nu
 set incsearch
@@ -99,8 +111,6 @@ set updatetime=100
 set timeoutlen=500
 set shortmess+=c
 set guicursor=
-set colorcolumn=80
-set signcolumn=yes
 set ruler
 set showcmd
 set showmode
