@@ -1,6 +1,6 @@
 " File: grep-operator.vim
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sun 07 Feb 2021 09:17:24 AM CET
+" Last Modified: Sat 27 Feb 2021 09:17:20 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -8,8 +8,14 @@
 " Description:
 " Grep operator.
 
+" Mappings {{{
+
 nnoremap <LEADER>g :set operatorfunc=<SID>GrepOperator<CR>g@
 vnoremap <LEADER>g :<c-u>call <SID>GrepOperator(visualmode())<CR>
+
+" }}}
+
+" GrepOperator {{{
 
 function! s:GrepOperator(type)
     " Save users unnamed register. 
@@ -35,3 +41,5 @@ function! s:GrepOperator(type)
     " Reset unnamed register to the initial value.
     let @@ = saved_unnamed_register
 endfunction
+
+" }}}

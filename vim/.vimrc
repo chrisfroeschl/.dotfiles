@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sat 27 Feb 2021 02:53:13 PM CET
+" Last Modified: Sat 27 Feb 2021 09:12:48 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -19,12 +19,12 @@ endif
 augroup end
 
 call plug#begin('~/.vim/plugged')
+    " Intellisense engine.
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Colorscheme.
     Plug 'chrisfroeschl/minimalist.vim'
     " Roff support.
     Plug 'chrisfroeschl/roff.vim'
-    " Intellisense engine.
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Search utility.
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     " Search utility.
@@ -35,9 +35,6 @@ call plug#begin('~/.vim/plugged')
     if version >= 730
         Plug 'airblade/vim-gitgutter'
     endif
-    " TypeScript support
-    Plug 'leafgarland/typescript-vim'
-
 call plug#end()
 
 if has('syntax') && has('eval')
@@ -58,6 +55,7 @@ let g:netrw_liststyle = 1
 let g:netrw_sizestyle = "b"
 let g:rooter_resolve_links = 1
 let g:rooter_targets = '*'
+let g:timeStampLeader = 'Last Modified: '
 
 if has('folding')
     set foldcolumn=1

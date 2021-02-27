@@ -1,37 +1,28 @@
-" File Name:   last_modified.vim
+" File: LastModified.vim
+" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+" Last Modified: Sat 27 Feb 2021 09:18:14 PM CET
+" License:
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
 "
-" Author: 	   Sudipta Ghorui <sudipta05@gmail.com>
-" 
-" Credits: 	   Srinath Avadhanula <srinath@fastmail.fm>
-"			   Justin Randall <Randall311@yahoo.com>
-"			   for the concept, and			   
-"			   Neeraj Prasad <neeraj@alumnux.com>
-"			   Bikram Chatterjee <bikram@alumnux.com>
-"			   who suggested me not to delete any comment (if exists) after
-"			   the time stamp and inspired me to do further modifications
-"			   			   
-" Last Modified: Fri 11 Dec 2020 08:22:49 PM CET
-
-" Description: sets the last modification time of the current file.
-"              the modification time is truncated to the last hour.  and the
-"              next time the time stamp is changed, it is checked against the
-"              time already stamped. this ensures that the time-stamp is
-"              changed only once every hour, ensuring that the undo buffer is
-"              not screwed around with every time we save.
-"              To force the time stamp to be not updated, use the command:
-"              		:NOMOD
-"              To change it back, use
-"              		:MOD
+" Description:
+" LastModified functions.
+" Sets the last modification time of the current file.
+" To force the time stamp to be not updated, use the command:
+"   :NOMOD
 "
-" Things To Remember:  a> Change the variable 's:timeStampLeader' to the string
-" 						 which you use in your code (by default which is 'Last
-" 						 Modified')
-" 					   b> Change the variable 'timeStampFormat'. Put an example
-" 					     of the time format you want.
-" 					   c> Change the variable 'timeStampString'. Change it to
-" 					     get the proper time stamp. Read the comments in the 
-" 					     code to change the variable.
+" To change it back, use
+"   :MOD
 
+" Things To Remember:  
+" - Change the variable 's:timeStampLeader' to the string which you use in 
+"   your code (by default which is 'Last Modified')
+" - Change the variable 'timeStampFormat'. Put an example of the time format you
+"   want.
+" - Change the variable 'timeStampString'. Change it to get the proper time stamp.
+"   Read the comments in the code to change the variable.
+
+" Prechecks {{{
 
 if !exists('g:timeStampLeader')
 	let s:timeStampLeader = 'Last Modified: '
@@ -39,7 +30,20 @@ else
 	let s:timeStampLeader = g:timeStampLeader
 endif
 
-function! UpdateWithLastMod()
+" }}}
+
+" RemoveLastHistoryItem {{{
+
+function! <SID>RemoveLastHistoryItem()
+  call histdel("/", -1)
+  let @/ = histget("/", -1)
+endfunction
+
+" }}}
+
+" utility#LastModified#UpdateWithLastMod {{{
+
+function! utility#LastModified#UpdateWithLastMod()
 	if exists('b:nomod') && b:nomod
 		return
 	end
@@ -62,7 +66,6 @@ function! UpdateWithLastMod()
 		" %M	 - MM	   - 50 (minute)
 		" %X	 - HH:MM:SS-12:29:34)
 		" %p	 - AM/PM
-		" 
 		
 		let timeStampFormat = "Fri 11 Dec 2020 08:22:28 PM CET"
 		let timeStampString = "%a %d %b %Y %I:%M:%S %p %Z"
@@ -125,17 +128,4 @@ function! UpdateWithLastMod()
 	exe ':silent' pos
 endfunction
 
-augroup LastChange
-	au!
-	au BufWritePre * :call UpdateWithLastMod()
-augroup END
-
-function! <SID>RemoveLastHistoryItem()
-  call histdel("/", -1)
-  let @/ = histget("/", -1)
-endfunction
-
-com! -nargs=0 NOMOD :let b:nomod = 1
-com! -nargs=0 MOD   :let b:nomod = 0
-
-" vim:ts=4:sw=4:noet
+" }}}

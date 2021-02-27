@@ -1,31 +1,14 @@
-" BufOnly.vim  -  Delete all the buffers except the current/named buffer.
+" File: BufOnly.vim
+" Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
+" Last Modified: Sat 27 Feb 2021 08:26:20 PM CET
+" License:
+" Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
+" See :help license
 "
-" Copyright November 2003 by Christian J. Robinson <infynity@onewest.net>
-"
-" Distributed under the terms of the Vim license.  See ":help license".
-"
-" Usage:
-"
-" :Bonly / :BOnly / :Bufonly / :BufOnly [buffer]
-"
-" Without any arguments the current buffer is kept.  With an argument the
-" buffer name/number supplied is kept.
+" Description:
+" BufOnly function.
 
-if exists('g:BufonlyLoaded') || &cp
-  finish
-end
-let g:BufonlyLoaded = 1
-
-command! -nargs=? -complete=buffer -bang Bonly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang BOnly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang Bufonly
-    \ :call BufOnly('<args>', '<bang>')
-command! -nargs=? -complete=buffer -bang BufOnly
-    \ :call BufOnly('<args>', '<bang>')
-
-function! BufOnly(buffer, bang)
+function! utility#BufOnly#BufOnly(buffer, bang)
 	if a:buffer == ''
 		" No buffer provided, use the current buffer.
 		let buffer = bufnr('%')
