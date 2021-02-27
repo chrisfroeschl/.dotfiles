@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Thu 25 Feb 2021 08:05:49 PM CET
+" Last Modified: Sat 27 Feb 2021 02:53:13 PM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -59,7 +59,7 @@ let g:netrw_sizestyle = "b"
 let g:rooter_resolve_links = 1
 let g:rooter_targets = '*'
 
-if has('fold')
+if has('folding')
     set foldcolumn=1
 endif
 
