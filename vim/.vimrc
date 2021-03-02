@@ -1,6 +1,6 @@
 " File: .vimrc
 " Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-" Last Modified: Sat 27 Feb 2021 09:12:48 PM CET
+" Last Modified: Tue 02 Mar 2021 10:23:10 AM CET
 " License:
 " Copyright (c) Chris Fröschl. Distributed under the same terms as Vim itself.
 " See :help license
@@ -35,6 +35,7 @@ call plug#begin('~/.vim/plugged')
     if version >= 730
         Plug 'airblade/vim-gitgutter'
     endif
+    Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 if has('syntax') && has('eval')
@@ -124,7 +125,7 @@ colorscheme minimalist
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 " Open vimrc in a split.
-nnoremap <LEADER>ev :vsplit $MYVIMRC<CR>
+nnoremap <LEADER>ev :split $MYVIMRC<CR>
 " Source vimrc.
 nnoremap <LEADER>sv :source $MYVIMRC<CR>
 " Quote surrounding.
@@ -193,5 +194,6 @@ iabbrev ccopy Copyright (c) Chris Fröschl.
 iabbrev waht what
 iabbrev tehn then
 iabbrev adn and
+iabbrev inital initial
 
 " }}}
