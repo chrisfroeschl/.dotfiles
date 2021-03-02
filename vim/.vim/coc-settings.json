@@ -2,7 +2,7 @@
   "coc.preferences.formatOnSaveFiletypes": ["*"],
   "coc.preferences.extensionUpdateCheck": "daily",
   "eslint.autoFixOnSave": true,
-  "prettier.formatterPriority": 0,
+  "prettier.formatterPriority": -1,
   "snippets.loadFromExtensions": false,
   "snippets.userSnippetsDirectory": "~/.vim/snips",
   "languageserver": {
