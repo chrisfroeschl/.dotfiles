@@ -1,6 +1,6 @@
 # File: Makefile
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Thu 04 Mar 2021 07:59:01 PM CET
+# Last Modified: Sat 06 Mar 2021 09:06:47 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 
@@ -13,7 +13,7 @@ install:
 	@echo "Created all symlinks in ${HOME}!"
 
 clean:
-	$(LINKER) $(TARGET) -R $(PACKAGES)
+	$(LINKER) $(TARGET) -D $(PACKAGES)
 	@echo "Deleted all symlinks in ${HOME}!"
 
 .PHONY: install clean
