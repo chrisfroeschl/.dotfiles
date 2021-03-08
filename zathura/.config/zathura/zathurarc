@@ -1,10 +1,19 @@
 # General
 
-set selection-clipboard clipboard           # Enable cc by selection.
-set statusbar-h-padding 0                   # Horizontal padding.            
-set statusbar-v-padding 0                   # Vertical padding.
-set page-padding 1                          # Page padding.
-set sandbox none                            # Make hyperlinks work.
+# Enable cc by selection.
+set selection-clipboard clipboard 
+# Horizontal padding. 
+set statusbar-h-padding 0 
+# Vertical padding.
+set statusbar-v-padding 0 
+# Page padding.
+set page-padding 1 
+# Make hyperlinks work.
+set sandbox none          
+# Default browser.
+# set uri_command "lynx %s"
+# Printers
+# set list_printer_command "lpstat -p"
 
 # Bindings
 

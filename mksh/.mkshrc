@@ -1,7 +1,7 @@
 #!/bin/mksh
 # File: .mkshrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Thu 04 Feb 2021 05:05:41 PM CET
+# Last Modified: Sun 07 Mar 2021 02:49:48 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 
@@ -19,6 +19,8 @@ export HISTFILE="$HOME/.mksh_history"
 set -o vi
 # Default editor.
 export EDITOR="vim"
+# Default editor.
+export BROWSER="lynx"
 # Required for gpg to work properly with git.
 export GPG_TTY=$(tty)
 # Lynx configuration file location.

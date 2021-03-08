@@ -1,14 +1,14 @@
 #!/bin/sh
 # File: sfeedrc
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sat 13 Feb 2021 12:18:48 PM CET
+# Last Modified: Sun 07 Mar 2021 09:16:32 PM CET
 # License:
 # Copyright (c) 2021 Chris Fröschl.
 #
 # Description:
 # Main sfeed config file containing overrides and RSS URLs.
 
-# list of feeds to fetch:
+# List of feeds to fetch:
 feeds() {
 	# feed <name> <feedurl> [basesiteurl] [encoding]
 	feed 'RMS' 'https://stallman.org/rss/rss.xml'
@@ -23,7 +23,7 @@ feeds() {
 	feed 'Luke Smith NotRelated' 'https://notrelated.libsyn.com/rss'
 	feed 'Luke Smith Blog' 'https://lukesmith.xyz/rss.xml'
 	feed 'Luke Smith Videos' 'https://videos.lukesmith.xyz/feeds/videos.atom?sort=-trending'
-        feed 'The Unists' 'https://theunists.wordpress.com/feed/'
+        feed 'The Unists' 'https://theunists.com/category/blog/feed/'
 }
 
 # Fetch a feed via TOR proxy if source allows it.
