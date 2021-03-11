@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: javad
 # Maintainer: Chris Fröschl <cfroeschl@protonmail.com>
-# Last Modified: Sun 10 Jan 2021 03:41:01 PM CET
+# Last Modified: Thu 11 Mar 2021 05:09:26 PM CET
 # License:
 # Copyright (c) 2020 Chris Fröschl.
 #
@@ -22,8 +22,22 @@
 # Java demon based on nodemon.
 
 # Global variables.
+VERSION="1.0.1"
 SRC="src"
 BIN="bin"
+COMPILER="javac"
+RUNNER="java"
+JAVAC_FLAGS="-cp $SRC -d $BIN"
+JAVA_FLAGS="-cp $BIN"
+
+read -r -d '' HELP_TEXT << EOF
+Usage: $(basename $0) [OPTIONS] file ...
+
+Options:
+ -v, --version              Show the programs version number and exit.
+ -h, --help                 Show this help message and exit.
+ -t, --test <file>          Run tests.
+EOF
 
 # Prepare a more refined package path for the following execution of the compiled
 # code.
@@ -37,7 +51,34 @@ then
     mkdir $BIN
 fi
 
+# Loop through arguments and process them.
+for arg in "$@"
+do
+    case $arg in
+        -h|--help)
+        echo "$HELP_TEXT"
+        exit 
+        ;;
+        -v|--version)
+        echo $VERSION
+        exit
+        ;;
+        -t|--test)
+        # Set necessary testing flags by overriding the normal running flags.
+        JAVAC_FLAGS="-cp $(ls $JUNIT_HOME/junit*) -d $BIN"
+        JAVA_FLAGS="-cp $CLASSPATH:$BIN org.junit.runner.JUnitCore"
+        # TODO Only temporary since the whole test world doesnt work atm.
+        PKG_PATH="TestBasic"
+        shift
+        ;;
+        -*|--*)
+        echo "$HELP_TEXT"
+        exit
+        ;;
+    esac
+done
+
 # Start the Java demon.
 npx nodemon \
     -e java -w src -x \
-    "javac -cp $SRC -d $BIN $1; java -cp $BIN $PKG_PATH"
+    "$COMPILER $JAVAC_FLAGS $1; $RUNNER $JAVA_FLAGS $PKG_PATH"
